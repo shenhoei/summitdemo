@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+        <div class="flex flex-wrap justify-between">
+          <img src="img/logo-summit.svg">
+        </div><!--summit Logo-->
+        <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+          <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+            Teaching and Learning</span>
+        </div>
+        <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <img src="img/nav-hamburger.svg">
+        </button>
+        </div>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+          <!--Summit Base Button-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-summit-base.svg" class="m-auto">
+            <span>My Summit Base</span>
+            <span class="sr-only">Expand</span>
+          </a>
+          <!--Summit Base Button-->
+
+          <!-- My Course Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-course.svg" class="m-auto">
+
+            <span>My Course</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+
+          <!-- My course Icon-->
+          <!-- Account Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] items-center summit-menu summit-student-menu text-center"
+            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+            <img src="img/nav-profile.svg" class="m-auto">
+            <span>My Account</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+          <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                  Profile</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                  Password</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                  Search</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                all</a>
+            </div>
+          </div>
+
+          <!-- Account Icon-->
+           </div>
+      </div>
+      </div>
+    </nav>
+ <!--student Top Section-->
+ <div class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] ">
+  <div class="text-right p-4"><a href="#" class="text-white">Science Academny | Raza Hasan Content</a></div>
+  <h1 class="text-white font-bold text-[36px] text-center mb-8">My Summit Base</h1>
+  <div class="flex w-full justify-center">
+    <div class="menu">
+      <nav class="flex items-center justify-between pt-4">
+        <button class="text-summit-blue-primary bg-summit-gray-FA rounded-t-lg py-2 px-4">
+          My PLP
+      </button>
+        <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+            My Assignment
+        </button>
+        <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+            My Progress
+        </button>
+    </nav>
+    </div>
+    <!--end of tab-menu-->
+  </div>
+</div>
+<!--Student Title and Goat Section-->
+<div class="w-full relative h-[70px]">
+  <div class="w-[300px] justify-start p-4 absolute mt-[-60px]">
+    <img src="img/logo-literacy.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+  </div>
+  <!--goat and box-->
+  <div class="flex w-full justify-end relative">
+    <div class="bg-white rounded-lg p-2 inline-block max-h-[75px] w-[250px] absolute mr-32 mt-[-85px]" id="top-header-box">
+      <button type="button" class="absolute top-3 end-2.5 text-textcolor-main bg-transparent hover:bg-gray-200 hover:text-black rounded-lg text-sm w-5 h-5 ms-auto inline-flex justify-center items-center" data-modal-hide="popup-modal">
+        <img src="img/icon-close-x.svg" class="w-2 h-2" >
+        <span class="sr-only">Close modal</span>
+    </button>
+      <div class="w-full pt-1.5">
+        <strong>Welcome Back!</strong>
+        <p>You have 3 new Assignments</p>
+      </div>
+    </div>
+    <div class="w-[108px] mt-[-135px] mr-10 absolute block">
+      <img src="img/summit-goat-point-sm.png">
+    </div>
+  </div>
+  <!--end of Goat and Box-->
+</div>
+<!--End of Student Title and Goat Section-->
+<!--End of Student Top Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <!--End of Top Section-->
+      <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-auto">
+        <aside
+          class="z-40 w-[400px] min-w-[400px] min-h-screen h-full transition-transform -translate-x-full md:translate-x-0 plpasideBarToggle ml-5 mr-5 mt-5"
+          id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+          <button type="button" class="w-[16px] absolute left-[399px] bg-summit-blue-primary rounded-r-lg mt-4 py-5"
+            id="asideStudentPLPToggleBtn">
+            <img src="img/aside-arrow-left.svg">
+          </button>
+        
+          <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+            <div class="w-[50px] h-[50px]">
+              <img src="img/hill-base-listening.svg" />
+            </div>
+            <div class="my-auto ml-5 text-left">
+              <p class="text-xl font-bold">Listening TREK</p>
+              <p class="text-textcolor-light">PLP #2</p>
+            </div>
+          </button>
+          <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+            <div class="w-[50px] h-[50px]">
+              <img src="img/hill-base-speaking.svg" />
+            </div>
+            <div class="my-auto ml-5 text-left">
+              <p class="text-xl font-bold">Speaking TREK</p>
+              <p class="text-textcolor-light">PLP #2</p>
+            </div>
+          </button>
+          <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+            <div class="w-[50px] h-[50px]">
+              <img src="img/hill-base-reading.svg" />
+        
+            </div>
+            <div class="my-auto ml-5 text-left">
+              <p class="text-xl font-bold">Reading TREK</p>
+              <p class="text-textcolor-light">PLP #2</p>
+            </div>
+          </button>
+          <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+            <div class="w-[50px] h-[50px]">
+              <img src="img/hill-base-writing.svg" />
+            </div>
+            <div class="my-auto ml-5 text-left">
+              <p class="text-xl font-bold">Writing TREK</p>
+              <p class="text-textcolor-light">PLP #2</p>
+            </div>
+          </button>
+        
+        </aside>
+      <section class="main-grid flex-grow" id="student-plp-content">
+        <!--Dashboard-top-->
+            <div class="p-5">
+                <img src="./img/demo-mountain.jpg">
+            </div>
+
+        </section>
+       <!--end of bottom of grid-->
+      </div><!--end of light blue section-->
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>

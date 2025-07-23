@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+        <div class="flex flex-wrap justify-between">
+          <img src="img/logo-summit.svg">
+        </div><!--summit Logo-->
+        <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+          <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+            Teaching and Learning</span>
+        </div>
+        <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <img src="img/nav-hamburger.svg">
+        </button>
+        </div>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+          <!--Summit Base Button-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-summit-base.svg" class="m-auto">
+            <span>My Summit Base</span>
+            <span class="sr-only">Expand</span>
+          </a>
+          <!--Summit Base Button-->
+
+          <!-- My Course Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-course.svg" class="m-auto">
+
+            <span>My Course</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+
+          <!-- My course Icon-->
+          <!-- Account Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] items-center summit-menu summit-student-menu text-center"
+            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+            <img src="img/nav-profile.svg" class="m-auto">
+            <span>My Account</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+          <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                  Profile</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                  Password</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                  Search</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                all</a>
+            </div>
+          </div>
+
+          <!-- Account Icon-->
+           </div>
+      </div>
+      </div>
+    </nav>
+    <div class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px]">
+      <div class="text-right p-4"><a href="#" class="text-white">Science Academny | Raza Hasan Content</a></div>
+      <h1 class="text-white font-bold text-[36px] text-center mb-8 relative">My Summit Base<span class="bg-summit-yellow-primary text-black font-bold absolute text-base rounded-xl p-2 mt-1 ml-2">View-Only Mode</span></h1>
+      <div class="flex w-full justify-center">
+        <div class="menu">
+          <nav class="flex items-center justify-between pt-4">
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+              My PLP
+          </button>
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+                My Assignment
+            </button>
+            <button class="text-summit-blue-primary bg-summit-gray-FA rounded-t-lg py-2 px-4">
+                My Progress
+            </button>
+        </nav>
+        </div>
+        <!--end of tab-menu-->
+      </div>
+      <div class="absolute right-4 -mt-36">
+        <div class="h-fit w-fit p-4 bg-summit-black-30 rounded-xl relative">
+            <a href="#" class="absolute right-2 top-2"><img src="img/view-expand.svg"/></a>
+            <div class="grid grid-cols-2 text-sm gap-2">
+                <div class="">
+                    <h3 class="text-summit-yellow-primary">School:</h3>
+                    <p class="font-medium text-white">Summit High School</p>
+                    <h3 class="text-summit-yellow-primary mt-2">Class:</h3>
+                    <p class="font-medium text-white">Dynamic Science - 5th</p>
+                </div>
+                <div class="">
+                    <h3 class="text-summit-yellow-primary">Subject:</h3>
+                    <p class="font-medium text-white">Dynamic Science</p>
+                    <h3 class="text-summit-yellow-primary mt-2">Student:</h3>
+                    <p class="font-medium text-white">Campbell, Wesley</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+<!--Student Title Section-->
+<div class="w-full relative h-[70px]">
+  <div class="w-[300px] justify-start p-4 absolute mt-[-60px]">
+    <img src="img/course-concept-boosters-biology.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+  </div>
+</div>
+<!--End of Student Title and Goat Section-->
+<!--End of Student Top Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <!--End of Top Section-->
+      <div class="bg-summit-blue-light p-5 rounded-xl border border-solid border-summit-gray-stroke">
+      <section class="main-grid">
+        <!--filter-row-->
+        <div class="grid gap-4 mb-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-3">
+          <div class="">                   
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-offset-skidding="50" class="text-summit-gray-dark border-solid border bg-white border-summit-gray-stroke font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">
+                  <img src="img/icon-filter.svg" />
+                  <span class="mx-2">Filter</span>
+                  <img src="img/icon-down-caret.svg" class="w-2.5 h-2.5 ms-3" />
+                  </button>
+                  
+                  <!-- Dropdown menu -->
+                  <div id="dropdown" class="z-10 hidden bg-white rounded-lg shadow w-56 p-4 ml-20">
+                    <div class="flex grid-cols-2 justify-between">
+                    <span class="text-sm font-bold">Filter by Status</span>
+                    <button class="flex group">
+                      <img src="img/icon-clear.svg" class="fill-textcolor-light group-hover:fill-black"/> 
+                     <span class="text-sm ml-2 text-textcolor-light group-hover:text-black">Clear</span></button>
+                  </div>
+                      <ul class="py-2 text-sm text-textcolor-light" aria-labelledby="dropdownDefaultButton">
+                        <li>
+                          <a href="#" class="block py-2">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm">New</label>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block py-2">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm">In Progress</label>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block py-2">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm">Late</label>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="bg-summit-blue-primary text-white w-full rounded-lg py-2 text-center">Apply</button>
+                  </div>
+  
+            </div>
+              <!--search and grid-->
+                    <div class="flex justify-end">
+                      <div class="flex bg-summit-blue-primary-10 p-1 w-fit h-fit rounded-full border-solid border border-summit-blue-primary-10">
+                        <button class="px-3 py-1 rounded-full inline-flex bg-white group">
+                          <img src="img/icon-grid.svg" />
+                          <span class="text-summit-blue-primary ml-2">Grid</span>
+                        </button>
+                        <button class="px-3 py-1 ml-2 rounded-full inline-flex hover:bg-white group">
+                          <img src="img/icon-list.svg" class="mt-0.5"/>
+                          
+                          <span class="group-hover:fill-summit-blue-primary ml-2">List</span>
+                        </button>
+                      </div>
+                      <form class="ml-4">   
+                        <label for="default-search" class="mb-2 text-sm font-medium sr-only">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-summit-gray-stroke" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search" class="block w-full p-2.5 ps-10 text-sm border border-summit-gray-stroke rounded-full bg-white" placeholder="Search" />        
+                        </div>
+                    </form>
+                    </div>
+                    <!--end of search and grid-->
+                    
+        </div>
+        <!--filter-row-->
+        <div class="grid xs:grid-cols sm:grid-cols-2 gap-2 lg:grid-cols-3 lg:gap-3 xl:grid-cols-4 xl:gap-4">
+          <!--class-module-->
+          <div class="basis-1/4 bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke">
+            <!--module image-->
+            <div class="mx-auto w-[115px] text-center mb-6 mt-10">
+                <img src="img/big-icon-vm.svg" />
+            </div><!--end of module image-->
+            <div class="text-center mb-6 h-24">
+              <h3 class="font-bold text-xl mb-2">2.6A: Properties of Matter</h3>
+              <p class="text-textcolor-light">Vocabulary <br /> Double text</p>
+            </div>
+            <!--module-footer-->
+            <div class="border-t border-summit-gray-stroke border-solid flex flex-row justify-between">
+              <div class="py-4 px-5">
+                <button class="bg-summit-red-primary-20/20 border border-solid border-summit-red-primarypx-4 py-1 rounded-full text-bold w-[150px] font-bold">Late</button>
+              </div>
+              <div class="text-sm text-black">
+                <p class="px-5 py-3"><span class="font-bold">Due Date</span> <br /> 04/20/2024</p>
+              </div>
+            </div><!--module footer-->
+          </div><!--end of class-module-->
+          <!--class-module-->
+          <div class="basis-1/4 bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke">
+            <!--module image-->
+            <div class="mx-auto w-[115px] text-center mb-6 mt-10">
+              <img src="img/big-icon-vm.svg" />                
+            </div><!--end of module image-->
+            <div class="text-center mb-6 h-24">
+              <h3 class="font-bold text-xl mb-2">2.6A: Properties of Matter</h3>
+              <p class="text-textcolor-light">Vocabulary</p>
+            </div>
+            <!--module-footer-->
+            <div class="border-t border-summit-gray-stroke border-solid flex flex-row justify-between">
+              <div class="py-4 px-5">
+                <button class="bg-summit-yellow-primary-20 border border-solid border-summit-yellow-primary px-4 py-1 rounded-full text-bold w-[150px] font-bold">In Progress</button>
+              </div>
+              <div class="text-sm text-black">
+                <p class="px-5 py-3"><span class="font-bold">Due Date</span> <br /> 04/20/2024</p>
+              </div>
+            </div><!--module footer-->
+          </div><!--end of class-module-->
+          <!--class-module-->
+          <div class="basis-1/4 bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke">
+            <!--module image-->
+            <div class="mx-auto w-[115px] text-center mb-6 mt-10">
+              <img src="img/big-icon-science.svg" />           
+            </div><!--end of module image-->
+            <div class="text-center mb-6 h-24">
+              <h3 class="font-bold text-xl mb-2">2.6A: Properties of Matter</h3>
+              <p class="text-textcolor-light">Vocabulary</p>
+            </div>
+            <!--module-footer-->
+            <div class="border-t border-summit-gray-stroke border-solid flex flex-row justify-between">
+              <div class="py-4 px-5">
+                <button class="bg-summit-yellow-primary-20 border border-solid border-summit-yellow-primary px-4 py-1 rounded-full text-bold w-[150px] font-bold">In Progress</button>
+              </div>
+              <div class="text-sm text-black">
+                <p class="px-5 py-3"><span class="font-bold">Due Date</span> <br /> 04/20/2024</p>
+              </div>
+            </div><!--module footer-->
+          </div><!--end of class-module-->
+          <!--class-module-->
+          <div class="basis-1/4 bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke">
+            <!--module image-->
+            <div class="mx-auto w-[115px] text-center mb-6 mt-10">
+              <img src="img/big-icon-blue-book.svg" />             
+            </div><!--end of module image-->
+            <div class="text-center mb-6 h-24">
+              <h3 class="font-bold text-xl mb-2">2.6A: Properties of Matter</h3>
+              <p class="text-textcolor-light">Vocabulary</p>
+            </div>
+            <!--module-footer-->
+            <div class="border-t border-summit-gray-stroke border-solid flex flex-row justify-between">
+              <div class="py-4 px-5">
+                <button class="bg-summit-yellow-primary-20 border border-solid border-summit-yellow-primary px-4 py-1 rounded-full text-bold w-[150px] font-bold">In Progress</button>
+              </div>
+              <div class="text-sm text-black">
+                <p class="px-5 py-3"><span class="font-bold">Due Date</span> <br /> 04/20/2024</p>
+              </div>
+            </div><!--module footer-->
+          </div><!--end of class-module-->
+        </div>
+      <!--End Of top section-->
+      </section>
+      <section class="main-list">
+        <!--remove this note-->
+      <h1 class="py-10 text-lg text-center">This section is when it is switched to List mode</h1>
+      <!--end of remove this note-->
+        <!--filter-row-->
+        <div class="grid gap-4 mb-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-3">
+          <div class="">                   
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-offset-skidding="50" class="text-summit-gray-dark border-solid border bg-white border-summit-gray-stroke font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">
+                  <img src="img/icon-filter.svg" />
+                  <span class="mx-2">Filter</span>
+                  <img src="img/icon-down-caret.svg" class="w-2.5 h-2.5 ms-3" />
+                  </button>
+                  
+                  <!-- Dropdown menu -->
+                  <div id="dropdown" class="z-10 hidden bg-white rounded-lg shadow w-56 p-4">
+                    <div class="flex grid-cols-2 justify-between">
+                    <span class="text-sm font-bold">Filter by Status</span>
+                    <button class="flex group">
+                      <img src="img/icon-clear.svg" class="fill-textcolor-light group-hover:fill-black"/>                       
+                     <span class="text-sm ml-2 text-textcolor-light group-hover:text-black">Clear</span></button>
+                  </div>
+                      <ul class="py-2 text-sm text-textcolor-light" aria-labelledby="dropdownDefaultButton">
+                        <li>
+                          <a href="#" class="block py-2">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm">New</label>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block py-2">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm">In Progress</label>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="block py-2">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm">Late</label>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="bg-summit-blue-primary text-white w-full rounded-lg py-2 text-center">Apply</button>
+                  </div>
+  
+            </div>
+              <!--search and grid-->
+                    <div class="flex justify-end">
+                      <div class="flex bg-summit-blue-primary-10 p-1 w-fit h-fit rounded-full border-solid border border-summit-blue-primary-10">
+                        <button class="px-3 py-1 rounded-full inline-flex bg-white group">
+                          <img src="img/icon-grid.svg" />
+                          <span class="text-summit-blue-primary ml-2">Grid</span>
+                        </button>
+                        <button class="px-3 py-1 ml-2 rounded-full inline-flex hover:bg-white group">
+                          <img src="img/icon-list.svg" class="mt-0.5"/>
+                          
+                          <span class="group-hover:fill-summit-blue-primary ml-2">List</span>
+                        </button>
+                      </div>
+                      <form class="ml-4">   
+                        <label for="default-search" class="mb-2 text-sm font-medium sr-only">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-summit-gray-stroke" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search" class="block w-full p-2.5 ps-10 text-sm border border-summit-gray-stroke rounded-full bg-white" placeholder="Search" />        
+                        </div>
+                    </form>
+                    </div>
+                    <!--end of search and grid-->    
+        </div>
+        <!--filter-row-->
+        <!--list rows-->
+        <!--table assignments-->
+        <div class="mt-7 overflow-x-auto">
+          <table class="w-full whitespace-nowrap">
+              <thead>
+                <tr>
+                  <th class="py-4 text-left pl-5">
+                    <button class="group">
+                    <img src="img/icon-arrange.svg">
+                    </button>
+                    <span class="ml-2">Course Section</span>
+                  </th>
+                  <th class="py-4"><button class="group">
+                    <img src="img/icon-arrange.svg">
+                    </button>
+                    <span class="ml-2">Assignment</span></th>
+                  <th class="py-4"><button class="group">
+                    <img src="img/icon-arrange.svg">
+                    </button>
+                    <span class="ml-2">Status</span>
+                  </th>
+                  <th class="py-4"><button class="group">
+                    <img src="img/icon-arrange.svg">
+                    </button>
+                    <span class="ml-2">Due Date</span>
+                   </th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center">
+                            <div class="w-2 h-8 bg-summit-blue-secondary rounded-r-lg block mr-4"></div>
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/small-icon-blue-book.svg" />
+                                
+                            </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Properties of Matter hi</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>Assessment</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                            <div class="w-full">
+                              <div class="block rounded-full bg-summit-blue-secondary-20 border border-summit-blue-secondary border-solid w-[150px] text-center m-auto">New</div>
+                            </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        <p>05/20/202</p>
+                      </td>
+                  </tr>
+                  <tr class="h-3"></tr>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                        <div class="flex items-center">
+                          <div class="w-2 h-8 bg-summit-blue-secondary rounded-r-lg block mr-4"></div>
+                          <div class="w-[30px] h-[30px] mr-4">
+                            <img src="img/small-icon-vm.svg" />
+                              
+                          </div>
+                            <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Properties of Matter</p>
+                        </div>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Interactive Study Guide</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                          <div class="w-full">
+                            <div class="block rounded-full bg-summit-blue-secondary-20 border border-summit-blue-secondary border-solid w-[150px] text-center m-auto">New</div>
+                          </div>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <p>05/20/202</p>
+                    </td>
+                   </tr>
+                  <tr class="h-3"></tr>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                        <div class="flex items-center">
+                          <div class="w-2 h-8 bg-summit-yellow-primary rounded-r-lg block mr-4"></div>
+                          <div class="w-[30px] h-[30px] mr-4">
+                            <img src="img/small-icon-vm.svg" />
+                          </div>
+                            <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Properties of Matter List</p>
+                        </div>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Vocabulary</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                          <div class="w-full">
+                            <div class="block rounded-full bg-summit-yellow-primary-20 border border-summit-red-yello border-solid w-[150px] text-center m-auto">In Progress</div>
+                          </div>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <p>04/25/202</p>
+                    </td>
+                  </tr>
+                  <tr class="h-3"></tr>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                        <div class="flex items-center">
+                            <div class="w-2 h-8 bg-summit-yellow-primary rounded-r-lg block mr-4"></div>
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/small-icon-science.svg" />
+                            </div>
+                            <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Physical Changes of Matter List</p>
+                        </div>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Interactive Study Guide</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                          <div class="w-full">
+                            <div class="block rounded-full bg-summit-yellow-primary-20 border border-summit-yellow-primary border-solid w-[150px] text-center m-auto">In Progress</div>
+                          </div>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <p>04/20/202</p>
+                    </td>
+                </tr>
+                  <tr class="h-3"></tr>
+              </tbody>
+          </table>
+        </div>
+      <!--end of table-->
+
+        <!--end of List rows-->
+      <!--End Of top section-->
+      </section>
+      <section class="bottom-of-grid pt-10 pb-10 border-b border-solid border-summit-stroke">
+        <!--Navigation Buttons-->
+        <div class="flex items-center justify-center gap-x-6">
+          <button  class="bg-summit-gray-97 px-1 py-1 rounded-full text-bold flex items-center pr-5 hover:bg-summit-gray-stroke">
+            <img src="img/nav-arrow-left.svg" />
+            <span class="font-bold text-white ml-3">Back</span>
+          </button>
+        <div class="font-bold">
+          Page 1 of 2
+        </div>
+          <button class="bg-summit-blue-primary px-1 py-1 rounded-full text-bold flex items-center pl-5 hover:bg-summit-blue-dark">
+            <span class="font-bold text-white mr-3">Next</span>
+            <img src="img/nav-arrow-right.svg" />
+              
+          </button>
+        </div>
+      </section>
+      <!--completed assignments-->
+      <section class="mt-10">
+          <div class="items-center justify-center flex">
+            
+            <button class="flex items-center justify-center">
+              <span class="font-bold mr-5">Completed Assignments </span>
+              <img src="img/nav-arrow-down.svg" />               
+            </button>
+
+          </div>
+
+          <!--filter-row-->
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-3">
+          <div class="">                   
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-offset-skidding="50" class="text-summit-gray-dark border-solid border bg-white border-summit-gray-stroke font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">
+                  <img src="img/icon-filter.svg" />
+                  <span class="mx-2">Filter</span>
+                  <img src="img/icon-down-caret.svg" class="w-2.5 h-2.5 ms-3" />
+                  </button>
+                  
+                  <!-- Dropdown menu -->
+                  <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                      <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2">Dashboard</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2">Settings</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2">Earnings</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2">Sign out</a>
+                        </li>
+                      </ul>
+                  </div>
+  
+            </div>
+              <!--search and grid-->
+                    <div class="flex justify-end">
+                      <form class="ml-4">   
+                        <label for="default-search" class="mb-2 text-sm font-medium sr-only">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-summit-gray-stroke" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search" class="block w-full p-2.5 ps-10 text-sm border border-summit-gray-stroke rounded-full bg-white" placeholder="Search" />        
+                        </div>
+                    </form>
+                    </div>
+                    <!--end of search and grid-->
+                    
+        </div>
+        <!--end of filter-row-->
+
+          <!--table assignments-->
+          <div class="mt-7 overflow-x-auto">
+            <table class="w-full whitespace-nowrap">
+                <thead>
+                  <tr>
+                    <th class="py-4 text-left pl-5">
+                      <button class="group">
+                      <img src="img/icon-arrange.svg" />
+                      </button>
+                      <span class="ml-2">Course Section</span>
+                    </th>
+                    <th class="py-4"><button class="group">
+                      <img src="img/icon-arrange.svg" />
+                      </button>
+                      <span class="ml-2">Assignment</span></th>
+                    <th class="py-4"><button class="group">
+                      <img src="img/icon-arrange.svg" />
+                      </button>
+                      <span class="ml-2">Due Date</span>
+                    </th>
+                    <th class="py-4"><button class="group">
+                      <img src="img/icon-arrange.svg" />
+                      </button>
+                      <span class="ml-2">Submission Date</span>
+                     </th>
+                    <th class="py-4"><button class="group">
+                      <img src="img/icon-arrange.svg" />
+                      </button>
+                      <span class="ml-2">Status</span></th>
+                    <th class="py-4"><button class="group">
+                      <img src="img/icon-arrange.svg" />
+                      </button>
+                      <span class="ml-2">Score</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr tabindex="0" class="">
+                        <td class="bg-white h-16 rounded-l-xl align-top" rowspan="3">
+                            <div class="flex items-center pl-5">
+                              <div class="w-[30px] h-[30px] mr-4">
+                                <img src="img/small-icon-blue-book.svg" />
+                              </div>
+                                <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Properties of Matter</p>
+                            </div>
+                        </td>
+                        <td class="bg-white h-16 text-center">
+                                <p>FA1</p>
+                        </td>
+                        <td class="bg-white h-16 text-center">
+                             <p>04/27/2024</p>                          
+                        </td>
+                        <td class="bg-white h-16 text-center">
+                             <p>04/27/2024</p>
+                        </td>
+                        <td class="pl-5 bg-white h-16">
+                          <div class="w-full">
+                            <div class="block rounded-full bg-summit-green-primary-20 border border-summit-green-primary border-solid w-[150px] text-center m-auto">Complete</div>
+                          </div>
+                        </td>
+                        <td class="bg-white text-center h-16 pt-4 rounded-tr-xl">
+                          <p>70%</p>
+                        </td>
+                    </tr>
+                    <tr tabindex="0" class="">
+                      <td class="bg-white h-16 text-center">
+                              <p>FA1</p>
+                      </td>
+                      <td class="bg-white h-16 text-center">
+                           <p>04/27/2024</p>                          
+                      </td>
+                      <td class="bg-white h-16 text-center">
+                           <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16">
+                        <div class="w-full">
+                          <div class="block rounded-full bg-summit-green-primary-20 border border-summit-green-primary border-solid w-[150px] text-center m-auto">Complete</div>
+                        </div>
+                      </td>
+                      <td class="bg-white text-center h-16 pt-4">
+                        <p>70%</p>
+                      </td>
+                  </tr>
+                  <tr tabindex="0" class="">
+                    <td class="bg-white h-16 text-center">
+                            <p>FA1</p>
+                    </td>
+                    <td class="bg-white h-16 text-center">
+                         <p>04/27/2024</p>                          
+                    </td>
+                    <td class="bg-white h-16 text-center">
+                         <p>04/27/2024</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16">
+                      <div class="w-full">
+                        <div class="block rounded-full bg-summit-green-primary-20 border border-summit-green-primary border-solid w-[150px] text-center m-auto">Complete</div>
+                      </div>
+                    </td>
+                    <td class="bg-white text-center h-16 pt-4 rounded-br-xl">
+                      <p>70%</p>
+                    </td>
+                  </tr>
+                  <!--end of dropdown-->
+                    <tr class="h-3"></tr>
+                    <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center pl-5">
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/small-icon-vm.svg">
+                            </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Properties of Matter</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>FA1</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16">
+                          <div class="w-full">
+                            <div class="block rounded-full bg-summit-green-primary-20 border border-summit-green-primary border-solid w-[150px] text-center m-auto">Complete</div>
+                          </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        <p>70%</p>
+                      </td>
+                     </tr>
+                    <tr class="h-3"></tr>
+                    <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center pl-5">
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/small-icon-vm.svg">
+                            </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Properties of Matter</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>FA2</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16">
+                        <div class="w-full">
+                          <div class="block rounded-full bg-summit-red-primary-20 border border-summit-red-primary border-solid w-[150px] text-center m-auto">Missing</div>
+                        </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        <p>70%</p>
+                      </td>
+                    </tr>
+                    <tr class="h-3"></tr>
+                    <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center pl-5">
+                              <div class="w-[30px] h-[30px] mr-4">
+                                <img src="img/small-icon-science.svg">
+                                  
+                              </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">2.6A: Physical Changes of Matter</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>Interactive Study Guide</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/27/2024</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                            <div class="w-full">
+                              <div class="block rounded-full bg-summit-red-primary-20 border border-summit-red-primary border-solid w-[150px] text-center m-auto">Late</div>
+                            </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        <p>70%</p>
+                      </td>
+                  </tr>
+                    <tr class="h-3"></tr>
+                </tbody>
+            </table>
+        </div>
+        <!--end of table-->
+      </section>
+      <!--end of completed assignments-->
+      <!--end of bottom of grid-->
+      </div><!--end of light blue section-->
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>

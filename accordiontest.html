@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion Table Example</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .accordion-header {
+            background: #e0f0ff;
+            cursor: pointer;
+        }
+
+        .accordion-icon {
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tbody>
+            <!-- Section 1 -->
+            <tr class="accordion-header" data-key="section1">
+                <td colspan="2">
+                    <span class="accordion-icon">&#9660;</span>
+                    Section 1
+                </td>
+            </tr>
+            <tr class="accordion-content section1">
+                <td>Row 1A</td>
+                <td>Detail 1A</td>
+            </tr>
+            <tr class="accordion-content section1">
+                <td>Row 1B</td>
+                <td>Detail 1B</td>
+            </tr>
+
+            <!-- Section 2 -->
+            <tr class="accordion-header" data-key="section2">
+                <td colspan="2">
+                    <span class="accordion-icon">&#9660;</span>
+                    Section 2
+                </td>
+            </tr>
+            <tr class="accordion-content section2">
+                <td>Row 2A</td>
+                <td>Detail 2A</td>
+            </tr>
+            <tr class="accordion-content section2">
+                <td>Row 2B</td>
+                <td>Detail 2B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".accordion-header").click(function () {
+                const key = $(this).data("key");
+                const icon = $(this).find(".accordion-icon");
+
+                // Toggle rows with the same key
+                $(".accordion-content." + key).slideToggle(200);
+
+                // Toggle icon rotation
+                icon.toggleClass("rotate-180");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

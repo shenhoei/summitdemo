@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+  <style>
+    .selectize-control.contacts .selectize-input>div .email {
+      opacity: 0.8;
+    }
+
+    .selectize-control.contacts .selectize-input>div .name+.email {
+      margin-left: 5px;
+    }
+
+    .selectize-control.contacts .selectize-input>div .email:before {
+      content: "<";
+    }
+
+    .selectize-control.contacts .selectize-input>div .email:after {
+      content: ">";
+    }
+
+    .selectize-control.contacts .selectize-dropdown .caption {
+      font-size: 12px;
+      display: block;
+      color: #a0a0a0;
+    }
+  </style>
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+            aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+          <div class="left-main-nav flex flex-col md:flex-row">
+            <!-- My support Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+              <span>Support</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My support Icon-->
+            <!-- My training Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+              <span>Training</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My training Icon-->
+            <!-- Home Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+              <span>Home</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Home Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+              <span>My Library</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+              <span>Vocabulary</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+
+
+            <!-- My Course Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+              <span>My Course</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My course Icon-->
+            <!-- Account Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+              id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+              <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+              <span>My Account</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+            <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+              <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                    Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                    Password</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                    Search</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                  all</a>
+              </div>
+            </div>
+
+            <!-- Account Icon-->
+          </div><!--end of leftmain-nav-->
+        </div>
+
+
+      </div>
+    </nav>
+    <section class="breadcrumb-title mt-[72px]">
+      <div class="w-full grid grid-cols-2 text-sm">
+        <div class="text-left py-4 px-8"><a href="#" class="text-summit-blue-primary hover:underline">Courses</a> / <a
+            href="#" class="text-summit-blue-primary hover:underline">Dynamic Science - 5<sup>th</sup></a></div>
+        <div class="text-right py-4 px-8"><a href="#" class="hover:underline">Science Academy</a> | <a href="#"
+            class="hover:underline">Raza Hasan Content</a></div>
+      </div>
+      <div class="w-full grid grid-cols-3 my-4">
+        <div class="px-8">
+          <button type="submit"
+            class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+            <span>Back</span>
+          </button>
+        </div>
+        <div>
+          <h1 class="text-4xl font-bold text-center text-summit-blue-primary">Create A Custom Assessment</h1>
+        </div>
+        <div>
+          &nbsp;
+        </div>
+      </div>
+    </section>
+
+    <!--main Section-->
+    <main class="h-auto bg-summit-gray-FA p-5">
+      <section class="bg-white rounded-xl border-solid border-summit-gray-stroke border w-full">
+
+
+        <p class="m-auto text-center"><a href="#" data-modal-target="view-student-select"
+            data-modal-toggle="view-student-select">View Student Dashboard</a>
+        </p>
+        <p class="m-auto text-center"><a href="#" data-modal-target="view-modal-search"
+            data-modal-toggle="view-modal-search">View Student Dashboard - Search</a>
+        </p>
+        <p class="m-auto text-center"><a href="#" data-modal-target="view-modal-records-2"
+            data-modal-toggle="view-modal-records-2"">View Student Dashboard - Module</a>
+            </p>
+            <p class=" m-auto text-center"><a href="#" data-modal-target="view-modal-multi-select"
+              data-modal-toggle="view-modal-multi-select">View Student Dashboard - multi Select</a>
+        </p>
+      </section>
+
+      <!--MODAL Student-Select-->
+      <div id="view-student-select" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-summit-blue-light rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-betweenpx-4 md:px-5 md:pt-4 md:pb-0 rounded-t">
+              <button type="button"
+                class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="view-student-select">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                  class="w-3 h-3 hover:fill-white">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="pt-2 px-4 pb-8">
+              <div class="w-full">
+                <div class="w-fit m-auto">
+                  <h4 class="w-full m-auto text-center font-semibold text-lg">View Student Dashboard</h4>
+                  <h6 class="text-summit-gray-85">Please choose one of the options below to proceed.</h6>
+                </div>
+                <div class="w-full m-auto">
+                  <a class="bg-white block w-full rounded-xl px-4 py-3 mt-5 drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                    href="#">
+                    <div class="rounded-full w-full flex justify-between">
+                      <div class="rounded-full bg-summit-table-green-bg p-2">
+                        <img src="img/icon-green-magnifying.png" class="h-auto" />
+
+                      </div>
+                      <span class="font-semibold mt-4 ml-5 w-full">Search All</span>
+                      <div class="mt-2"><img src="img/icon-arrow-right.png" class="h-auto" /></div>
+                    </div>
+                  </a>
+                  <a class="bg-white block w-full rounded-xl px-4 py-3  mt-5 drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                    href="#">
+                    <div class="rounded-full w-full flex justify-between">
+                      <div class="rounded-full bg-summit-table-blue-bg p-2">
+                        <img src="img/icon-blue-harddrives.png" class="h-auto" />
+
+                      </div>
+                      <span class="font-semibold mt-4 ml-5 w-full">Use Drop-Downs to Find a Student in a Specific
+                        Class</span>
+                      <div class="mt-2"><img src="img/icon-arrow-right.png" class="h-auto" /></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OF MODAL Student-Select-->
+
+      <!--MODAL view-modal-search-->
+      <div id="view-modal-search" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full min-w-2xl max-w-5xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-summit-blue-light rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-betweenpx-4 md:px-5 md:pt-4 md:pb-0 rounded-t">
+              <button type="button"
+                class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="view-modal-search">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                  class="w-3 h-3 hover:fill-white">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body Search Empty-->
+            <div class="pt-2 px-4 pb-8">
+              <div class="w-full">
+                <div class="w-fit m-auto">
+                  <h4 class="w-full m-auto text-center font-semibold text-lg">View Student Dashboard</h4>
+                  <h6 class="text-summit-gray-85">Search All Students to Pull Up a Dashboard</h6>
+                </div>
+                <div class="w-full m-auto"><!--search module input-->
+                  <div class="relative mt-3">
+                    <div class="shadow-drop-center">
+                      <form class="px-8 pt-6 pb-8 mb-4 relative" method="POST" autocomplete="on" novalidate>
+
+                        <input id="dropdownInput" type="text" placeholder="Search user..."
+                          class="w-full border border-gray-300 rounded-lg p-2" />
+                        <div class="relative"><!--dropdown holder-->
+                          <div id="dropdown"
+                            class="absolute mt-1 w-full bg-white border border-summit-gray-stroke rounded-lg z-10 hidden h-60 overflow-auto">
+                            <table class="view-as-table min-w-full text-left text-sm text-gray-700 w-full">
+                              <thead>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>ID</th>
+                                <th>Points</th>
+                              </thead>
+                              <tbody id="dropdownBody">
+                                <!-- Filled by jQuery -->
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+
+
+                  </div>
+
+                </div><!--end of search module-->
+
+                <div class="w-full min-h-[100px]">
+                  <p class="m-auto w-fit text-summit-gray-85">No Students found. Start typing to search.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="p-5 pb-6 w-full flex justify-between gap-2">
+              <a data-modal-hide="default-modal" type="button" href="#"
+                class="block text-white bg-summit-blue-primary hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                Back</a>
+              <a data-modal-hide="default-modal" type="button" href="#"
+                class="block text-white bg-summit-gray-light-gray-disabled hover:bg-summit-red-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                View Dashboard</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OF MODAL view-modal-search-->
+
+
+      <!--MODAL two records-->
+      <div id="view-modal-records-2" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full min-w-2xl max-w-7xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-summit-blue-light rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-betweenpx-4 md:px-5 md:pt-4 md:pb-0 rounded-t">
+              <button type="button"
+                class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="view-modal-records-2">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                  class="w-3 h-3 hover:fill-white">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body Search Empty-->
+            <div class="pt-2 px-4 pb-2">
+              <div class="w-full">
+                <div class="w-fit m-auto">
+                  <h4 class="w-full m-auto text-center font-semibold text-lg">View Student Dashboard</h4>
+                  <h6 class="text-summit-gray-85">Please choose one of the options below to proceed.</h6>
+                </div>
+                <div class="w-full m-auto">
+                  <div class="relative mt-3">
+                    <div class="shadow-drop-center">
+                      <form class="px-8 pt-6 pb-8 mb-4 relative" method="POST" autocomplete="on" novalidate>
+
+                        <input id="dropdownInput" type="text" placeholder="Search user..."
+                          class="w-full border border-gray-300 rounded-lg p-2" />
+                        <div class="relative"><!--dropdown holder-->
+                          <div id="dropdown"
+                            class="absolute mt-1 w-full bg-white border border-summit-gray-stroke rounded-lg z-10 hidden h-60 overflow-auto">
+                            <table class="view-as-table min-w-full text-left text-sm text-gray-700 w-full">
+                              <tbody id="dropdownBody">
+                                <!-- Filled by jQuery -->
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div><!--end of search module-->
+
+                  <div class="w-full min-h-[100px]">
+                    <p class="m-auto w-fit">Select which dashboard you want to view. Each subject has one dashboard.</p>
+
+                    <div class="w-full"><!--Grid Results-->
+                      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:overflow-auto">
+                        <div
+                          class="block w-full rounded-xl p-5 mt-5 border border-solid border-summit-gray-dark hover:border-summit-blue-primary">
+                          <!--Grid Item-->
+                          <div class="block m-auto w-auto align-middle"><img
+                              src="img/whatsnew-main_logo_dynamic_science.png" class="m-auto w-auto h-[50px] " /></div>
+                          <table class="view-results-table w-full mt-2">
+                            <thead>
+                              <tr>
+                                <th class="font-bold">Class</th>
+                                <th class="font-bold">Teacher</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Dynamic Science - 5th</td>
+                                <td>Norris, Michael</td>
+                              </tr>
+                              <tr>
+                                <td>DS Period</td>
+                                <td>Patel, Anish</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="block w-full rounded-xl p-5 mt-5 border border-solid border-summit-gray-dark hover:border-summit-blue-primary">
+                          <!--Grid Item-->
+                          <div class="block m-auto w-auto"><img src="img/whatsnew-c2l_telpas.png"
+                              class="m-auto w-auto h-[50px] " /></div>
+                          <table class="view-results-table w-full mt-2">
+                            <thead>
+                              <tr>
+                                <th class="font-bold">Class</th>
+                                <th class="font-bold">Teacher</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Dynamic Science - 5th</td>
+                                <td>Norris, Michael</td>
+                              </tr>
+                              <tr>
+                                <td>DS Period</td>
+                                <td>Patel, Anish</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="block w-full rounded-xl p-5 mt-5 border border-solid border-summit-gray-dark hover:border-summit-blue-primary">
+                          <!--Grid Item-->
+                          <div class="block m-auto w-auto"><img src="img/whatsnew-RLA_Mastery.png"
+                              class="m-auto w-auto h-[50px]" /></div>
+                          <table class="view-results-table w-full mt-2">
+                            <thead>
+                              <tr>
+                                <th class="font-bold">Class</th>
+                                <th class="font-bold">Teacher</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Dynamic Science - 5th</td>
+                                <td>Norris, Michael</td>
+                              </tr>
+                              <tr>
+                                <td>DS Period</td>
+                                <td>Patel, Anish</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <div
+                          class="block w-full rounded-xl p-5 mt-5 border border-solid border-summit-gray-dark hover:border-summit-blue-primary">
+                          <!--Grid Item-->
+                          <div class="block m-auto w-auto align-middle"><img
+                              src="img/whatsnew-main_logo_dynamic_science.png" class="m-auto w-auto h-[50px] " /></div>
+                          <table class="view-results-table w-full mt-2">
+                            <thead>
+                              <tr>
+                                <th class="font-bold">Class</th>
+                                <th class="font-bold">Teacher</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Dynamic Science - 5th</td>
+                                <td>Norris, Michael</td>
+                              </tr>
+                              <tr>
+                                <td>DS Period</td>
+                                <td>Patel, Anish</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="block w-full rounded-xl p-5 mt-5 border border-solid border-summit-gray-dark hover:border-summit-blue-primary">
+                          <!--Grid Item-->
+                          <div class="block m-auto w-auto"><img src="img/whatsnew-c2l_telpas.png"
+                              class="m-auto w-auto h-[50px] " /></div>
+                          <table class="view-results-table w-full mt-2">
+                            <thead>
+                              <tr>
+                                <th class="font-bold">Class</th>
+                                <th class="font-bold">Teacher</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Dynamic Science - 5th</td>
+                                <td>Norris, Michael</td>
+                              </tr>
+                              <tr>
+                                <td>DS Period</td>
+                                <td>Patel, Anish</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="block w-full rounded-xl p-5 mt-5 border border-solid border-summit-gray-dark hover:border-summit-blue-primary">
+                          <!--Grid Item-->
+                          <div class="block m-auto w-auto"><img src="img/whatsnew-RLA_Mastery.png"
+                              class="m-auto w-auto h-[50px]" /></div>
+                          <table class="view-results-table w-full mt-2">
+                            <thead>
+                              <tr>
+                                <th class="font-bold">Class</th>
+                                <th class="font-bold">Teacher</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Dynamic Science - 5th</td>
+                                <td>Norris, Michael</td>
+                              </tr>
+                              <tr>
+                                <td>DS Period</td>
+                                <td>Patel, Anish</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </div>
+                    </div><!--end of Grid Results-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="p-5 pb-6 w-full flex justify-between gap-2">
+              <a data-modal-hide="default-modal" type="button" href="#"
+                class="block text-white bg-summit-blue-primary hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                Back</a>
+              <a data-modal-hide="default-modal" type="button" href="#"
+                class="block text-white bg-summit-gray-light-gray-disabled hover:bg-summit-blue-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                View Dashboard</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END OF MODAL Delete Mixtures-->
+
+      <!--MODAL View Modal Multi Select-->
+      <div id="view-modal-multi-select" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-summit-blue-light rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+              <button type="button"
+                class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="view-modal-multi-select">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                  class="w-3 h-3 hover:fill-white">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="py-2 px-4">
+              <div class="w-full">
+                <div class="w-fit m-auto">
+                  <h4 class="w-full m-auto text-center font-semibold text-lg">View Student Dashboard</h4>
+                  <h6 class="text-summit-gray-85">Search All Students to Pull Up a Dashboard</h6>
+                </div>
+                <div class="w-full m-auto">
+                  <div class="relative mt-3">
+                    <div class="shadow-drop-center">
+                      <form class="px-8 pt-6 pb-8 mb-4" method="POST" autocomplete="on" novalidate>
+                        <label>School:</label>
+                        <select id="normalize3">
+                          <option value=""></option>
+                          <option value="1">Wesley, Option (potato@email.com)</option>
+                          <option value="2">Beast</option>
+                          <option value="3">Compatible</option>
+                          <option value="4">Thomas Edison</option>
+                          <option value="5">Nikola</option>
+                          <option value="6">Selectize</option>
+                          <option value="7">Javascript</option>
+                        </select>
+
+                        <label class="mt-4 inline-block">Teacher:</label>
+                        <select id="normalize4">
+                          <option value=""></option>
+                          <option value="1">Wesley, Option (potato@email.com)</option>
+                          <option value="2">Beast</option>
+                          <option value="3">Compatible</option>
+                          <option value="4">Thomas Edison</option>
+                          <option value="5">Nikola</option>
+                          <option value="6">Selectize</option>
+                          <option value="7">Javascript</option>
+                        </select>
+
+                        <label class="mt-4 inline-block">Class:</label>
+                        <select id="normalize5">
+                          <option value=""></option>
+                          <option value="1">Wesley, Option (potato@email.com)</option>
+                          <option value="2">Beast</option>
+                          <option value="3">Compatible</option>
+                          <option value="4">Thomas Edison</option>
+                          <option value="5">Nikola</option>
+                          <option value="6">Selectize</option>
+                          <option value="7">Javascript</option>
+                        </select>
+
+                        <label class="mt-4 inline-block">Student:</label>
+                        <select id="normalize6">
+                          <option value=""></option>
+                          <option value="1">Wesley, Option (potato@email.com)</option>
+                          <option value="2">Beast</option>
+                          <option value="3">Compatible</option>
+                          <option value="4">Thomas Edison</option>
+                          <option value="5">Nikola</option>
+                          <option value="6">Selectize</option>
+                          <option value="7">Javascript</option>
+                        </select>
+                      </form>
+                    </div>
+
+                  </div><!--end of search module-->
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 w-full flex justify-between gap-2">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-blue-primary hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Back</a>
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-light-gray-disabled hover:bg-summit-blue-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  View Dashboard</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Delete Mixtures-->
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
+  integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/custom.js"></script>
+<script>
+
+  $("#normalize").selectize();
+  $("#normalize2").selectize();
+  $("#normalize3").selectize();
+  $("#normalize4").selectize();
+  $("#normalize5").selectize();
+  $("#normalize6").selectize();
+
+</script>
+
+<script>
+  const data = [
+    { name: "Cooper, Alice", email: "alice@example.com", idnum: "S1023145", scorenum: "2" },
+    { name: "Tefer, Bob", email: "bob@example.com", idnum: "s123516", scorenum: "5" },
+    { name: "Sheen, Charlie", email: "charlie@example.com", idnum: "s166134", scorenum: "7" },
+    { name: "Kirk, James", email: "test@example.com", idnum: "s1664234", scorenum: "7" },
+    { name: "Sywalker, Luke", email: "charlie@example.com", idnum: "s1662334", scorenum: "5" },
+    { name: "Cooper, Alice", email: "alice@example.com", idnum: "S1023145", scorenum: "2" },
+    { name: "Tefer, Bob", email: "bob@example.com", idnum: "s123516", scorenum: "5" },
+    { name: "Sheen, Charlie", email: "charlie@example.com", idnum: "s166134", scorenum: "7" },
+    { name: "Kirk, James", email: "test@example.com", idnum: "s1664234", scorenum: "7" },
+    { name: "Sywalker, Luke", email: "charlie@example.com", idnum: "s1662334", scorenum: "5" },
+    { name: "Cooper, Alice", email: "alice@example.com", idnum: "S1023145", scorenum: "2" },
+    { name: "Tefer, Bob", email: "bob@example.com", idnum: "s123516", scorenum: "5" },
+    { name: "Sheen, Charlie", email: "charlie@example.com", idnum: "s166134", scorenum: "7" },
+    { name: "Kirk, James", email: "test@example.com", idnum: "s1664234", scorenum: "7" },
+    { name: "Sywalker, Luke", email: "charlie@example.com", idnum: "s1662334", scorenum: "5" },
+    { name: "Cooper, Alice", email: "alice@example.com", idnum: "S1023145", scorenum: "2" },
+    { name: "Tefer, Bob", email: "bob@example.com", idnum: "s123516", scorenum: "5" },
+    { name: "Sheen, Charlie", email: "charlie@example.com", idnum: "s166134", scorenum: "7" },
+    { name: "Kirk, James", email: "test@example.com", idnum: "s1664234", scorenum: "7" },
+    { name: "Sywalker, Luke", email: "charlie@example.com", idnum: "s1662334", scorenum: "5" },
+    { name: "Cooper, Alice", email: "alice@example.com", idnum: "S1023145", scorenum: "2" },
+    { name: "Tefer, Bob", email: "bob@example.com", idnum: "s123516", scorenum: "5" },
+    { name: "Sheen, Charlie", email: "charlie@example.com", idnum: "s166134", scorenum: "7" },
+    { name: "Kirk, James", email: "test@example.com", idnum: "s1664234", scorenum: "7" },
+    { name: "Sywalker, Luke", email: "charlie@example.com", idnum: "s1662334", scorenum: "5" },
+    { name: "Cooper, Alice", email: "alice@example.com", idnum: "S1023145", scorenum: "2" },
+    { name: "Tefer, Bob", email: "bob@example.com", idnum: "s123516", scorenum: "5" },
+    { name: "Sheen, Charlie", email: "charlie@example.com", idnum: "s166134", scorenum: "7" },
+    { name: "Kirk, James", email: "test@example.com", idnum: "s1664234", scorenum: "7" },
+    { name: "Sywalker, Luke", email: "charlie@example.com", idnum: "s1662334", scorenum: "5" },
+  ];
+
+  function renderRows(filteredData) {
+    $("#dropdownBody").empty();
+    $.each(filteredData, function (i, item) {
+      const row = $(`
+        <tr class="cursor-pointer hover:bg-summit-blue-primary hover:text-white">
+          <td class="px-4 py-2">${item.name}</td>
+          <td class="px-4 py-2">${item.email}</td>
+          <td class="px-4 py-2">${item.idnum}</td>
+          <td class="px-4 py-2">${item.scorenum}</td>
+        </tr>
+      `);
+      row.on("click", function () {
+        $("#dropdownInput").val(item.name);
+        $("#dropdown").addClass("hidden");
+      });
+      $("#dropdownBody").append(row);
+    });
+  }
+
+  $(document).ready(function () {
+    $("#dropdownInput").on("focus input", function () {
+      const query = $(this).val().toLowerCase();
+      const filtered = data.filter(item => item.name.toLowerCase().includes(query));
+      renderRows(filtered);
+      $("#dropdown").removeClass("hidden");
+    });
+
+    $(document).on("click", function (e) {
+      if (!$(e.target).closest(".relative").length) {
+        $("#dropdown").addClass("hidden");
+      }
+    });
+  });
+</script>
+
+</html>

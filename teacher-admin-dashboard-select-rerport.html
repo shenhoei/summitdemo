@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+            aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+          <div class="left-main-nav flex flex-col md:flex-row">
+            <!-- My support Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+              <span>Support</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My support Icon-->
+            <!-- My training Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+              <span>Training</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My training Icon-->
+            <!-- Home Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+              <span>Home</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Home Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+              <span>My Library</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+              <span>Vocabulary</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+
+
+            <!-- My Course Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+              <span>My Course</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My course Icon-->
+            <!-- Account Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+              id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+              <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+              <span>My Account</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+            <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+              <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                    Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                    Password</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                    Search</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                  all</a>
+              </div>
+            </div>
+
+            <!-- Account Icon-->
+          </div><!--end of leftmain-nav-->
+        </div>
+
+
+      </div>
+    </nav>
+    <!--Teacher Top Section-->
+    <div
+      class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-3 sm:gap-2">
+      <div class="">&nbsp;</div>
+      <div class="mt-8 ml-5">
+        <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-center mb-8">District Admin Dashboard</h1>
+      </div>
+      <div class="justify-end mt-1 mr-5">
+        <div class="text-right mt-2 mb-6 p-1"><a href="#" class="text-white">District ISD | Carolann F. Parks</a></div>
+      </div>
+    </div>
+
+    <!--End of Teacher Top Section-->
+
+    <section class="px-5"><!--back section-->
+      <a href="#" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">          
+          <span>Back</span>
+      </a>
+    </section>
+    <!--main Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <!--End of Top Section-->
+      <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke px-5 pb-5">
+        <h1 class="w-full text-center font-bold text-2xl mt-10">Email Subscription for Reports</h1>
+
+        <section class="grid grid-cols-2 gap-4 mt-5">
+            <div>
+                <h4 class="text-lg mb-3 font-semibold">Select Report</h4>
+                <div class="teacher-select-report bg-summit-blue-primary-20 rounded-xl p-4 overflow-auto h-[350px]">  
+                    <ul id="report-selection">
+                        <li>
+                            <input type="checkbox" id="option1" value="" class="hidden peer" required="">
+                            <label for="option1" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                    <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                        <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                    </svg>                                 
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+
+                            </label>
+                        </li>
+                        <li class="mt-3">
+                            <input type="checkbox" id="option2" value="" class="hidden peer">
+                            <label for="option2" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                    <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                </svg>                                    
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+                            </label>
+                        </li>
+                        <li class="mt-3">
+                            <input type="checkbox" id="option3" value="" class="hidden peer">
+                            <label for="option3" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                    <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                </svg>                                    
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+                            </label>
+                        </li>
+                        <li class="mt-3">
+                            <input type="checkbox" id="option4" value="" class="hidden peer">
+                            <label for="option4" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                    <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                </svg>                                    
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+                            </label>
+                        </li>
+                        <li class="mt-3">
+                            <input type="checkbox" id="option5" value="" class="hidden peer">
+                            <label for="option5" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                    <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                </svg>                                    
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+                            </label>
+                        </li>
+                        <li class="mt-3">
+                            <input type="checkbox" id="option6" value="" class="hidden peer">
+                            <label for="option6" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                    <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                </svg>                                    
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+                            </label>
+                        </li>
+                        <li class="mt-3">
+                            <input type="checkbox" id="option7" value="" class="hidden peer">
+                            <label for="option7" class="group inline-flex w-full px-5 py-2 bg-white rounded-lg cursor-pointer peer-checked:bg-summit-blue-primary peer-checked:text-white peer-checked:*:fill-white hover:bg-summit-blue-primary hover:text-white">                           
+                                <svg width="18" height="18" viewBox="0 0 18 18" class="fill-summit-blue-primary group-hover:fill-white mt-0.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M14.625 3.375V15.1875C14.625 15.3367 14.5657 15.4798 14.4602 15.5852C14.3548 15.6907 14.2117 15.75 14.0625 15.75H3.9375C3.78832 15.75 3.64524 15.6907 3.53975 15.5852C3.43426 15.4798 3.375 15.3367 3.375 15.1875V3.375C3.375 3.22582 3.43426 3.08274 3.53975 2.97725C3.64524 2.87176 3.78832 2.8125 3.9375 2.8125H6.75C6.3841 3.29893 6.18663 3.89132 6.1875 4.5V5.0625H11.8125V4.5C11.8134 3.89132 11.6159 3.29893 11.25 2.8125H14.0625C14.2117 2.8125 14.3548 2.87176 14.4602 2.97725C14.5657 3.08274 14.625 3.22582 14.625 3.375Z" fill="#1C51E1"/>
+                                    <path d="M11.8125 10.6874C11.8125 10.8366 11.7532 10.9797 11.6477 11.0851C11.5423 11.1906 11.3992 11.2499 11.25 11.2499H6.75C6.60082 11.2499 6.45774 11.1906 6.35225 11.0851C6.24676 10.9797 6.1875 10.8366 6.1875 10.6874C6.1875 10.5382 6.24676 10.3951 6.35225 10.2896C6.45774 10.1842 6.60082 10.1249 6.75 10.1249H11.25C11.3992 10.1249 11.5423 10.1842 11.6477 10.2896C11.7532 10.3951 11.8125 10.5382 11.8125 10.6874ZM11.25 7.8749H6.75C6.60082 7.8749 6.45774 7.93416 6.35225 8.03965C6.24676 8.14514 6.1875 8.28821 6.1875 8.4374C6.1875 8.58658 6.24676 8.72966 6.35225 8.83515C6.45774 8.94063 6.60082 8.9999 6.75 8.9999H11.25C11.3992 8.9999 11.5423 8.94063 11.6477 8.83515C11.7532 8.72966 11.8125 8.58658 11.8125 8.4374C11.8125 8.28821 11.7532 8.14514 11.6477 8.03965C11.5423 7.93416 11.3992 7.8749 11.25 7.8749ZM15.1875 3.3749V15.1874C15.1875 15.4858 15.069 15.7719 14.858 15.9829C14.647 16.1939 14.3609 16.3124 14.0625 16.3124H3.9375C3.63913 16.3124 3.35298 16.1939 3.142 15.9829C2.93103 15.7719 2.8125 15.4858 2.8125 15.1874V3.3749C2.8125 3.07653 2.93103 2.79038 3.142 2.5794C3.35298 2.36842 3.63913 2.2499 3.9375 2.2499H6.48703C6.80309 1.89603 7.19032 1.61291 7.62337 1.41906C8.05643 1.22521 8.52554 1.125 9 1.125C9.47446 1.125 9.94357 1.22521 10.3766 1.41906C10.8097 1.61291 11.1969 1.89603 11.513 2.2499H14.0625C14.3609 2.2499 14.647 2.36842 14.858 2.5794C15.069 2.79038 15.1875 3.07653 15.1875 3.3749ZM6.75 4.4999H11.25C11.25 3.90316 11.0129 3.33086 10.591 2.90891C10.169 2.48695 9.59674 2.2499 9 2.2499C8.40326 2.2499 7.83097 2.48695 7.40901 2.90891C6.98705 3.33086 6.75 3.90316 6.75 4.4999ZM14.0625 3.3749H12.1816C12.3096 3.73618 12.375 4.11663 12.375 4.4999V5.0624C12.375 5.21158 12.3157 5.35466 12.2102 5.46015C12.1048 5.56563 11.9617 5.6249 11.8125 5.6249H6.1875C6.03832 5.6249 5.89524 5.56563 5.78975 5.46015C5.68426 5.35466 5.625 5.21158 5.625 5.0624V4.4999C5.62501 4.11663 5.6904 3.73618 5.81836 3.3749H3.9375V15.1874H14.0625V3.3749Z"/>
+                                </svg>                                    
+                                    <div class="w-full ml-2">Listening-Speaking</div>
+                            </label>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg mb-3 font-semibold">Subscription Settings</h4>
+                <div class="teacher-select-report bg-summit-blue-primary-20 rounded-xl p-4">
+                  <form>
+                    <div class="w-full">
+                      <label class="text-sm mb-2 block">
+                        Report Subscription Name
+                      </label>
+                      <input class="bg-summit-gray-FA border border-summit-gray-stroke text-summit-gray-dark text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2"/>
+                    </div>
+                    <div class="w-full grid grid-cols-2 gap-4 mt-4">
+                      <div>
+                      <label class="text-sm mb-2 block">
+                        Set Frequency:
+                      </label>
+                      <select class="bg-summit-gray-FA border border-summit-gray-stroke text-black text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2">
+                        <option>Daily</option>
+                        <option>Weekly</option>
+                        <option>Monthly</option>
+                      </select>
+                      </div>
+                      <div>
+                        <label class="text-sm mb-2 block">
+                          &nbsp;
+                        </label>
+                        <select class="bg-summit-gray-FA border border-summit-gray-stroke text-black text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2">
+                          <option>Sunday</option>
+                          <option>Monday</option>
+                          <option>Tuesday</option>
+                          <option>Wednesday</option>
+                          <option>Thursday</option>
+                          <option>Friday</option>
+                          <option>Saturday</option>                   
+                        </select>
+                        </div>
+                    </div>
+                    <div class="w-full grid grid-cols-2 gap-4 mt-4">
+                      <div>
+                        <label for="time" class="block mb-2 text-sm text-black">Select time:</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-summit-gray-dark " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <input type="time" id="time" class="bg-summit-gray-fa border leading-none border-summit-gray-stroke text-summit-gray-dark text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2.5" min="09:00" max="18:00" value="00:00" required />
+                        </div>
+                      </div>
+                      <div>
+                        &nbsp;
+                      </div>
+                    </div><!--Select time-->
+                    <div class="w-full grid grid-cols-2 gap-4 mt-4">
+                      <div>
+                        <label class="text-sm mb-2 block">
+                          Email
+                        </label>
+                        <input class="bg-summit-gray-FA border border-summit-gray-stroke text-summit-gray-dark text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2"/>
+                      </div>
+                      <div>
+                        <label class="text-sm mb-2 block">
+                          Set File Format
+                        </label>
+                        <input class="bg-summit-gray-FA border border-summit-gray-stroke text-summit-gray-dark text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2"/>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="button-bottom flex justify-center">
+            <button type="submit"
+              class="items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-gray-dark rounded-lg hover:bg-summit-gray-stroke hover:text-summit-gray-dark min-w-48">
+              <span>Cancel</span>
+            </button>
+            <button type="submit"
+              class="items-center px-5 py-2.5 mt-4 ml-3 sm:mt-6 text-sm font-medium text-center text-summit-gray-dark bg-summit-gray-disabled rounded-lg min-w-48">
+              <span>Add subscription</span>
+            </button>
+            <button type="submit"
+              class="items-center px-5 py-2.5 mt-4 ml-3 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary hover:bg-summit-blue-dark rounded-lg min-w-48">
+              <span>Add subscription</span>
+            </button>
+          </div>
+
+      </div>
+  </div><!--end of light blue section-->
+
+  </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

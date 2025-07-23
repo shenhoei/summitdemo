@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+  <div class="antialiased bg-gray-50 dark:bg-gray-900">
+    <nav
+      class="bg-white border-b border-gray-200 px-4 py-0 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-start items-center">
+          <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 ">
+            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg aria-hidden="true" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="sr-only">Toggle sidebar</span>
+          </button>
+          <a href="#"
+            class="inline-flex items-center justify-center h-9 mr-3 px-2 text-xs font-medium text-summit-blue-primary bg-summit-blue-light rounded-full focus:outline-nonehover:text-summit-blue-primary focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600  dark:hover:bg-gray-700">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5139 1.57636C10.7823 1.30788 11.2177 1.30788 11.4861 1.57636L19.7361 9.82636C19.8651 9.9553 19.9375 10.1302 19.9375 10.3125V19.9375C19.9375 20.3172 19.6297 20.625 19.25 20.625H13.0625C12.6828 20.625 12.375 20.3172 12.375 19.9375V14.4375H9.625V19.9375C9.625 20.3172 9.3172 20.625 8.9375 20.625H2.75C2.3703 20.625 2.0625 20.3172 2.0625 19.9375V10.3125C2.0625 10.1302 2.13493 9.9553 2.26386 9.82636L10.5139 1.57636ZM3.4375 10.5973V19.25H8.25V13.75C8.25 13.3703 8.5578 13.0625 8.9375 13.0625H13.0625C13.4422 13.0625 13.75 13.3703 13.75 13.75V19.25H18.5625V10.5973L11 3.03477L3.4375 10.5973Z" fill="#2256DD"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.875 3.4375V8.25L15.125 5.5V3.4375C15.125 3.0578 15.4328 2.75 15.8125 2.75H17.1875C17.5672 2.75 17.875 3.0578 17.875 3.4375Z" fill="#2256DD"/>
+              </svg>
+              
+          </a>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary"
+                aria-current="page">Instructional Resources</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary">Video
+                Resources</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary">Supplemental
+                Resources</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary">Course Navigation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center lg:order-2">
+          <!-- Expand Icon -->
+          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-summit-blue-primary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.74304 15.2578C8.45014 14.9649 7.97527 14.9649 7.68238 15.2578L1.53809 21.402L1.53809 17.2504C1.53809 16.8362 1.2023 16.5004 0.788087 16.5004C0.373874 16.5004 0.0380859 16.8362 0.0380864 17.2504L0.0380859 23.2127C0.0380859 23.6269 0.373874 23.9627 0.788087 23.9627L6.75034 23.9627C7.16455 23.9627 7.50034 23.6269 7.50034 23.2127C7.50034 22.7985 7.16455 22.4627 6.75034 22.4627L2.59875 22.4627L8.74304 16.3184C9.03593 16.0255 9.03593 15.5506 8.74304 15.2578Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.257 8.74224C15.5499 9.03514 16.0247 9.03514 16.3176 8.74224L22.4619 2.59795L22.4619 6.74961C22.4619 7.16383 22.7977 7.49961 23.2119 7.49961C23.6261 7.49961 23.9619 7.16383 23.9619 6.74961L23.9619 0.787293C23.9619 0.37308 23.6261 0.0372925 23.2119 0.0372925L17.2497 0.0372972C16.8354 0.0372972 16.4997 0.373084 16.4997 0.787297C16.4997 1.20151 16.8354 1.5373 17.2497 1.5373L21.4013 1.53729L15.257 7.68158C14.9641 7.97448 14.9641 8.44935 15.257 8.74224Z" />
+            </svg>
+
+            <span class="sr-only">Expand</span>
+          </a>
+          <!-- Pencil Icon -->
+          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-summit-blue-primary">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.2197 0.21967C18.5126 -0.0732233 18.9874 -0.0732233 19.2803 0.21967L23.7803 4.71967C24.0732 5.01256 24.0732 5.48743 23.7803 5.78032L8.78034 20.7803C8.70852 20.8521 8.62286 20.9086 8.52856 20.9463L1.02856 23.9463C0.750002 24.0578 0.431838 23.9925 0.219692 23.7803C0.00754482 23.5682 -0.0577606 23.25 0.0536643 22.9714L3.05366 15.4714C3.09138 15.3771 3.14787 15.2915 3.21969 15.2197L18.2197 0.21967ZM16.8107 3.75L20.25 7.18933L22.1893 5.25L18.75 1.81066L16.8107 3.75ZM19.1893 8.24999L15.75 4.81066L6.00002 14.5606V15H6.75002C7.16423 15 7.50001 15.3358 7.50001 15.75V16.5H8.25001C8.66423 16.5 9.00001 16.8358 9.00001 17.25V18H9.43935L19.1893 8.24999ZM4.54749 16.0132L4.3892 16.1715L2.09631 21.9037L7.82854 19.6108L7.98683 19.4525C7.70244 19.3459 7.50001 19.0716 7.50001 18.75V18H6.75002C6.3358 18 6.00002 17.6642 6.00002 17.25V16.5H5.25002C4.92841 16.5 4.65408 16.2976 4.54749 16.0132Z" />
+            </svg>
+
+            <span class="sr-only">Edit</span>
+          </button>
+          <!-- Magnifying Icon -->
+          <button type="button" class="p-2 mr-1 text-gray-500 hover:text-summit-blue-primary transition transform" id="SearchButton" data-collapse-toggle="navSearchBar">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.75 18C14.3063 18 18 14.3063 18 9.75C18 5.19365 14.3063 1.5 9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75C1.5 14.3063 5.19365 18 9.75 18ZM19.5 9.75C19.5 15.1348 15.1348 19.5 9.75 19.5C4.36522 19.5 0 15.1348 0 9.75C0 4.36522 4.36522 0 9.75 0C15.1348 0 19.5 4.36522 19.5 9.75Z" />
+              <path
+                d="M15.5158 17.6132C15.5601 17.6732 15.6093 17.7307 15.6636 17.785L21.4393 23.5607C22.0251 24.1465 22.9749 24.1465 23.5607 23.5607C24.1465 22.9749 24.1465 22.0251 23.5607 21.4393L17.785 15.6636C17.7307 15.6093 17.6732 15.5601 17.6132 15.5158C17.0248 16.3169 16.3169 17.0248 15.5158 17.6132Z" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <form>   
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="hidden absolute right-5 top-2" id="navSearchBar">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                <input type="search" id="default-search" data-dropdown-toggle="searchDropDown" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-100 rounded-lg bg-gray-50 focus:ring-summit-blue-light"  placeholder="Enter search here">
+               <button class="absolute -right-3 bottom-3.5" data-modal-hide="navSearchBar">
+                <svg class="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+              </svg>
+               </button>
+            </div>
+        </form>
+          <div id="searchDropDown" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow w-54 dark:bg-gray-700 dark:divide-gray-600 max-h-[350px] overflow-auto">
+            <div class="py-1">
+              <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: <br /><span class="max-w-[300px] truncate block overflow-hidden">Sample Search Query with long truncated text </span></h6>
+              <p class="block px-4 py-2 pt-0">
+              <span>Showing 14 of 14 results</span>
+              </p>
+            </div>
+            <div class="py-1 max-w-[320px]">
+              <h6 class="block px-4 py-2 pb-1 font-bold text-summit-blue-primary text-lg">Video resources</h6>
+              <p class="block pt-0 text-xs">
+              <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
+                  </p>
+                  <p class="block pt-0 text-xs">
+                    <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic - Classification of Matter - Length - 18:50</span></a>
+                  </p>
+            </div>
+
+            <div class="py-1 max-w-[320px]">
+              <h6 class="block px-4 py-2 pb-1 font-bold text-summit-blue-primary text-lg">Picture resources</h6>
+              <p class="block pt-0 text-xs">
+              <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+              </p>
+              <p class="block pt-0 text-xs">
+                <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+                  </p>
+                  <p class="block pt-0 text-xs">
+                    <a href="#" class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic - Classification of Matter - Length - 18:50</span></a>
+                  </p>
+            </div>
+
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <aside
+      class="fixed top-0 left-0 z-40 w-[500px] max-w-[500px] min-w-fit h-screen xs:pt-24 xs:pb-14 sm:py-14  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700 asideBarToggle"
+      id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" class="w-[16px] absolute left-[499px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
+         id="asideToggleBtn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3.86009 8.75225L9.3415 13.5485C9.98808 14.1142 11 13.6551 11 12.7959V3.20344C11 2.34428 9.98808 1.8851 9.3415 2.45086L3.86009 7.2471C3.40476 7.64551 3.40476 8.35384 3.86009 8.75225Z"
+            fill="white" />
+        </svg>
+      </button>
+      <div class="overflow-y-auto pb-5 px-0 h-full bg-white dark:bg-gray-800">
+        <!--Aside Title-->
+        <div class="flex flex-row bg-summit-blue-primary text-white">
+          <div class="flex-grow text-left whitespace-nowrap pl-5 py-4">
+            <span class="block text-2xl font-medium">Teacher Resources</span><span class="block font-light">Dynamic
+              Science - 8th</span>
+
+          </div>
+          <button type="button" id="asideToggleBtn2"
+            class="flex-row text-3xl bg-summit-blue-dark py-8 px-5 font-medium text-left whitespace-nowrap">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="fill-white">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.7071 7.29289C24.0976 7.68342 24.0976 8.31658 23.7071 8.70711L16.4142 16L23.7071 23.2929C24.0976 23.6834 24.0976 24.3166 23.7071 24.7071C23.3166 25.0976 22.6834 25.0976 22.2929 24.7071L14.2929 16.7071C13.9024 16.3166 13.9024 15.6834 14.2929 15.2929L22.2929 7.29289C22.6834 6.90237 23.3166 6.90237 23.7071 7.29289Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 2C8.44772 2 8 2.44772 8 3L8 29C8 29.5523 8.44772 30 9 30C9.55228 30 10 29.5523 10 29L10 3C10 2.44772 9.55228 2 9 2Z" />
+            </svg>
+          </button>
+        </div>
+        <!--menu items-->
+        <ul class="space-y-2 mt-3">
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light" data-tooltip-target="tooltip-1"
+              aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
+              <img src="img/side-menu-book.svg" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 1 : Matter and Energy with extra long to see if it can fit alright </span>
+              <div id="tooltip-1" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                Category 1 : Matter and Energy with extra long to see if it can fit alright 
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            
+            <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1" data-collapse-toggle="dropdown-cat1-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="24" height="24" fill="url(#pattern0)" />
+                      <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0_2512_3398" transform="scale(0.00833333)" />
+                        </pattern>
+                        <image id="image0_2512_3398" width="120" height="120"
+                          xlink:href="data:image/png;base64,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" />
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">8.6A
+                      : </span>Classification of Matter extra long with peant butter kelly
+                  </div>
+                  <div id="tooltip-2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    8.6A : Classification of Matter extra long with peant butter kelly
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#" data-tooltip-target="tooltip-3"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide</div>
+                    </a>
+                    <div id="tooltip-3" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">8.7A
+                      : </span>Newton's Second Law of Motion
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat1-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light menu-active">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+              <img src="img/side-menu-book.svg" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 2 : Force, Motion and Energy</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.5A
+                      : </span>Newton's First Law of Motion
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat2-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="24" height="24" fill="url(#pattern1)" />
+                      <defs>
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0_2512_3398" transform="scale(0.00833333)" />
+                        </pattern>
+                        <image id="image0_2512_3398" width="120" height="120"
+                          xlink:href="data:image/png;base64,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" />
+                      </defs>
+                    </svg>
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.6A
+                      : </span>Classification of Matter
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat2-inner" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.8A
+                      : </span>Another Category item
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat2-inner3" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.7A
+                      : </span>Balanced and Unbalanced Net Forces
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat2-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat3" data-collapse-toggle="dropdown-cat3">
+              <img src="img/side-menu-book.svg" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[420px]">Category 3 : Earth and Space</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            <ul id="dropdown-cat3" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
+                  <div class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="24" height="24" fill="url(#pattern7)" />
+                      <defs>
+                        <pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0_2512_3398" transform="scale(0.00833333)" />
+                        </pattern>
+                        <image id="image0_2512_3398" width="120" height="120"
+                          xlink:href="data:image/png;base64,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" />
+                      </defs>
+                    </svg>
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.5B
+                      : </span>Sub category 1
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat3-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="24" height="24" fill="url(#pattern3)" />
+                      <defs>
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0_2512_3398" transform="scale(0.00833333)" />
+                        </pattern>
+                        <image id="image0_2512_3398" width="120" height="120"
+                          xlink:href="data:image/png;base64,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" />
+                      </defs>
+                    </svg>
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
+                      : </span>Sub category 2
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat3-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.3A
+                      : </span>Sub category 3
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat3-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+              <img src="img/side-menu-book.svg" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[410px]">No Dropdown menu item</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="pt-5 mt-5 space-y-2 border-t border-summit-gray-stroke dark:border-gray-700">
+          <li>
+            <button type="button"
+              class="flex items-center p-2 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat4" data-collapse-toggle="dropdown-cat4">
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                  fill="#7A7A7A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                  fill="#7A7A7A" />
+              </svg>
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap">Category 4 : Move Item Sample</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            <ul id="dropdown-cat4" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat4-inner0" data-collapse-toggle="dropdown-cat4-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                        fill="#7A7A7A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                        fill="#7A7A7A" />
+                    </svg>
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">11.5B
+                      : </span>Move Cat 1
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat4-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Move Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat4-inner1" data-collapse-toggle="dropdown-cat4-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                        fill="#7A7A7A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                        fill="#7A7A7A" />
+                    </svg>
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
+                      : </span>Move Cat 2
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat4-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat4-inner2" data-collapse-toggle="dropdown-cat4-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                        fill="#7A7A7A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                        fill="#7A7A7A" />
+                    </svg>
+                  </div>
+                   <div class="pl-2 flex-1 truncate max-w-[410px]"> 
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">11.3A
+                      : </span>Move cat 3
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat4-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[87px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+
+                      </div>
+                      <button href="#"
+                  class="items-center pl-2 ml-2 py-2 w-full text-base text-left font-medium text-summit-blue-primary transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex">
+                  <span class="w-2 h-2 p-3 leading-3 bg-summit-blue-primary text-white rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark">&#43;</span><span class="flex ml-3">Add Custom Category</span>
+          </button>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button href="#"
+                  class="items-center pl-2 py-2 w-full text-base text-left font-medium text-summit-blue-primary transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex">
+                  <span class="w-2 h-2 p-3 leading-3 bg-summit-blue-primary text-white rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark">&#43;</span><span class="flex ml-3">Add Custom Category</span>
+          </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 justify-left p-4 space-x-4 w-full lg:flex border-t border-x-summit-gray-stroke bg-white">
+        <svg width="205" height="36" viewBox="0 0 205 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="205" height="36" fill="url(#summit-logo)" />
+          <defs>
+            <pattern id="summit-logo" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_2435_2806" transform="scale(0.00487805 0.0277778)" />
+            </pattern>
+            <image id="image0_2435_2806" width="205" height="36"
+              xlink:href="data:image/png;base64,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" />
+          </defs>
+        </svg>
+      </div>
+    </aside>
+
+    <main class="p-4 md:ml-[500px] h-auto pt-20 bg-summit-gray-FAblue">
+      <!--zoom button cluster-->
+      <div class="fixed right-16 bottom-16 z-20">
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.5 8.90002C0.776142 8.90002 1 9.12388 1 9.40002V11.9C1 12.4523 1.44772 12.9 2 12.9H14C14.5523 12.9 15 12.4523 15 11.9V9.40002C15 9.12388 15.2239 8.90002 15.5 8.90002C15.7761 8.90002 16 9.12388 16 9.40002V11.9C16 13.0046 15.1046 13.9 14 13.9H2C0.895431 13.9 0 13.0046 0 11.9V9.40002C0 9.12388 0.223858 8.90002 0.5 8.90002Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.64645 10.8536C7.84171 11.0488 8.15829 11.0488 8.35355 10.8536L11.3536 7.85355C11.5488 7.65829 11.5488 7.34171 11.3536 7.14645C11.1583 6.95118 10.8417 6.95118 10.6464 7.14645L8.5 9.29289V0.5C8.5 0.223858 8.27614 -7.45058e-09 8 -7.45058e-09C7.72386 -7.45058e-09 7.5 0.223858 7.5 0.5V9.29289L5.35355 7.14645C5.15829 6.95118 4.84171 6.95118 4.64645 7.14645C4.45118 7.34171 4.45118 7.65829 4.64645 7.85355L7.64645 10.8536Z"
+              fill="white" />
+          </svg>
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.0443 12.0419L16.2001 16.2008M7.80005 5.40078V10.2008M5.40005 7.80078H10.2M13.8 7.80078C13.8 11.1145 11.1138 13.8008 7.80005 13.8008C4.48634 13.8008 1.80005 11.1145 1.80005 7.80078C1.80005 4.48707 4.48634 1.80078 7.80005 1.80078C11.1138 1.80078 13.8 4.48707 13.8 7.80078Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.2 12.2008L16.2001 16.2008M5.40005 7.80078H10.2M13.8 7.80078C13.8 11.1145 11.1138 13.8008 7.80005 13.8008C4.48634 13.8008 1.80005 11.1145 1.80005 7.80078C1.80005 4.48707 4.48634 1.80078 7.80005 1.80078C11.1138 1.80078 13.8 4.48707 13.8 7.80078Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button type="button" data-popover-target="text-tool-popover" data-popover-placement="left" 
+        class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.625 2.942C8.625 2.725 8.735 2.527 8.918 2.412L10.026 1.72C10.126 1.658 10.24 1.625 10.358 1.625H12V0.375H10.358C10.006 0.375 9.663 0.474 9.364 0.66L8.256 1.353C8.161 1.412 8.081 1.488 8 1.562C7.918 1.488 7.839 1.412 7.744 1.353L6.635 0.66C6.336 0.474 5.993 0.375 5.642 0.375H4V1.625H5.642C5.759 1.625 5.874 1.658 5.974 1.72L7.082 2.412C7.266 2.527 7.376 2.725 7.376 2.942V8V13.058C7.376 13.275 7.266 13.473 7.082 13.588L5.973 14.28C5.873 14.342 5.759 14.375 5.641 14.375H4V15.625H5.642C5.994 15.625 6.337 15.526 6.636 15.34L7.744 14.648C7.84 14.588 7.919 14.512 8 14.439C8.081 14.512 8.161 14.588 8.256 14.648L9.365 15.341C9.664 15.527 10.007 15.626 10.359 15.626H12V14.376H10.358C10.241 14.376 10.126 14.343 10.026 14.281L8.918 13.589C8.734 13.474 8.625 13.276 8.625 13.059V8V2.942Z" fill="white"></path>
+      </svg>
+      </button>
+      <!--popover for text-->
+      <div data-popover id="text-tool-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Text Tool</h3>
+        </div>
+        <div class="px-3 py-2">
+          <div class="flex flex-wrap items-center justify-center mb-2" id="scribbleToolParamsToolbar">
+            <div class="scribble-color-plate">
+                <input type="hidden" id="scribbleToolColor" value="#0075C9">
+                <input type="range" style="display: none;" id="scribbleToolThickness">
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary focus:border-summit-blue-primary focus:border-solid focus:border-2" style="background-color: #000000"><span class="sr-only">#000000</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #0075C9"><span class="sr-only">#0075C9</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #BF2033"><span class="sr-only">#BF2033</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #F57F1F"><span class="sr-only">#F57F1F</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #FFE700"><span class="sr-only">#FFE700</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #00823F"><span class="sr-only">#00823F</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #70489D"><span class="sr-only">#70489D</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #808080"><span class="sr-only">#808080</span></div>
+            </div>
+            <div class="grid grid-cols-4 w-full">
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer" data-value="1">P</span>
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer ml-1 mr-1" data-value="3">H1</span>
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer ml-1 mr-1" data-value="4">H2</span>
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer" data-value="5">H3</span>
+            </div>
+        </div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <!--popover for text-->
+        <button type="button" data-popover-target="scribble-tool" data-popover-placement="left"
+        class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.49913 12.6251C2.61913 12.6251 2.73913 12.6051 2.85713 12.5661L6.29013 11.4201L13.2891 4.4221C14.0191 3.6911 14.0191 2.5011 13.2891 1.7701L12.2291 0.710098C11.4971 -0.0199023 10.3091 -0.0199023 9.57713 0.710098L2.57813 7.7091L1.43313 11.1451C1.29813 11.5511 1.40213 11.9931 1.70513 12.2951C1.92113 12.5101 2.20613 12.6251 2.49913 12.6251ZM10.4611 1.5951C10.7031 1.3511 11.1021 1.3511 11.3441 1.5951L12.4051 2.6561C12.6491 2.8991 12.6491 3.2961 12.4051 3.5391L11.3401 4.6051L9.39513 2.6601L10.4611 1.5951ZM3.67013 8.3851L8.51013 3.5451L10.4541 5.4891L5.61413 10.3301L2.69713 11.3031L3.67013 8.3851Z" fill="white"></path>
+          <path d="M14.8169 13.314L13.0229 13.862C12.3309 14.073 11.5909 14.111 10.8859 13.968L8.80391 13.551C7.58491 13.308 6.29791 13.48 5.18491 14.036C3.95291 14.652 2.46691 14.412 1.49191 13.436L1.44091 13.385L0.60791 14.321C1.46291 15.175 2.59991 15.625 3.75291 15.625C4.42891 15.625 5.10991 15.471 5.74391 15.153C6.60891 14.721 7.60891 14.586 8.55891 14.777L10.6409 15.194C11.5509 15.376 12.5009 15.327 13.3879 15.056L15.1819 14.508L14.8169 13.314Z" fill="white"></path>
+      </svg>
+      </button>
+      <!--popover for scribble-->
+      <div data-popover id="scribble-tool" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Scribble Tool</h3>
+        </div>
+        <div class="px-3 py-2">
+          <div class="flex flex-wrap items-center justify-center mb-2" id="scribbleToolParamsToolbar">
+            <div class="scribble-color-plate">
+                <input type="hidden" id="scribbleToolColor" value="#0075C9">
+                <input type="range" style="display: none;" id="scribbleToolThickness">
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary focus:border-summit-blue-primary focus:border-solid focus:border-2" style="background-color: #000000"><span class="sr-only">#000000</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #0075C9"><span class="sr-only">#0075C9</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #BF2033"><span class="sr-only">#BF2033</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #F57F1F"><span class="sr-only">#F57F1F</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #FFE700"><span class="sr-only">#FFE700</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #00823F"><span class="sr-only">#00823F</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #70489D"><span class="sr-only">#70489D</span></div>
+                <div class="w-[24px] h-[24px] inline-block border-2 indent-[100%] border-solid cursor-pointer text-transparent border-white hover:border-summit-blue-primary" style="background-color: #808080"><span class="sr-only">#808080</span></div>
+            </div>
+            <div class="grid grid-cols-3 w-full">
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer" data-value="1">THIN</span>
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer ml-1 mr-1" data-value="3">MEDIUM</span>
+                <span class="border-2 border-solid border-summit-gray-stroke hover:border-summit-blue-primary text-center cursor-pointer" data-value="5">THICK</span>
+            </div>
+        </div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+    <!--popover for scribble-->
+      </div>
+      <!--zoom button cluster-->
+
+      <div>
+              <object class="w-full min-h-screen"
+              data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"> 
+              </object> 
+      </div>
+
+    </main>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>

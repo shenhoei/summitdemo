@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+        <div class="flex flex-wrap justify-between">
+          <img src="img/logo-summit.svg">
+        </div><!--summit Logo-->
+        <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+          <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+            Teaching and Learning</span>
+        </div>
+        <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <img src="img/nav-hamburger.svg">
+        </button>
+        </div>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+          <!--Summit Base Button-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-summit-base.svg" class="m-auto">
+            <span>My Summit Base</span>
+            <span class="sr-only">Expand</span>
+          </a>
+          <!--Summit Base Button-->
+
+          <!-- My Course Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-course.svg" class="m-auto">
+
+            <span>My Course</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+
+          <!-- My course Icon-->
+          <!-- Account Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] items-center summit-menu summit-student-menu text-center"
+            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+            <img src="img/nav-profile.svg" class="m-auto">
+            <span>My Account</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+          <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                  Profile</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                  Password</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                  Search</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                all</a>
+            </div>
+          </div>
+
+          <!-- Account Icon-->
+           </div>
+      </div>
+      </div>
+    </nav>
+    <div class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] ">
+      <div class="text-right p-4"><a href="#" class="text-white">Science Academny | Raza Hasan Content</a></div>
+      <h1 class="text-white font-bold text-[36px] text-center mb-8">My Summit Base</h1>
+      <div class="flex w-full justify-center">
+        <div class="menu">
+          <nav class="flex items-center justify-between pt-4">
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+              My PLP
+          </button>
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+                My Assignment
+            </button>
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+                My Progress
+            </button>          
+            <button class="text-summit-blue-primary bg-summit-gray-FA rounded-t-lg py-2 px-4">
+               Knowledge Links<sup>TM</sup>
+            </button>
+        </nav>
+        </div>
+        <!--end of tab-menu-->
+      </div>
+    </div>
+<!--Student Title and Goat Section-->
+<div class="w-full relative h-[70px]">
+  <div class="w-[300px] justify-start p-4 absolute mt-[-60px]">
+    <img src="img/course-concept-boosters-biology.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+  </div>
+  <!--goat and box-->
+  <div class="flex w-full justify-end relative">
+    <div class="w-[108px] mt-[-135px] mr-10 absolute block">
+      <img src="img/summit-goat-normal-sm.png">
+    </div>
+  </div>
+  <!--end of Goat and Box-->
+</div>
+<!--End of Student Title and Goat Section-->
+<!--End of Student Top Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+        <div class="flex justify-between"><!--title section-->
+          <div class="">
+            <button class="text-white bg-summit-blue-dark hover:underline w-[73px] h-[41px] mt-6 rounded-md">
+                Back
+              </button>
+          </div>
+            <div class="m-auto w-fit">
+                <img src="img/knowledgelinks-title-img.png" />
+          </div>
+          <div>&nbsp;</div>
+        </div>
+
+      <div class="bg-summit-blue-light p-5 rounded-xl border border-solid border-summit-gray-stroke">
+      <section class="main-grid">
+        <!--filter-row-->
+        <div class="mb-4 justify-center p-3">
+            <div class="w-full rounded-xl relative knowledge-title-class bg-no-repeat bg-cover bg-center min-h-[100px] md:min-h-[250px] mb-10" style="background-image:url('img/knowledge-links-header.png')"><!--Title class-->
+                <h1 class="text-[50px] md:text-[100px] lg:text-[120px]  font-semibold text-white knowledge-link-text-stroke absolute left-1/2 -translate-x-1/2 bottom-1">Ecosystems</h1>         
+            </div>
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">1</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Foundation Ebook</span>
+              </div>
+
+              <div class="flex justify-center gap-5">
+                <div class="pb-4"><!--knowledge-links-section-->   
+                  <div class="bg-summit-blue-light border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-1.png" class="w-full m-auto" />
+                    </div>
+                    <div class="mt-5 bg-summit-green-table w-full h-8 rounded-lg p-1 text-center">
+                      <img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="pb-4"><!--knowledge-links-section--> 
+                  <div class="bg-summit-blue-light border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-2.png" class="w-full m-auto" />
+                    </div>
+                    <div class="mt-5 bg-summit-green-table w-full h-8 rounded-lg p-1 text-center text-white">
+                        <span>88%</span>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="pb-4"><!--knowledge-links-section--> 
+                  <div class="bg-summit-blue-light border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <div class="rounded-full p-5 bg-summit-table-blue-bg w-fit m-auto block">
+                        <img src="img/icon-teacher-clipboard.svg" class="w-[60px] h-[60px]" />
+                      </div>
+                    </div>
+                    <div class="mt-5 bg-summit-blue-table w-full h-8 rounded-lg p-1 text-center text-white">
+                        <span>70%</span>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </section><!--section-->
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-gray-stroke text-summit-gray-dark bg-summit-gray-light-gray-disabled text-center w-8 h-8 pt-0.5">1</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Foundation Ebook (Gray Version)</span>
+              </div>
+
+              <div class="flex justify-center gap-5">
+                  <div><!--knowledge-links-section-->  
+                  <div class="bg-summit-gray-light-gray-disabled border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-1.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-8 rounded-lg p-1 text-center">
+                      <span class="font-bold text-summit-gray-dark">Watch Video</span>
+                    </div>
+                  </div>
+                  <div class="m-auto w-fit my-2">
+                    <img src="img/icon-red-lock.svg" />
+                  </div>
+                  </div>
+                  <div><!--knowledge-links-section-->  
+                  <div class="bg-summit-gray-light-gray-disabled border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-2.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-8 rounded-lg p-1 text-center">
+                      <span class="font-bold text-summit-gray-dark">Start</span>
+                    </div>
+                  </div>
+                  <div class="m-auto w-fit my-2">
+                    <img src="img/icon-red-lock.svg" />
+                  </div>
+                  </div>
+                  <div><!--knowledge-links-section-->  
+                  <div class="bg-summit-gray-light-gray-disabled border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <div class="rounded-full p-5 bg-summit-gray-disabled w-fit m-auto block">
+                        <img src="img/icon-teacher-clipboard.svg" class="w-[60px] h-[60px] grayscale" />
+                      </div>
+                    </div>
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-8 rounded-lg p-1 text-center">
+                        <span>Assess</span>
+                    </div>
+                  </div>
+                  <div class="m-auto w-fit my-2">
+                    <img src="img/icon-red-lock.svg" />
+                  </div>
+                  </div>
+              </div>
+            </section><!--section-->            
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full flex justify-between p-5 mb-5"><!--section-->
+                <div class="flex justify-start w-fit">
+                    <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">2</span>
+                    <span class="font-bold ml-4 mt-0.5 text-lg">Unit Pre-Test</span>
+                </div>
+                <a href="#" class="inline-flex justify-center items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark min-w-[200px]">
+                   <img src="img/icon-play-white.svg" class="mr-2"/> <span>Start</span>
+                </a>
+            </section><!--section-->
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full flex justify-between p-5 mb-5"><!--section-->
+                <div class="flex justify-start w-fit">
+                    <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">2</span>
+                    <span class="font-bold ml-4 mt-0.5 text-lg">Unit Pre-test</span>
+                </div>
+                <div href="#" class="items-center px-5 py-1 text-lg font-medium text-center text-white bg-summit-knowledge-yellow rounded-lg min-w-[200px]">
+                   <span>60%</span>
+                </div>
+            </section><!--section-->
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full flex justify-between p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                  <span class="block rounded-full border border-solid border-summit-gray-stroke text-summit-gray-dark bg-summit-gray-light-gray-disabled text-center w-8 h-8 pt-0.5">2</span>
+                  <span class="font-bold ml-4 mt-0.5 text-lg">Unit Pre-test (Gray Version)</span>
+              </div>
+              <div class="flex">
+              <div class="m-auto w-fit mr-4">
+                <img src="img/icon-red-lock.svg" class="h-[36px]" />
+              </div>
+              <a href="#" class="inline-flex justify-center items-center px-5 py-2.5 text-sm font-medium text-center bg-summit-gray-disabled rounded-lg min-w-[358px]">
+                <img src="img/icon-play-dark-gray.svg" class="mr-2"/> <span>Start</span>
+             </a>
+            </div>
+          </section><!--section-->
+
+            
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">3</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Preview</span>
+              </div>
+              <div class="flex justify-center gap-5">
+                <div class="pb-4"><!--knowledge-links-section-->     
+                  <div class="bg-summit-blue-light border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-3.png" class="w-full m-auto" />
+                    </div>
+                    <div class="mt-5 bg-summit-green-table w-full h-8 rounded-lg p-1 text-center">
+                      <img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="pb-4"><!--knowledge-links-section-->   
+                  <div class="bg-summit-blue-light border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-2.png" class="w-full m-auto" />
+                    </div>
+                    <div class="mt-5 bg-summit-blue-primary-20 w-full h-8 rounded-lg p-1 text-center text-white">
+                        <span>98%</span>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </section><!--section-->
+
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-gray-stroke text-summit-gray-dark bg-summit-gray-light-gray-disabled text-center w-8 h-8 pt-0.5">3</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Preview (Gray Version)</span>
+              </div>
+              <div class="flex justify-center gap-5">
+                <div><!--knowledge-links-section-->     
+                  <div class="bg-summit-gray-light-gray-disabled border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-3.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-8 rounded-lg p-1 text-center">
+                      <span class="font-bold text-summit-gray-dark">Watch Video</span>
+                    </div>
+                  </div>
+                  <div class="m-auto w-fit my-2">
+                    <img src="img/icon-red-lock.svg" />
+                  </div>
+                  </div>
+                  <div><!--knowledge-links-section-->   
+                  <div class="bg-summit-gray-light-gray-disabled border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-2.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-8 rounded-lg p-1 text-center">
+                      <span class="font-bold text-summit-gray-dark">Start</span>
+                    </div>
+                  </div>
+                  <div class="m-auto w-fit my-2">
+                    <img src="img/icon-red-lock.svg" />
+                  </div>
+                  </div>
+              </div>
+            </section><!--section-->
+
+
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">4</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Read About Ecosystems</span>
+              </div>
+
+              <div class="flex justify-center gap-5">  
+                  <div class="w-[300px]">
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-changing_and_conserving.png" class="w-full m-auto max-h-[415px]" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full" />
+                    <div class="mt-5 bg-summit-green-table w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-red-table w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                  </div>
+                  <div class="w-[300px]"><!--box-->
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-energy_flow_and_use.png" class="w-full m-auto" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full" />
+                    <div class="mt-5 bg-summit-knowledge-yellow w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-blue-table w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                  </div><!--end of box-->
+                  <div class="w-[300px]"><!--box-->
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-food_chains_and_food_webs.png" class="w-full m-auto" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full" />
+                    <div class="mt-5 bg-summit-knowledge-yellow w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-blue-table w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                  </div><!--end of box-->
+                  <div class="w-[300px]"><!--box-->
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-populations_and_communities.png" class="w-full m-auto" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full" />
+                    <div class="mt-5 bg-summit-knowledge-yellow w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-blue-table w-full h-10 rounded-lg p-1.5 text-center text-white">
+                      <span>90%</span>
+                    </div>
+                  </div><!--end of box-->
+              </div>
+            </section><!--section-->
+
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex">
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-gray-stroke text-summit-gray-dark bg-summit-gray-light-gray-disabled text-center w-8 h-8 pt-0.5">4</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Read About Ecosystems (Gray Version)</span>
+              </div>
+
+              <div class="m-auto w-fit mr-4">
+                <img src="img/icon-red-lock.svg" class="h-[36px]" />
+              </div>
+            </div>
+
+              <div class="flex justify-center gap-5">  
+                  <div class="w-[300px] relative">
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-changing_and_conserving.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />                  
+                    <img src="img/knowledge-links-demo-2.png" class="w-full grayscale" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Start</span>
+                    </div>
+                    <!--Gray Overlay-->
+                    <div class="bg-summit-gray-85 absolute h-[156px] w-full block text-white rounded-lg bg-opacity-80 -mt-[97px] justify-center">
+                        <img src="img/knowledge-links-clock.svg" class="w-[30px] h-[30px] mx-auto mt-8 mb-3" />
+                      <span class="w-full inline-block text-center font-bold">Opens 8:00am 11/21/2024 </span>
+                    </div>
+                    <!--end of Gray Overlay-->
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Assess</span>
+                    </div>
+                  </div>
+                  <div class="w-[300px]"><!--box-->
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-energy_flow_and_use.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full grayscale" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Start</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Assess</span>
+                    </div>
+                  </div><!--end of box-->
+                  <div class="w-[300px]"><!--box-->
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-food_chains_and_food_webs.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full grayscale" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Start</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Assess</span>
+                    </div>
+                  </div><!--end of box-->
+                  <div class="w-[300px]"><!--box-->
+                    <div class="w-full align-middle rounded-xl overflow-hidden relative">
+                      <div class="py-5 absolute bg-summit-green-knowledge-80 w-full bottom-0"><img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/></div>
+                      <img src="img/ecosystem-populations_and_communities.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <img src="img/knowledge-links-demo-2.png" class="w-full grayscale" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Start</span>
+                    </div>
+                    <hr class="bg-summit-gray-stroke h-px my-4" />
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Assess</span>
+                    </div>
+                  </div><!--end of box-->
+              </div>
+            </section><!--section-->
+
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">5</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Review</span>
+              </div>
+
+              <div class="flex justify-center gap-5">  
+                  <div class="bg-summit-blue-light border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-3.png" class="w-full m-auto" />
+                    </div>
+                    <div class="mt-5 bg-summit-green-table w-full h-8 rounded-lg p-1 text-center">
+                      <img src="img/plp-table-checkmark-white.svg" class="w-fit m-auto"/>
+                    </div>
+                  </div>
+              </div>
+            </section><!--section-->
+
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full p-5 mb-5"><!--section-->
+              <div class="flex">
+              <div class="flex justify-start w-fit">
+                <span class="block rounded-full border border-solid border-summit-gray-stroke text-summit-gray-dark bg-summit-gray-light-gray-disabled text-center w-8 h-8 pt-0.5">5</span>
+                <span class="font-bold ml-4 mt-0.5 text-lg">Review (Gray Version)</span>
+              </div>
+              
+              <div class="m-auto w-fit mr-4">
+                <img src="img/icon-red-lock.svg" class="h-[36px]" />
+              </div>
+            </div>
+
+              <div class="flex justify-center gap-5">  
+                  <div class="bg-summit-gray-light-gray-disabled border border-solid border-summit-gray-stroke rounded-xl w-[400px] p-5">
+                    <div class="w-full align-middle h-[250px] flex">
+                      <img src="img/knowledge-links-demo-3.png" class="w-full m-auto grayscale" />
+                    </div>
+                    <div class="mt-5 bg-summit-gray-disabled w-full h-10 rounded-lg p-1.5 text-center text-summit-gray-dark font-bold">
+                      <span>Read</span>
+                    </div>
+                  </div>
+              </div>
+            </section><!--section-->
+
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full flex justify-between p-5 mb-5"><!--section-->
+                <div class="flex justify-start w-fit">
+                    <span class="block rounded-full border border-solid border-summit-gray-stroke text-summit-gray-dark bg-summit-gray-light-gray-disabled text-center w-8 h-8 pt-0.5">6</span>
+                    <span class="font-bold ml-4 mt-0.5 text-lg">Unit Post-Test</span>
+                </div>
+                <div class="flex">
+                  <div class="m-auto w-fit mr-4">
+                    <img src="img/icon-red-lock.svg" class="h-[36px]" />
+                  </div>
+                  <a href="#" class="inline-flex justify-center items-center px-5 py-2.5 text-sm font-medium text-center bg-summit-gray-disabled rounded-lg min-w-[200px]">
+                    <img src="img/icon-play-dark-gray.svg" class="mr-2"/> <span>Start</span>
+                 </a>
+                </div>
+            </section><!--section-->
+            <section class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke w-full flex justify-between p-5 mb-5"><!--section-->
+              <div class="flex justify-start w-fit">
+                  <span class="block rounded-full border border-solid border-summit-blue-primary text-summit-blue-primary bg-summit-blue-primary-20 text-center w-8 h-8 pt-0.5">6</span>
+                  <span class="font-bold ml-4 mt-0.5 text-lg">Unit Post-Test</span>
+              </div>
+              <div class="flex">
+
+              <a href="#" class="inline-flex justify-center items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-green-table rounded-lg min-w-[200px]">
+                 <span>90%</span>
+              </a>
+              </div>
+          </section><!--section-->
+            
+        </div>
+        <!--filter-row-->
+      </section>
+      <!--end of bottom of grid-->
+      </div><!--end of light blue section-->
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>

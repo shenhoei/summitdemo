@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+    <div class="antialiased bg-gray-50 dark:bg-gray-900">
+        <main>
+            <!-- Sidebar -->
+            <section class="w-full h-[calc(100vh-273px)] bg-summit-blue-light">
+                <aside
+                    class="fixed left-0 z-40 w-[400px] max-w-[400px] min-w-fit h-[calc(100vh-390px)] xs:pt-24 xs:pb-1 sm:py-0  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+                    id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+                    <button type="button"
+                        class="w-[16px] absolute left-[400px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
+                        id="asideToggleBtn">
+                        <img src="img/aside-arrow-left.svg">
+                    </button>
+                    <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
+                        <!--menu items-->
+                        <ul class="space-y-2">
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-setting.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-setting-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Course
+                                        Settings</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                                    aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+                                    <img src="img/district-menu-users.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-users.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[420px]">Manage
+                                        Users</span>
+                                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                                </button>
+                                <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-limit.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-limit-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                Limit Class Creation
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-newcomer.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-newcomer-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                View Newcomer Students
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-transfer.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-transfer-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                Transfer Students
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-upload.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-upload-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Upload
+                                        State Asessment Scores</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-license.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-license-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Manage
+                                        Licenses</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-information.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-information-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">District
+                                        Information</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+                <!--main section-->
+                <div class="ml-[400px] p-5 h-[calc(100vh-390px)] overflow-auto districtsettingsMain">
+                    <section><!--Transfer Students Form-->
+                        <div>
+                            <h1 class="text-3xl font-semibold ml-5 mt-5">Transfer Students</h1>
+                        </div>
+                        <div>
+                            <form action="#">
+                                <div class="m-auto w-fit my-4">
+                                    <div class="flex mr-4">
+                                        <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                            class="block px-4 py-2 text-sm min-w-64 text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
+                                            placeholder="SK12 Username / Email" />
+
+                                        <button type="submit"
+                                            class="inline-flex items-center px-5 py-1.5 ml-3 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                                            <span>Search</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6 w-[80%] m-auto my-5">
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>School:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>School:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>Grade:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>Grade:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>Teacher:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>Teacher:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>Class:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                    <div class="flex mr-4">
+                                        <div class="mt-1 w-20 text-right"><label>Class:</label></div>
+                                        <div class="w-[80%]"><select
+                                                class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-full p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="m-auto w-fit my-5">
+                                    <div class="flex mr-4">
+                                        <div class="mt-1"><label>School</label></div>
+                                        <div><select
+                                                class="bg-white border min-w-64 border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                                <option>All</option>
+                                                <option>Select School</option>
+                                                <option>School 1</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                                <div class="m-auto w-fit my-5">
+                                    <div class="flex mr-4">
+                                        <button type="submit"
+                                            class="inline-flex items-center px-5 py-1.5 ml-3 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                                            <span>Transfer</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+                    </section><!--End of Transfer Students Form-->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

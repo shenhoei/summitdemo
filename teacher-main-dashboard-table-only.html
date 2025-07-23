@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">     
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+        <!-- My support Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+          <span>Support</span>
+
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My support Icon-->
+        <!-- My training Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+          <span>Training</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My training Icon-->
+        <!-- Home Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+          <span>Home</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My Home Icon-->
+        <!-- My Library Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+          <span>My Library</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My Library Icon-->
+        <!-- My Library Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+          <span>Vocabulary</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My Library Icon-->
+
+
+        <!-- My Course Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+          <span>My Course</span>
+
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My course Icon-->
+        <!-- Account Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+          id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+          <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+          <span>My Account</span>
+
+          <span class="sr-only">Expand</span>
+        </a>
+        <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+          <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                Profile</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                Password</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                Search</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+            </li>
+          </ul>
+          <div class="py-1">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+              all</a>
+          </div>
+        </div>
+
+        <!-- Account Icon-->
+            </div><!--end of leftmain-nav-->      
+        </div>            
+
+        
+      </div>
+    </nav>
+  <!--Teacher Top Section-->
+  <div
+    class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
+    <div class="mt-8 ml-5">
+      <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-left mb-8">Teacher Reports Dashboard</h1>
+    </div>
+    <div class="flex justify-end mt-4 mr-5">
+      <div class="">
+        <form class="max-w-sm mx-auto w-48">
+          <label for="countries" class="mb-2 text-sm text-white flex"><img src="img/icon-white-book.svg" /><span
+              class="ml-1">Class</span></label>
+          <select id="countries"
+            class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-summit-blue-primaryblock w-full p-2.5">
+            <option selected>Dynamic Science</option>
+            <option value="US">Dynamic Science 1</option>
+            <option value="CA">Dynamic Science 2</option>
+            <option value="FR">Dynamic Science 3</option>
+            <option value="DE">Dynamic Science 4</option>
+          </select>
+          <p class="text-white text-sm mt-1 font-bold">Elsa Ferry &bull; 5th Grade</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--End of Teacher Top Section-->
+
+  <!--main Section-->
+  <main class="h-auto bg-summit-gray-FA static p-5">
+    <!--End of Top Section-->
+    <div
+      class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-auto">
+      <section class="flex-grow" id="teacher-reports-content">
+        <div class="p-5 overflow-auto">
+          <div class="teacher-dashboard-table w-full">
+            <table class="summit-table-2024">
+              <thead>
+                <tr>
+                  <th><span>Student</span></th>
+                  <th colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">5.6A</span>
+                    </div>
+                  </th>
+                  <th colspan="3"><span>5.6A</span></th>
+                  <th colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">4.6A</span>
+                    </div>
+                  </th>
+                  <th colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">4.6A</span>
+                    </div>
+                  </th>
+                  <th colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">5.6A</span>
+                    </div>
+                  </th>
+                </tr>
+                <tr class="bg-summit-blue-table-header">
+                  <th><span>&nbsp;</span></th>
+                  <th><span>1<sup>st</sup></span></th>
+                  <th><span>VM</span></th>
+                  <th><span>2<sup>nd</sup></span></th>
+                  <th><span>1<sup>st</sup></span></th>
+                  <th><span>VM</span></th>
+                  <th><span>2<sup>nd</sup></span></th>
+                  <th><span>1<sup>st</sup></span></th>
+                  <th><span>VM</span></th>
+                  <th><span>2<sup>nd</sup></span></th>
+                  <th><span>1<sup>st</sup></span></th>
+                  <th><span>VM</span></th>
+                  <th><span>2<sup>nd</sup></span></th>
+                  <th><span>1<sup>st</sup></span></th>
+                  <th><span>VM</span></th>
+                  <th><span>2<sup>nd</sup></span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Francis, Janne</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                </tr>
+                <tr>
+                  <td>
+                    Huang, Cathleen</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                </tr>
+                <tr>
+                  <td>
+                    LastName, FirstName</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="w-full flex justify-end">
+            <button type="submit"
+              class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+              <img src="img/icon-button-download.svg" class="w-[18px] h-[18px] mr-2"><span>Download</span>
+            </button>
+          </div>
+
+          <!--end of Teacher Table-->
+
+
+          <!--Teks Teacher Table-->
+          <!--Teacher Table Top-->
+          <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
+            <div class="mt-8 ml-5">
+              <button type="submit"
+                class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                <span>Back</span>
+              </button>
+            </div>
+            <div class="flex justify-end mt-4 mr-5">
+              <div class="">
+                <form class="max-w-sm mx-auto w-48">
+                  <label for="countries" class="mb-2 text-sm text-black flex"><img
+                      src="img/icon-graduation-cap.svg" /><span class="ml-1">Student</span></label>
+                  <select id="countries"
+                    class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-summit-blue-primaryblock w-full p-2.5">
+                    <option selected>Francis, Janne</option>
+                    <option value="US">Lastname, Firstname</option>
+                    <option value="CA">Lastname, Firstname</option>
+                    <option value="FR">Lastname, Firstname</option>
+                    <option value="DE">Lastname, Firstname</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="teacher-dashboard-table w-full mt-4">
+            <table class="summit-table-2024">
+              <thead>
+                <tr>
+                  <th><span>TEKS</span></th>
+                  <th><span>Formative Assessment 1</span></th>
+                  <th><span>TEKS Video</span></th>
+                  <th><span>Vocabulary</span></th>
+                  <th><span>Formative Assessment 2</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5.6A</td>
+                  <td>Compare and
+                    Contrast Physical Properties</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                  <td>&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">5.6A</span>
+                    </div>
+                  </td>
+                  <td>Observable Physical
+                    Properties</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+
+
+                </tr>
+                <tr>
+                  <td>
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">5.6A</span>
+                    </div>
+                  </td>
+                  <td>Observable Physical
+                    Properties</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <!--End of Teks Teacher Table-->
+          <div class="teacher-dashboard-table w-full mt-10">
+            <table class="summit-table-2024">
+              <thead>
+                <tr>
+                  <th><span>&nbsp;</span></th>
+                  <th colspan="6">
+                    <span>Animals</span>
+
+                  </th>
+                  <th colspan="6"><span>Earth</span></th>
+                  <th colspan="6">
+                    <span>Energy</span>
+
+                  </th>
+                </tr>
+                <tr>
+                  <th><span>Student</span></th>
+                  <th><span>P1</span></th>
+                  <th><span>P2</span></th>
+                  <th><span>P3</span></th>
+                  <th><span>P4</span></th>
+                  <th><span>Asess</span></th>
+                  <th><span>PP</span></th>
+                  <th><span>P1</span></th>
+                  <th><span>P2</span></th>
+                  <th><span>P3</span></th>
+                  <th><span>P4</span></th>
+                  <th><span>Assess</span></th>
+                  <th><span>PP</span></th>
+                  <th><span>P1</span></th>
+                  <th><span>P2</span></th>
+                  <th><span>P3</span></th>
+                  <th><span>P4</span></th>
+                  <th><span>P5</span></th>
+                </tr>
+                <tr>
+                  <th><span>Average</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>   
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th class="vb_blue"><span>75%</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                  <th><span>&nbsp;</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Francis, Janne</td>
+                  <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="vb_blue">70%</td>
+                    <td class="vb_expanding">&nbsp;</td>
+                    <td class="vb_indigo">&nbsp;</td>
+                  <td class="vb_entering">&nbsp;</td>
+                  <td class="vb_emerging">&nbsp;</td>
+                  <td class="vb_bridging">&nbsp;</td>
+                  <td class="vb_reaching">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="text-summit-blue-primary">
+                    Francis, Janne</td>
+                  <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="vb_blue">70%</td>
+                    <td class="">&nbsp;</td>
+                    <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="text-summit-blue-primary">
+                    Francis, Janne</td>
+                  <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="vb_blue">70%</td>
+                    <td class="">&nbsp;</td>
+                    <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="w-full flex justify-end">
+            <button type="submit"
+              class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+              <img src="img/icon-button-download.svg" class="w-[18px] h-[18px] mr-2"><span>Download</span>
+            </button>
+          </div>
+
+          <!--end of Teacher Table-->
+          <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
+            <div class="mt-8 ml-5">
+              <button type="submit"
+                class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                <span>Back</span>
+              </button>
+            </div>
+            <div class="flex justify-end mt-4 mr-5">
+              <div class="">
+                <form class="max-w-sm mx-auto w-48">
+                  <label for="countries" class="mb-2 text-sm text-black flex"><img
+                      src="img/icon-graduation-cap.svg" /><span class="ml-1">Student</span></label>
+                  <select id="countries"
+                    class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-summit-blue-primaryblock w-full p-2.5">
+                    <option selected>Francis, Janne</option>
+                    <option value="US">Lastname, Firstname</option>
+                    <option value="CA">Lastname, Firstname</option>
+                    <option value="FR">Lastname, Firstname</option>
+                    <option value="DE">Lastname, Firstname</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="teacher-dashboard-table w-full mt-4">
+            <table class="summit-table-2024">
+              <thead>
+                <tr>
+                  <th rowspan="2"><span>Theme</span></th>
+                  <th colspan="4"><span>Listening-Speaking Basics Practice</span></th>
+                  <th rowspan="2"><span>Listening Assessment</span></th>
+                  <th rowspan="2"><span>Pronunciation Perfector<sup>TM</sup></span></th>
+                </tr>
+                <tr>
+                  <th >Practice #1</th>
+                  <th >Practice #2</th>
+                  <th >Practice #3</th>
+                  <th >Practice #4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Animals</td>
+                  <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="">&nbsp;</td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="vb_blue">70%</td>
+                </tr>
+                <tr>
+                  <td>
+                    Earth</td>
+                  <td
+                    class="">
+                    &nbsp;</td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="">&nbsp;</td>
+                    <td
+                    class="vb_green">
+                    <img src="img/icon-checkmark.png"></td>
+                    <td class="vb_blue">70%</td>
+                </tr>
+                <tr>
+                    <td>
+                      Energy</td>
+                    <td
+                      class="vb_green">
+                      <img src="img/icon-checkmark.png"></td>
+                      <td
+                      class="vb_green">
+                      <img src="img/icon-checkmark.png"></td>
+                      <td
+                      class="vb_green">
+                      <img src="img/icon-checkmark.png"></td>
+                      <td
+                      class="vb_green">
+                      <img src="img/icon-checkmark.png"></td>
+                      <td
+                      class="vb_green">
+                      <img src="img/icon-checkmark.png"></td>
+                      <td class="vb_blue">70%</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--End of Teks Teacher Table-->
+          <!-- Readiness-->
+           </div>
+      </section>
+    </div><!--end of light blue section-->
+
+  </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

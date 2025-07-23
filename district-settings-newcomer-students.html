@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+    <div class="antialiased bg-gray-50 dark:bg-gray-900">
+        <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+                    <div class="flex flex-wrap justify-between">
+                        <img src="img/logo-summit.svg">
+                    </div><!--summit Logo-->
+                    <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+                        <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas
+                            K-12<br />
+                            Teaching and Learning</span>
+                    </div>
+                    <button data-collapse-toggle="navbar-summit" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+                        aria-controls="navbar-summit" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <img src="img/nav-hamburger.svg">
+                    </button>
+                </div>
+
+                <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+                    <div class="left-main-nav flex flex-col md:flex-row">
+                        <!-- My support Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+                            <span>Support</span>
+
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My support Icon-->
+                        <!-- My training Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+                            <span>Training</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My training Icon-->
+                        <!-- Home Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+                            <span>Home</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My Home Icon-->
+                        <!-- My Library Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+                            <span>My Library</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My Library Icon-->
+                        <!-- My Library Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+                            <span>Vocabulary</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My Library Icon-->
+
+
+                        <!-- My Course Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+                            <span>My Course</span>
+
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My course Icon-->
+                        <!-- Account Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+                            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+                            <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+                            <span>My Account</span>
+
+                            <span class="sr-only">Expand</span>
+                        </a>
+                        <div id="actionsDropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                                        Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                                        Password</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                                        Search</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                                    all</a>
+                            </div>
+                        </div>
+
+                        <!-- Account Icon-->
+                    </div><!--end of leftmain-nav-->
+                </div>
+
+
+            </div>
+        </nav>
+        <!--Teacher Top Section-->
+        <div
+            class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-3 sm:gap-2">
+            <div class="">&nbsp;</div>
+            <div class="mt-8 ml-5">
+                <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-center">District Settings</h1>
+            </div>
+        </div>
+        <div class="flex w-full justify-between py-5 border-b-gray-200 border-b">
+            <div class="tab-left-menu px-8">
+                <button type="submit"
+                    class="inline-flex items-center px-5 py-1.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                    <span>Back</span>
+                </button>
+            </div>
+            <!--end of tab-menu-->
+        </div>
+
+        <main>
+            <!-- Sidebar -->
+            <section class="w-full h-[calc(100vh-273px)] bg-summit-blue-light">
+                <aside
+                    class="fixed left-0 z-40 w-[400px] max-w-[400px] min-w-fit h-[calc(100vh-390px)] xs:pt-24 xs:pb-1 sm:py-0  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+                    id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+                    <button type="button"
+                        class="w-[16px] absolute left-[400px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
+                        id="asideToggleBtn">
+                        <img src="img/aside-arrow-left.svg">
+                    </button>
+                    <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
+                        <!--menu items-->
+                        <ul class="space-y-2">
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-setting.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-setting-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Course
+                                        Settings</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                                    aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+                                    <img src="img/district-menu-users.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-users.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[420px]">Manage
+                                        Users</span>
+                                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                                </button>
+                                <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-limit.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-limit-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                Limit Class Creation
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-newcomer.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-newcomer-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                View Newcomer Students
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-transfer.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-transfer-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                Transfer Students
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-upload.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-upload-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Upload
+                                        State Asessment Scores</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-license.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-license-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Manage
+                                        Licenses</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-information.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-information-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">District
+                                        Information</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+                <!--main section-->
+                <div class="ml-[400px] p-5 h-[calc(100vh-390px)] overflow-auto districtsettingsMain">
+                    <section><!--View Newcomer Students Table-->
+                        <div>
+                            <h1 class="text-3xl font-semibold ml-5 mt-5">View Newcomer Students</h1>
+                        </div>
+                        <div class="p-5 pb-0 flex justify-end">
+                            <div class="flex mr-4"><label class="mt-2">School</label>
+                                <select
+                                    class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                    <option>All</option>
+                                    <option>Select School</option>
+                                    <option>School 1</option>
+                                </select>
+                            </div>
+                            <div class="flex mr-4"><label class="mt-2">Teacher</label>
+                                <select
+                                    class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                    <option>All</option>
+                                    <option>Select Subject</option>
+                                    <option>Subject 1</option>
+                                </select>
+                            </div>
+                            <div class="flex mr-4"><label class="mt-2">Class</label>
+                                <select
+                                    class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                    <option>All</option>
+                                    <option>Select Subject</option>
+                                    <option>Subject 1</option>
+                                </select>
+                            </div><!--class-->
+                            <form>
+                                <label for="default-search" class="mb-2 text-sm font-medium sr-only">Search</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <button id="dropdown-search-button" data-dropdown-toggle="dropdownsearch">
+                                            <svg class="w-4 h-4 text-summit-gray-dark" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                            </svg></button>
+                                    </div>
+                                    <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                        class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
+                                        placeholder="Quick Search" required />
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="teacher-dashboard-table w-full mt-4 m-auto">
+                            <table class="summit-table-2024 w-full">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="flex justify-between"><span class="ml-2">School</span><button
+                                                    class="group">
+                                                    <img src="img/icon-arrange-white.png" class="h-6">
+                                                </button>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Class</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Subject</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Email</span>
+                                            </div>
+                                        </th>
+                                        <th><span>Limit User Create</span>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-summit-blue-secondary">
+                                                </div>
+                                            </label>
+
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="!font-normal">
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Accelerated Learning</td>
+                                        <td>
+                                            Accelerated Science - 5th</td>
+                                        <td>
+                                            accelerated science</td>
+                                        <td>
+                                            deborah.fry@summit12.com</td>
+                                        <td>
+                                            <label class="inline-flex items-center cursor-pointer">
+                                                <input type="checkbox" value="" class="sr-only peer" checked>
+                                                <div
+                                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary">
+                                                </div>
+                                            </label>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </section><!--end of Limit Class Creation Table-->
+                </div>
+            </section>
+        </main>
+        <footer class="text-xs block py-10 fixed bottom-0 w-full bg-white z-50 border-t border-gray-200">
+            <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> |
+                <a href="#" class="text-summit-blue-dark">Privacy Policy</a>
+            </p>
+            <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+                endorsed
+                by, or affiliated with the Texas Education Agency.</p>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

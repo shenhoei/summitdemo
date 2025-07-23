@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+            aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+          <div class="left-main-nav flex flex-col md:flex-row">
+            <!-- My support Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+              <span>Support</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My support Icon-->
+            <!-- My training Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+              <span>Training</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My training Icon-->
+            <!-- Home Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+              <span>Home</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Home Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+              <span>My Library</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+              <span>Vocabulary</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+
+
+            <!-- My Course Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+              <span>My Course</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My course Icon-->
+            <!-- Account Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+              id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+              <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+              <span>My Account</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+            <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+              <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                    Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                    Password</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                    Search</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                  all</a>
+              </div>
+            </div>
+
+            <!-- Account Icon-->
+          </div><!--end of leftmain-nav-->
+        </div>
+
+
+      </div>
+    </nav>
+    <section class="breadcrumb-title mt-[72px]">
+        <div class="w-full grid grid-cols-2 text-sm">
+            <div class="text-left py-4 px-8"><a href="#" class="text-summit-blue-primary hover:underline">Courses</a> / <a href="#" class="text-summit-blue-primary hover:underline">Dynamic Science - 5<sup>th</sup></a></div>
+            <div class="text-right py-4 px-8"><a href="#" class="hover:underline">Science Academy</a> | <a href="#" class="hover:underline">Raza Hasan Content</a></div>
+        </div>
+        <div class="w-full grid grid-cols-3 my-4">
+            <div class="px-8">
+            <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+              <span>Back</span>
+            </button>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-center">Settings</h1>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </div>  
+    </section>  
+    <!--main Section-->
+    <div class="flex w-full justify-center">
+        <div class="menu">
+          <nav class="flex items-center justify-between pt-4">
+            <button class="text-white font-semibold bg-summit-blue-primary rounded-t-lg py-2 px-4">
+              Course Settings
+          </button>
+            <button class="text-summit-gray-dark ml-2 font-semibold bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:bg-summit-blue-primary hover:text-white">
+                System Settings
+            </button>
+            </nav>
+        </div>
+        <!--end of tab-menu-->
+      </div>
+    <main class="h-auto bg-summit-gray-FA static px-5 pb-5">
+      <!--End of Top Section-->
+      <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke">
+        <section class="p-5 m-auto w-full">
+          <!--table assignments-->
+          <div class="my-7">
+            <div class="drop-shadow-md bg-white p-5 flex rounded-lg mb-3">
+                <div class="w-fit">
+                    <img src="img/small-icon-science.svg" class="w-[50px] h-[50px]">
+                </div>
+                <div class="ml-5 grow">
+                    <p class="leading-3"><span class="text-summit-blue-primary text-lg font-semibold">Individually Assign Items In The Concept Mastery Table</span><br />
+                        <span class="text-sm text-summit-gray-dark">This setting enables you to assign activities individually in the Concept Mastery Table. Any TEKS already assigned as a set cannot be altered</span>
+                    </p>
+                </div>
+                <div class="w-fit mt-3">
+                    <label class="inline-flex items-center cursor-pointer">
+                        <span class="ms-3 text-sm font-medium text-summit-gray-dark mr-2">Enabled</span>
+                        <input type="checkbox" value="" class="sr-only peer" checked>
+                        <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-summit-gray-light-gray-disabled after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-summit-gray-dark peer-checked:bg-summit-blue-primary"></div>
+                      </label>
+                </div>
+            </div><!--settings box-->            
+          </div>
+          <!--end of table-->
+
+        </section><!--end of Subscription Table-->
+      </div>
+  </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

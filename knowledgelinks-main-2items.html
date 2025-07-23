@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+        <div class="flex flex-wrap justify-between">
+          <img src="img/logo-summit.svg">
+        </div><!--summit Logo-->
+        <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+          <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+            Teaching and Learning</span>
+        </div>
+        <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <img src="img/nav-hamburger.svg">
+        </button>
+        </div>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+          <!--Summit Base Button-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-summit-base.svg" class="m-auto">
+            <span>My Summit Base</span>
+            <span class="sr-only">Expand</span>
+          </a>
+          <!--Summit Base Button-->
+
+          <!-- My Course Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-course.svg" class="m-auto">
+
+            <span>My Course</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+
+          <!-- My course Icon-->
+          <!-- Account Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] items-center summit-menu summit-student-menu text-center"
+            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+            <img src="img/nav-profile.svg" class="m-auto">
+            <span>My Account</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+          <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                  Profile</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                  Password</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                  Search</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                all</a>
+            </div>
+          </div>
+
+          <!-- Account Icon-->
+           </div>
+      </div>
+      </div>
+    </nav>
+    <div class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] ">
+      <div class="text-right p-4"><a href="#" class="text-white">Science Academny | Raza Hasan Content</a></div>
+      <h1 class="text-white font-bold text-[36px] text-center mb-8">My Summit Base</h1>
+      <div class="flex w-full justify-center">
+        <div class="menu">
+          <nav class="flex items-center justify-between pt-4">
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+              My PLP
+          </button>
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+                My Assignment
+            </button>
+            <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+                My Progress
+            </button>          
+            <button class="text-summit-blue-primary bg-summit-gray-FA rounded-t-lg py-2 px-4">
+               Knowledge Links<sup>TM</sup>
+            </button>
+        </nav>
+        </div>
+        <!--end of tab-menu-->
+      </div>
+    </div>
+<!--Student Title and Goat Section-->
+<div class="w-full relative h-[70px]">
+  <div class="w-[300px] justify-start p-4 absolute mt-[-60px]">
+    <img src="img/course-concept-boosters-biology.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+  </div>
+  <!--goat and box-->
+  <div class="flex w-full justify-end relative">
+    <div class="w-[108px] mt-[-135px] mr-10 absolute block">
+      <img src="img/summit-goat-normal-sm.png">
+    </div>
+  </div>
+  <!--end of Goat and Box-->
+</div>
+<!--End of Student Title and Goat Section-->
+<!--End of Student Top Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <div class="m-auto w-fit">
+            <img src="img/knowledgelinks-title-img.png" />
+      </div>
+      <div class="bg-summit-blue-light p-5 rounded-xl border border-solid border-summit-gray-stroke">
+      <section class="main-grid">
+        <!--filter-row-->
+        <div class="mb-4 justify-center grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 py-3 gap-3 xl:gap-4">
+            <a href="#" class="shadow-sm rounded-xl bg-white w-full block col-start-2"><!--knowledge Column-->
+                <div class="w-full overflow-hidden relative">
+                    <span class="rounded-lg bg-summit-blue-light text-summit-blue-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center font-semibold">New</span>
+                    <img src="img/knowledge-demo1.png" class="w-full"/>
+                </div>
+                <div class="flex justify-between py-5 px-3">
+                    <div class="text-lg font-bold">
+                        Animals
+                    </div>
+                    <button class="text-sm mt-1 hover:text-summit-blue-primary" data-popover-target="link-popover" data-popover-placement="left">See Progress</button>
+                    <div data-popover id="link-popover" role="tooltip"
+                          class="absolute z-10 invisible inline-block w-64 text-sm text-black transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 font-normal text-left">
+                          <div class="py-1 max-h-[400px] block relative overflow-auto">
+                            <ul>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold"><img src="img/plp-table-checkmark.svg" class="w-5 h-5 mr-2"></span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                              <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-red-primary">40%</span></li>
+                              <li class="flex justify-between p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>                             
+                              
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </a><!--End of Knowledge Column-->
+            <a href="#" class="shadow-sm rounded-xl bg-white w-full block"><!--knowledge Column-->
+              <div class="w-full overflow-hidden relative">
+                  <span class="rounded-lg bg-summit-table-yellow-bg text-summit-yellow-primary w-32 py-1 px-4 block absolute right-3 top-3 text-center font-semibold">In Progress</span>
+                  <img src="img/knowledge-demo1.png" class="w-full"/>
+              </div>
+              <div class="flex justify-between py-5 px-3">
+                  <div class="text-lg font-bold">
+                      Energy
+                  </div>
+                  <button class="text-sm mt-1 hover:text-summit-blue-primary" data-popover-target="link-popover2" data-popover-placement="left">See Progress</button>
+                  <div data-popover id="link-popover2" role="tooltip"
+                        class="absolute z-10 invisible inline-block w-64 text-sm text-black transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 font-normal text-left">
+                        <div class="py-1 max-h-[400px] block relative overflow-auto">
+                          <ul>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-yellow-primary">60%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold"><img src="img/plp-table-checkmark.svg" class="w-5 h-5 mr-2"></span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>
+                            <li class="flex justify-between border-b border-solid border-b-summit-gray-stroke p-2"><span class="block">1 - Unit Pre-test</span><span class="block font-semibold text-summit-red-primary">40%</span></li>
+                            <li class="flex justify-between p-2"><span class="block">2 - Unit Pre-test</span><span class="block font-semibold text-summit-green-primary">80%</span></li>                             
+                            
+                          </ul>
+                        </div>
+                  </div>
+              </div>
+          </a><!--End of Knowledge Column-->
+
+
+
+        </div>
+        <!--filter-row-->
+      </section>
+      <!--end of bottom of grid-->
+      </div><!--end of light blue section-->
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>

@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">     
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+        <!-- My support Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+          <span>Support</span>
+
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My support Icon-->
+        <!-- My training Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+          <span>Training</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My training Icon-->
+        <!-- Home Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+          <span>Home</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My Home Icon-->
+        <!-- My Library Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+          <span>My Library</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My Library Icon-->
+        <!-- My Library Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+          <span>Vocabulary</span>
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My Library Icon-->
+
+
+        <!-- My Course Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+          <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+          <span>My Course</span>
+
+          <span class="sr-only">Expand</span>
+        </a>
+
+        <!-- My course Icon-->
+        <!-- Account Icon-->
+        <a type="button" href="#"
+          class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+          id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+          <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+          <span>My Account</span>
+
+          <span class="sr-only">Expand</span>
+        </a>
+        <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+          <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                Profile</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                Password</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                Search</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+            </li>
+          </ul>
+          <div class="py-1">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+              all</a>
+          </div>
+        </div>
+
+        <!-- Account Icon-->
+            </div><!--end of leftmain-nav-->      
+        </div>            
+
+        
+      </div>
+    </nav>
+  <!--Teacher Top Section-->
+  <div
+    class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
+    <div class="mt-8 ml-5">
+      <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-left mb-8">Teacher Reports Dashboard</h1>
+    </div>
+    <div class="flex justify-end mt-4 mr-5">
+      <div class="">
+        <form class="max-w-sm mx-auto w-48">
+          <label for="countries" class="mb-2 text-sm text-white flex"><img src="img/icon-white-book.svg" /><span
+              class="ml-1">Class</span></label>
+          <select id="countries"
+            class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-summit-blue-primaryblock w-full p-2.5">
+            <option selected>Dynamic Science</option>
+            <option value="US">Dynamic Science 1</option>
+            <option value="CA">Dynamic Science 2</option>
+            <option value="FR">Dynamic Science 3</option>
+            <option value="DE">Dynamic Science 4</option>
+          </select>
+          <p class="text-white text-sm mt-1 font-bold">Elsa Ferry &bull; 5th Grade</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--End of Teacher Top Section-->
+  <!--MODAL Delete Quiz Events-->
+  <div id="default-modal-delete-quiz" tabindex="-1" aria-hidden="true"
+  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <div class="relative bg-summit-gray-FA rounded-lg shadow">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+        <button type="button"
+          class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+          data-modal-hide="default-modal-delete-quiz">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="py-2 px-4">
+        <div class="w-full">
+            <p class="font-bold text-2xl text-center mt-1 max-w-[400px] m-auto"><span>Are you sure you want to <br />Delete this Quiz Attempt?</span></p>
+            <p class="text-summit-red-primary my-2 text-center">(This can not be undone)</p>
+            <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Class:</strong> Dynamic Science</p>
+            <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Grade Level:</strong> 5</p>
+            <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Quiz:</strong> 4.6A Formative Assessment 2</p>
+            <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Sutdent Name:</strong> Nielsen, Mary</p>
+            <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Grade:</strong> <span class="bg-summit-green-table inline-block px-2 rounded-lg text-white">92%</span></p>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="p-5 pb-6 grid grid-cols-2 w-[400px] gap-2 m-auto">
+        <a data-modal-hide="default-modal" type="button" href="#"
+          class="block text-white bg-summit-blue-primary hover:bg-summit-blue-dark font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+          Delete Only</a> 
+        <a data-modal-hide="default-modal" type="button" href="#"
+          class="block text-white bg-summit-green-primary hover:bg-summit-green-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+          Delete and Reassign</a>   
+          <a data-modal-hide="default-modal" type="button" href="#"
+          class="block text-white bg-summit-gray-dark hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full col-span-2">
+          Cancel</a> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--END OF MODAL Delete Quiz-->
+
+
+
+  <!--main Section-->
+  <main class="h-auto bg-summit-gray-FA static p-5">
+    <!--End of Top Section-->
+    <div
+      class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-auto">
+      <aside
+        class="z-40 w-[400px] min-w-[400px] min-h-screen h-full transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+        id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+        <button type="button" class="w-[16px] absolute left-[399px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
+          id="asideToggleBtn">
+          <img src="img/aside-arrow-left.svg">
+        </button>
+        <div class="overflow-y-auto pb-5 px-0 h-full w-[400px] bg-white">
+          <!--Aside Title-->
+          <div class="flex flex-row bg-summit-blue-primary text-white">
+            <div class="flex-grow text-left whitespace-nowrap pl-5 py-4">
+              <span class="block text-2xl font-medium">Dynamic Science - 5th</span>
+            </div>
+            <button type="button" id="asideToggleBtn2"
+              class="text-3xl bg-summit-blue-dark px-5 font-medium text-left whitespace-nowrap">
+              <img src="img/aside-top-arrow.svg">
+            </button>
+          </div>
+          <!--menu items-->
+          <ul class="space-y-2 mt-3">
+            <li>
+              <a type="button" href="#"
+                class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                data-tooltip-target="tooltip-1" aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
+                <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+                <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Concept Mastery </span>
+                <div id="tooltip-1" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  Concept Mastery
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+              </a>
+
+              <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1"
+                    data-collapse-toggle="dropdown-cat1-inner1">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                      <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category
+                        #
+                        : </span>Matter and Energy
+                    </div>
+                    <div id="tooltip-2" role="tooltip"
+                      class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Category # : Matter and Energy
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6 pr-2" />
+
+                  </a>
+                  <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
+                    <li>
+                      <a href="#" data-tooltip-target="tooltip-3"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                          Lesson Guide Lesson Guide Lesson Guide</div>
+                      </a>
+                      <div id="tooltip-3" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category
+                        2
+                        : </span>Force, Motion and Energy
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat1-inner2" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light menu-active">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a type="button" href="#"
+                class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+                <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+                <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Vocabulary Mastery</span>
+                <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+              </a>
+              <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.5A
+                        : </span>Newton's First Law of Motion
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat2-inner0" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                      <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.6A
+                        : </span>Classification of Matter
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat2-inner" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.8A
+                        : </span>Another Category item
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat2-inner3" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.7A
+                        : </span>Balanced and Unbalanced Net Forces
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat2-inner2" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a type="button" href="#"
+                class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                aria-controls="dropdown-cat3" data-collapse-toggle="dropdown-cat3">
+                <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+                <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Usage Report</span>
+                <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+              </a>
+              <ul id="dropdown-cat3" class="hidden py-2 space-y-0">
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                      <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.5B
+                        : </span>Sub category 1
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat3-inner0" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                      <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
+                        : </span>Sub category 2
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat3-inner1" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                    aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
+                    <div
+                      class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    </div>
+                    <div class="pl-2 flex-1 truncate max-w-[304px]">
+                      <span
+                        class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.3A
+                        : </span>Sub category 3
+                    </div>
+                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                  </a>
+                  <ul id="dropdown-cat3-inner2" class="hidden space-y-0">
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                        <div
+                          class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        </div>
+                        <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a type="button" href="#"
+                class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+                <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[304px]">No Dropdown menu
+                  item</span>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!--end of Aside-->
+
+      
+      <section class="flex-grow" id="teacher-reports-content-arrange">
+        <div class="p-5 overflow-auto">
+          <div class="teacher-dashboard-table overflow-auto h-[500px]" id="summit-table-holder">
+            <table class="summit-table-2024 w-[4000px] sticky-header-row sticky-col" id="table-teacher-arrange">
+              <thead>
+                <tr>
+                  <th class="sticky-left-cell header" id="studentth">fqfqfqfqfq<span>Student</span><a href="#" class="block"><img src="img/table-arrange.svg" /></a></th>
+                  <th colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">5.6A</span>
+                    </div>
+                    <a href="#" class="block" class="table-sort-button"><img src="img/table-arrange.svg" /></a>
+                  </th>
+                  <th class="header" colspan="3"><span>5.6A</span></th>
+                  <th class="header" colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">4.6A</span>
+                    </div>
+                  </th>
+                  <th class="header" colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">4.6A</span>
+                    </div>
+                  </th>
+                  <th class="header" colspan="3">
+                    <div class="inline-flex"><img src="img/side-menu-rainbow-icon.svg" /><span class="ml-2">5.6A</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="sticky-left-cell">
+                    Francis, Janne</td>
+                   <td
+                    class="vb_red">
+                    20%
+                    <div class="item-delete"><a href="#" class="w-fit block m-auto" data-modal-target="default-modal-delete-quiz"
+                      data-modal-toggle="default-modal-delete-quiz"><img src="img/teacher-dashboard-delete.svg"></a></div>
+                  </td>
+                   <td
+                    class="vb_red">
+                    15%
+                    <div class="item-delete"><a href="#" class="w-fit block m-auto" data-modal-target="default-modal-delete-quiz"
+                      data-modal-toggle="default-modal-delete-quiz"><img src="img/teacher-dashboard-delete.svg"></a></div>
+                  </td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%
+                    <div class="item-delete"><a href="#" class="w-fit block m-auto" data-modal-target="default-modal-delete-quiz"
+                      data-modal-toggle="default-modal-delete-quiz"><img src="img/teacher-dashboard-delete.svg"></a></div>
+                  </td>
+                  <td
+                    class="vb_pink">
+                    67%
+                    <div class="item-delete"><a href="#" class="w-fit block m-auto" data-modal-target="default-modal-delete-quiz"
+                      data-modal-toggle="default-modal-delete-quiz"><img src="img/teacher-dashboard-delete.svg"></a></div>
+                  </td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                    
+                </tr>
+                <tr>
+                  <td class="sticky-left-cell">
+                    Huang, Cathleen</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                    
+                </tr>
+                <tr>
+                  <td class="sticky-left-cell">
+                    LastName, FirstName</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                    
+                </tr>
+                <tr>
+                  <td class="sticky-left-cell">
+                    LastName, FirstName</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                    
+                </tr>
+                <tr>
+                  <td class="sticky-left-cell">
+                    LastName, FirstName</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                    
+                </tr>
+                <tr>
+                  <td class="sticky-left-cell">
+                    LastName, FirstName</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    15%</td>
+                  <td
+                    class="vb_pink">
+                    67%</td>
+                   <td
+                    class="vb_red">
+                    0%</td>
+                  <td class="">&nbsp;</td>
+                   <td
+                    class="vb_red">
+                    20%</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td class="">&nbsp;</td>
+                  <td
+                    class="vb_green">
+                    100%</td>
+                    
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="w-full flex justify-end">
+            <button type="submit"
+              class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+              <img src="img/icon-button-download.svg" class="w-[18px] h-[18px] mr-2"><span>Download</span>
+            </button>
+          </div>
+
+
+           </div>
+      </section>
+    </div><!--end of light blue section-->
+
+  </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.32.0/js/jquery.tablesorter.min.js"></script>
+<script>
+   $(function() {
+  $("#table-teacher-arrange").tablesorter({ sortList: [[0,0], [1,1]] });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

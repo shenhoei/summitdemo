@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+    <div class="antialiased bg-gray-50 dark:bg-gray-900">
+        <main>
+            <!-- Sidebar -->
+            <section class="w-full h-[calc(100vh-273px)] bg-summit-blue-light">
+                <aside
+                    class="fixed left-0 z-40 w-[400px] max-w-[400px] min-w-fit h-[calc(100vh-390px)] xs:pt-24 xs:pb-1 sm:py-0  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+                    id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+                    <button type="button"
+                        class="w-[16px] absolute left-[400px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
+                        id="asideToggleBtn">
+                        <img src="img/aside-arrow-left.svg">
+                    </button>
+                    <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
+                        <!--menu items-->
+                        <ul class="space-y-2">
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-setting.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-setting-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Course
+                                        Settings</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+                                    aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+                                    <img src="img/district-menu-users.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-users.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[420px]">Manage
+                                        Users</span>
+                                    <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                                </button>
+                                <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-limit.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-limit-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                Limit Class Creation
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-newcomer.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-newcomer-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                View Newcomer Students
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button href="#"
+                                            class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                                            aria-controls="dropdown-cat2-inner0"
+                                            data-collapse-toggle="dropdown-cat2-inner0">
+                                            <img src="img/district-menu-transfer.png"
+                                                class="w-6 h-6 group-hover:opacity-0 absolute ml-10" />
+                                            <img src="img/district-menu-transfer-blue.png"
+                                                class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute ml-10" />
+                                            <div class="ml-20 text-left whitespace-nowrap truncate max-w-[410px] py-4">
+                                                Transfer Students
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-upload.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-upload-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Upload
+                                        State Asessment Scores</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-license.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-license-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">Manage
+                                        Licenses</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button"
+                                    class="flex items-center p-4 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+                                    <img src="img/district-menu-information.png"
+                                        class="w-6 h-6 group-hover:opacity-0 absolute" />
+                                    <img src="img/district-menu-information-blue.png"
+                                        class="w-6 h-6 opacity-0 group-hover:opacity-100 absolute" />
+
+                                    <span class="ml-8 text-left whitespace-nowrap truncate max-w-[410px]">District
+                                        Information</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+                <!--main section-->
+                <div class="ml-[400px] p-5 h-[calc(100vh-390px)] overflow-auto districtsettingsMain">
+                    <section><!--Manage Licenses-->
+
+                        <div class="pb-0 flex justify-between">
+                            <h1 class="text-xl font-semibold">Manage Licenses</h1>
+                            
+                            <div class="flex justify-end">
+                            <div class="flex">
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <button id="dropdown-search-button" data-dropdown-toggle="dropdownsearch">
+                                            <svg class="w-4 h-4 text-summit-gray-dark" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                            </svg></button>
+                                    </div>
+                                    <input type="search" id="default-search" data-dropdown-toggle="dropdownsearch"
+                                        class="block w-full px-4 py-2 ps-10 text-sm text-summit-gray-dark border border-summit-gray-stroke rounded-lg bg-white focus:ring-summit-blue-primary"
+                                        placeholder=" Search" required />
+
+                                    
+
+                                </div>
+                            </div>
+                            <button type="submit"
+                                            class="inline-flex items-center px-5 py-1.5 ml-3 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                                            <span>Sync Records</span>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="teacher-dashboard-table w-full mt-4 m-auto">
+                            <table class="summit-table-2024 w-full">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="flex justify-between"><span class="ml-2">Sales Force ID</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">District Names</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">School Names</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Subject</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Standard</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Product Modules</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Student Authorized</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Teacher Authorized</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Admin Licenses</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">Start Date</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">End Date</span>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="inline-flex"><span class="ml-2">End</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="!font-normal">
+                                    <tr>
+                                        <td>
+                                            a0eUI001034-GITY4U</td>
+                                        <td>
+                                            Eastland ISD</td>
+                                        <td>
+                                            Ward Elementary</td>
+                                        <td>
+                                            Connect to Literacy</td>
+                                        <td>
+                                            TX
+                                        </td>
+                                        <td>
+                                            Listening-Speaking
+                                        </td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td>
+                                            4/1/2024
+                                        </td>
+                                        <td>
+                                            5/1/2025
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            a0eUI001034-GITY4U</td>
+                                        <td>
+                                            Eastland ISD</td>
+                                        <td>
+                                            Ward Elementary</td>
+                                        <td>
+                                            Connect to Literacy</td>
+                                        <td>
+                                            TX
+                                        </td>
+                                        <td>
+                                            Listening-Speaking
+                                        </td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td>
+                                            4/1/2024
+                                        </td>
+                                        <td>
+                                            5/1/2025
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            a0eUI001034-GITY4U</td>
+                                        <td>
+                                            Eastland ISD</td>
+                                        <td>
+                                            Ward Elementary</td>
+                                        <td>
+                                            Connect to Literacy</td>
+                                        <td>
+                                            TX
+                                        </td>
+                                        <td>
+                                            Listening-Speaking
+                                        </td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td>
+                                            4/1/2024
+                                        </td>
+                                        <td>
+                                            5/1/2025
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            a0eUI001034-GITY4U</td>
+                                        <td>
+                                            Eastland ISD</td>
+                                        <td>
+                                            Ward Elementary</td>
+                                        <td>
+                                           Connect to Literacy</td>
+                                        <td>
+                                            TX
+                                        </td>
+                                        <td>
+                                            Listening-Speaking
+                                        </td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td>
+                                            4/1/2024
+                                        </td>
+                                        <td>
+                                            5/1/2025
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            a0eUI001034-GITY4U</td>
+                                        <td>
+                                            Eastland ISD</td>
+                                        <td>
+                                            Ward Elementary</td>
+                                        <td>
+                                            Connect to Literacy</td>
+                                        <td>
+                                            TX
+                                        </td>
+                                        <td>
+                                            Listening-Speaking
+                                        </td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td>
+                                            4/1/2024
+                                        </td>
+                                        <td>
+                                            5/1/2025
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            a0eUI001034-GITY4U</td>
+                                        <td>
+                                            Eastland ISD</td>
+                                        <td>
+                                            Ward Elementary</td>
+                                        <td>
+                                            Connect to Literacy</td>
+                                        <td>
+                                            TX
+                                        </td>
+                                        <td>
+                                            Listening-Speaking
+                                        </td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            -
+                                        </td>
+                                        <td>
+                                            4/1/2024
+                                        </td>
+                                        <td>
+                                            5/1/2025
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                    
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav class="mt-5 flex"><!--We don't have a new version of this pagination. If you prefer to use an older version thats also fine-->
+                            <ul class="flex items-center -space-x-px h-8 text-sm">
+                                <li>
+                                <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-summit-gray-dark bg-white border border-e-0 border-summit-gray-stroke rounded-s-lg hover:bg-summit-blue-light hover:text-summit-gray-dark">
+                                    <span class="sr-only">Previous</span>
+                                    <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                    </svg>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" class="flex items-center justify-center p-3 h-8 leading-tight text-summit-gray-dark bg-white border border-summit-gray-stroke hover:bg-summit-blue-light hover:text-summit-gray-dark">1</a>
+                                </li>
+                                <li>
+                                <a href="#" class="flex items-center justify-center p-3 h-8 leading-tight text-summit-gray-dark bg-white border border-summit-gray-stroke hover:bg-summit-blue-light hover:text-summit-gray-dark">2</a>
+                                </li>
+                                <li>
+                                <a href="#" aria-current="page" class="z-10 flex items-center justify-center p-3 h-8 leading-tight text-summit-blue-primary border border-summit-blue-table-header bg-summit-blue-table-odd hover:bg-summit-blue-light hover:text-summit-blue-primary dark:text-white">3</a>
+                                </li>
+                                <li>
+                                <a href="#" class="flex items-center justify-center p-3 h-8 leading-tight text-summit-gray-dark bg-white border border-summit-gray-stroke hover:bg-summit-blue-light hover:text-summit-gray-dark">4</a>
+                                </li>
+                                <li>
+                                <a href="#" class="flex items-center justify-center p-3 h-8 leading-tight text-summit-gray-dark bg-white border border-summit-gray-stroke hover:bg-summit-blue-light hover:text-summit-gray-dark">5</a>
+                                </li>
+                                <li>
+                                <a href="#" class="flex items-center justify-center p-3 h-8 leading-tight text-summit-gray-dark bg-white border border-summit-gray-stroke rounded-e-lg hover:bg-summit-blue-light hover:text-summit-gray-dark">
+                                    <span class="sr-only">Next</span>
+                                    <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                    </svg>
+                                </a>
+                                </li>
+                            </ul>
+                            <div class="flex ml-5">
+                                <span class="mt-1">Display</span>
+                                <select
+                                            class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2 ml-4">
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>40</option>
+                                    <option>50</option>
+                                </select>
+                                <span class="mt-1 ml-2">Results per Page</span>
+                            </div>
+                            </nav>
+                    </section><!--End Manage Licenses-->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

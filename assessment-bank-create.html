@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+            aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+          <div class="left-main-nav flex flex-col md:flex-row">
+            <!-- My support Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu !text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+              <span>Support</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My support Icon-->
+            <!-- My training Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+              <span>Training</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My training Icon-->
+            <!-- Home Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+              <span>Home</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Home Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+              <span>My Library</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+              <span>Vocabulary</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+
+
+            <!-- My Course Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+              <span>My Course</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My course Icon-->
+            <!-- Account Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+              id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+              <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+              <span>My Account</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+            <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+              <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                    Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                    Password</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                    Search</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                  all</a>
+              </div>
+            </div>
+
+            <!-- Account Icon-->
+          </div><!--end of leftmain-nav-->
+        </div>
+
+
+      </div>
+    </nav>
+    <section class="breadcrumb-title mt-[72px]">
+        <div class="w-full grid grid-cols-2 text-sm">
+            <div class="text-left py-4 px-8"><a href="#" class="text-summit-blue-primary hover:underline">Courses</a> / <a href="#" class="text-summit-blue-primary hover:underline">Dynamic Science - 5<sup>th</sup></a></div>
+            <div class="text-right py-4 px-8"><a href="#" class="hover:underline">Science Academy</a> | <a href="#" class="hover:underline">Raza Hasan Content</a></div>
+        </div>
+        <div class="w-full grid grid-cols-3 my-4">
+            <div class="px-8">
+            <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+              <span>Back</span>
+            </button>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-center text-summit-blue-primary">Create A Custom Assessment</h1>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </div>  
+    </section>  
+    
+    <!--main Section-->
+    <main class="h-auto bg-summit-gray-FA p-5 grid grid-cols-4 gap-4">
+        <aside class="bg-white rounded-xl border-solid border-summit-gray-stroke border">
+            <div class="w-full border-b border-summit-gray-stroke border-solid">
+                <div class="py-5 pl-5"><h2 class="font-bold text-xl lg:text-2xl">Configuration Settings</h2></div>
+            </div><!--end of Module top Section-->
+            <div class="px-5 pt-5">
+                <h3 class="font-bold text-lg my-4">Select Number of Questions</h3>
+                <div class="grid grid-cols-4 gap-2">
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg">05</a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg assign-selected">10</a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg">15</a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg">20</a>
+                </div>
+            </div>
+            <div class="px-5 pt-5">
+                <h3 class="font-bold text-lg mb-4">Select Question Type:</h3>
+                <div class="w3-full gap-y-2">
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between"><span>Multiselect</span><span>(7)</span></a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between assign-selected"><span>Multiple Choice</span><span>(199)</span></a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between"><span>Short Constructed Response</span><span>(11)</span></a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between"><span>Drag And Drop</span><span>(0)</span></a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between"><span>Hot Spot</span><span>(7)</span></a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between assign-selected"><span>Text Entry</span><span>(199)</span></a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md py-2 px-4 hover:bg-summit-table-green-bg w-full mb-2 flex justify-between"><span>Multipart</span><span>(11)</span></a>
+                </div>
+            </div>
+            <div class="px-5 pt-5">
+                <h3 class="font-bold text-lg mb-4">Select DOK Type:</h3>
+                <div class="grid grid-cols-4 gap-2">
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg font-bold">Level 1</a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg font-bold assign-selected">Level 2</a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg font-bold">Level 3</a>
+                    <a href="#" class="border border-summit-gray-stroke rounded-md text-center block py-2 hover:bg-summit-table-green-bg font-bold">Level 4</a>
+                </div>
+                <div class="border border-summit-red-primary bg-summit-red-primary-20 rounded-md py-2 px-4 w-full mb-2 flex justify-between text-summit-red-primary mt-2"><span>Please Select One Or More DOK Levels.</span><a href="#">x</a></div>
+            </div>
+            <div class="section-footer p-5 w-full border-t border-summit-gray-stroke border-solid m-auto grid grid-cols-2 gap-2">            
+                <button type="submit" class="px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-gray-dark rounded-lg hover:bg-summit-gray-stroke w-full block m-auto">
+                  <span>Reset</span>
+                </button>
+                <button type="submit" class="px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark w-full block m-auto">
+                    <span>Preview</span>
+                  </button>
+              </div><!--section-footer-->
+        </aside>
+
+        <section class="bg-white rounded-xl border-solid border-summit-gray-stroke border col-span-3">
+            <div class="w-full border-b border-summit-gray-stroke border-solid grid grid-cols-2">
+                <div class="py-5 pl-5"><h1 class="font-bold text-xl lg:text-2xl mt-2">Select Question From Preview</h1></div>
+                <div class="pt-4 pr-5 text-right flex justify-end">
+                    <button type="submit" class="px-5 py-2.5 h-[40px] text-sm font-medium text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark block ">
+                        <span>Question Review</span>
+                    </button>
+                </div>
+            </div><!--end of Module top Section-->
+
+            <section class="p-5">
+                <div class="assesment-pagination grid grid-cols-1 lg:grid-cols-2"><!--pagination-->
+                    <div class="flex">
+                        <nav class="isolate inline-flex shadow-sm max-h-[42px]">
+                            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-summit-blue-light px-2 py-2 text-sm border border-solid border-summit-gray-stroke rounded-l-md font-semibold text-summit-blue-primary">1</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">2</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">3</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">4</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">5</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke rounded-r-md">6</a>
+                        </nav>
+                        <div class="ml-5 font-semibold">
+                            <span class="ml-2">Display</span>
+                            <select class="p-2 rounded-md ml-2 border-summit-gray-stroke">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                                <option>50</option>
+                            </select>
+                            <span class="ml-2">Results Per Page.</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-end flex-col lg:flex-row">
+                        <span class="font-semibold mr-5 mt-2">0 out of 05 Question(s) Selected</span>
+                        <button type="submit" class="px-2 py-2.5 h-[40px] text-sm font-medium text-summit-blue-primary bg-summit-blue-light border-solid border border-summit-blue-primary rounded-lg hover:bg-summit-blue-dark hover:text-white block">
+                            <span>Random Questions</span>
+                        </button>
+                    </div>
+                </div><!-- end of Pagination-->
+                <div>
+                  <div class="assessment-bank-table w-full my-5 overflow-auto">
+                    <table class="summit-table-2024 w-full">
+                      <thead>
+                        <tr>
+                          <th><span>Select</span></th>
+                          <th><span>Question Type</span></th>
+                          <th><span>Question</span></th>
+                          <th><span>Preview</span></th>
+                          <th><span>DOK</span></th>
+                          <th><span>TEKS</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr class="table-green-selected">
+                          <td><input type="checkbox" checked /></td>
+                          <td>Hot Spot</td>
+                          <td class="text-left"><a href="#">Click on the image that shows an example of a balanced force.</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>Multiselect</td>
+                           <td class="text-left"><a href="#">Which of the following states of matter takes the shape of its container</a></td>
+                          <td><img src="img/table-eye.svg" /></td>
+                          <td>1</td>
+                          <td>TEKS:5.7A</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="assesment-pagination grid grid-cols-1"><!--pagination-->
+                    <div class="flex">
+                        <nav class="isolate inline-flex shadow-sm max-h-[42px]">
+                            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-summit-blue-light px-2 py-2 text-sm border border-solid border-summit-gray-stroke rounded-l-md font-semibold text-summit-blue-primary">&lt;</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">1</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">2</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">3</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">4</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">5</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">6</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">7</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">8</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">9</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke">10</a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 text-sm font-semibold hover:bg-gray-50 border border-solid border-summit-gray-stroke rounded-r-md">&gt;</a>
+                        </nav>
+                        <div class="ml-5 font-semibold">
+                            <span class="ml-2">Display</span>
+                            <select class="p-2 rounded-md ml-2 border-summit-gray-stroke">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                                <option>50</option>
+                            </select>
+                            <span class="ml-2">Results Per Page.</span>
+                        </div>
+                    </div><!--flex-->
+                </div><!-- end of Pagination-->
+
+            </section>
+
+            <section class="w-full"><!--empty Section-->
+                <div class="text-center align-middle py-20">
+                    <img src="img/big-icon-noquestions.svg" class="m-auto"/>
+                    <h1 class="font-bold text-3xl">No Questions Preview Available</h1>
+                    <p>Go to configuration and select the question number, question type and DOK level for the result</p>
+                </div>
+
+            </section><!--end of Empty Section-->
+
+        </section>
+    </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+        <div class="flex flex-wrap justify-between">
+          <img src="img/logo-summit.svg">
+        </div><!--summit Logo-->
+        <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+          <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+            Teaching and Learning</span>
+        </div>
+        <button data-collapse-toggle="navbar-summit" type="button" class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary" aria-controls="navbar-summit" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <img src="img/nav-hamburger.svg">
+        </button>
+        </div>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+        <div class="left-main-nav flex flex-col md:flex-row">
+          <!--Summit Base Button-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-summit-base.svg" class="m-auto">
+            <span>My Summit Base</span>
+            <span class="sr-only">Expand</span>
+          </a>
+          <!--Summit Base Button-->
+
+          <!-- My Course Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-student-menu text-center">
+            <img src="img/nav-course.svg" class="m-auto">
+
+            <span>My Course</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+
+          <!-- My course Icon-->
+          <!-- Account Icon-->
+          <a type="button" href="#"
+            class="p-2 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] items-center summit-menu summit-student-menu text-center"
+            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+            <img src="img/nav-profile.svg" class="m-auto">
+            <span>My Account</span>
+
+            <span class="sr-only">Expand</span>
+          </a>
+          <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                  Profile</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                  Password</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                  Search</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                all</a>
+            </div>
+          </div>
+
+          <!-- Account Icon-->
+           </div>
+      </div>
+      </div>
+    </nav>
+ <!--student Top Section-->
+ <div class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] ">
+  <div class="text-right p-4"><a href="#" class="text-white">Science Academny | Raza Hasan Content</a></div>
+  <h1 class="text-white font-bold text-[36px] text-center mb-8">My Summit Base</h1>
+  <div class="flex w-full justify-center">
+    <div class="menu">
+      <nav class="flex items-center justify-between pt-4">
+        <button class="text-summit-blue-primary bg-summit-gray-FA rounded-t-lg py-2 px-4">
+          My PLP
+      </button>
+        <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+            My Assignment
+        </button>
+        <button class="text-white rounded-t-lg py-2 px-4 hover:bg-summit-gray-FA hover:text-summit-blue-primary">
+            My Progress
+        </button>
+    </nav>
+    </div>
+    <!--end of tab-menu-->
+  </div>
+</div>
+<!--Student Title and Goat Section-->
+<div class="w-full relative h-[70px]">
+  <div class="w-[300px] justify-start p-4 absolute mt-[-60px]">
+    <img src="img/logo-literacy.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+  </div>
+  <!--goat and box-->
+  <div class="flex w-full justify-end relative">
+    <div class="bg-white rounded-lg p-2 inline-block max-h-[75px] w-[250px] absolute mr-32 mt-[-85px]" id="top-header-box">
+      <button type="button" class="absolute top-3 end-2.5 text-textcolor-main bg-transparent hover:bg-gray-200 hover:text-black rounded-lg text-sm w-5 h-5 ms-auto inline-flex justify-center items-center" data-modal-hide="popup-modal">
+        <img src="img/icon-close-x.svg" class="w-2 h-2" >
+        <span class="sr-only">Close modal</span>
+    </button>
+      <div class="w-full pt-1.5">
+        <strong>Welcome Back!</strong>
+        <p>You have 3 new Assignments</p>
+      </div>
+    </div>
+    <div class="w-[108px] mt-[-135px] mr-10 absolute block">
+      <img src="img/summit-goat-point-sm.png">
+    </div>
+  </div>
+  <!--end of Goat and Box-->
+</div>
+<!--End of Student Title and Goat Section-->
+<!--End of Student Top Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <!--End of Top Section-->
+      <div class="bg-summit-blue-light p-5 rounded-xl border border-solid border-summit-gray-stroke">
+      <section class="main-grid">
+        <!--Dashboard-top-->
+        <div class="flex flex-row space-x-2">
+            <!--leftmenu-->
+            <div class="basis-1/2 lg:basis-1/4">
+                <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+                    <div class="w-[90px] h-[90px]">
+                            <img src="img/hill-base-listening.svg" />
+                            
+                    </div>
+                        <div class="my-auto ml-5 text-left">
+                            <p class="text-2xl font-bold">Listening TREK</p>
+                            <p class="text-textcolor-light">PLP #2</p>
+                        </div>
+                </button>
+                <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+                    <div class="w-[90px] h-[90px]">
+                      <img src="img/hill-base-speaking.svg" />
+                    </div>
+                        <div class="my-auto ml-5 text-left">
+                            <p class="text-2xl font-bold">Speaking TREK</p>
+                            <p class="text-textcolor-light">PLP #2</p>
+                        </div>
+                </button>
+                <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+                    <div class="w-[90px] h-[90px]">
+                        <img src="img/hill-base-reading.svg" />
+                            
+                    </div>
+                        <div class="my-auto ml-5 text-left">
+                            <p class="text-2xl font-bold">Reading TREK</p>
+                            <p class="text-textcolor-light">PLP #2</p>
+                        </div>
+                </button>
+                <button class="inline-flex border border-summit-blue-primary w-full rounded-lg bg-white p-4 mb-4">
+                    <div class="w-[90px] h-[90px]">
+                      <img src="img/hill-base-writing.svg" />                       
+                    </div>
+                        <div class="my-auto ml-5 text-left">
+                            <p class="text-2xl font-bold">Writing TREK</p>
+                            <p class="text-textcolor-light">PLP #2</p>
+                        </div>
+                </button>
+                      
+            </div>
+            <!--end of leftmenu-->
+            <div class="basis-3/4">
+                <!--table assignments-->
+        <div class="mt-7 overflow-x-auto">
+          <section class="ml-2">
+            <img src="img/demo-mountain.jpg" class="m-auto">
+          </section>
+          <section class="ml-2 mt-5">
+            <img src="img/PLP-cert.jpg" class="m-auto">
+          </section>
+
+          <!--PLP Table-->
+          <section class="ml-4 my-10">
+            <!--BASE PLP Header-->
+            <div class="rounded-lg mb-4 bg-white shadow-md w-full flex border border-solid gray-85 px-5 py-4 justify-start">
+              <div class="flex mr-4">
+                <div class="w-[30px] h-[30px] mr-4">
+                  <img src="img/hill-base-listening-gray.svg" />
+                </div>
+                <p class="text-base font-bold leading-none text-summit-gray-dark mr-2 mt-2">PLP #1</p>
+              </div>
+              <div class="flex mr-4">
+                <div class="w-[30px] h-[30px] mr-4">
+                  <img src="img/hill-base-listening-gray.svg" />
+                </div>
+                <p class="text-base font-bold leading-none text-summit-gray-dark mr-2 mt-2">PLP #2</p>
+              </div>
+              <div class="flex mr-4">
+                <div class="w-[30px] h-[30px] mr-4">
+                  <img src="img/hill-base-listening.svg" />
+                </div>
+                <p class="text-base font-bold leading-none text-black mr-2 mt-2">PLP #3</p>
+              </div>
+                <a class="flex bg-summit-blue-primary-20 text-center rounded-full border border-solid border-summit-blue-primary px-2 py-0.5 text-sm font-medium w-fit" href="#">                
+                  <span class="font-bold mt-1">Check your progress</span>
+                  <div class="ml-2">
+                    <img src="img/icon-progress-check.png" class="w-auto h-[30px]" />
+                    </div>
+                </a>
+              </div>
+              <!--BASE PLP Header End-->
+            <!--BASE PLP Header-->
+            <div class="rounded-lg mb-4 bg-white shadow-md w-full flex border border-solid gray-85 px-5 py-4 justify-between">
+              <div class="flex">
+                <div class="w-[30px] h-[30px] mr-4">
+                  <img src="img/hill-base-listening.svg" />
+                </div>
+                <p class="text-base font-bold leading-none text-gray-700 mr-2 mt-2">PLP #1</p>
+              </div>
+                <a class="flex bg-summit-blue-primary-20 text-center rounded-full border border-solid border-summit-blue-primary px-2 py-0.5 text-sm font-medium w-fit" href="#">                
+                  <span class="font-bold mt-1">Check your progress</span>
+                  <div class="ml-2">
+                    <img src="img/icon-progress-check.png" class="w-auto h-[30px]" />
+                    </div>
+                </a>
+              </div>
+              <!--BASE PLP Header End-->
+
+            <table class="w-full whitespace-nowrap">
+                <thead>
+                  <tr>
+                    <th class="py-4 text-left pl-5">
+                      <span class="ml-2">Course Section</span>
+                    </th>
+                    <th class="py-4">
+                      <span class="ml-2">Assignment</span></th>
+                    <th class="py-4">
+                      <span class="ml-2">Status</span>
+                    </th>
+                    <th class="py-4"><button class="group">
+                      &nbsp;
+                     </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                        <div class="flex items-center">
+                          <div class="w-2 h-8 bg-summit-blue-primary rounded-r-lg block mr-4"></div>
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/hill-base-listening.svg" />
+                            </div>
+                            <p class="font-medium text-gray-700 w-[650px] truncate h-fit" data-popover-target="popover-top" data-popover-placement="top">
+                              Basics Present- Properties of Matter with long time Basics Present- Properties of Matter with long time Basics Present- Properties of Matter with long time 
+                            </p>
+                            <div data-popover id="popover-top" role="tooltip" class="absolute z-10 invisible inline-block w-fit text-sm text-black transition-opacity duration-300 bg-white border border-summit-gray-table-border rounded-lg shadow-sm opacity-0">
+                              <div class="px-3 py-2">
+                                  <p>Basics Present- Properties of Matter with long time Basics Present- Properties of Matter with long time Basics Present- Properties of Matter with long time </p>
+                              </div>
+                              <div data-popper-arrow></div>
+                          </div>
+                        </div>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Practice #1</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                          <div class="w-full">
+                            <div class="flex w-fit px-3 py-1 bg-summit-green-primary-20 text-center m-auto">
+                              <div class="w-[30px] h-[30px] mr-2">
+                              <img src="img/icon-green-lock.svg" />
+                            </div><span class="mt-0.5">Locked</span></div>
+                          </div>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <a href="#"
+                        class="items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark m-auto">
+                        <span>Start TREK</span>
+                      </a>
+                    </td>
+                  </tr>
+                    <tr class="h-3"></tr>
+                    <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center">
+                            <div class="w-2 h-8 bg-summit-gray-light-gray-disabled rounded-r-lg block mr-4"></div>
+                              <div class="w-[30px] h-[30px] mr-4">
+                                <img src="img/hill-base-listening.svg" />
+                              </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>Practice #1</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                            <div class="w-full">
+                              <div class="flex w-fit px-3 py-1 bg-summit-gray-light-gray-disabled text-center m-auto">
+                                <div class="w-[30px] h-[30px] mr-2">
+                                <img src="img/icon-grey-lock.svg" />
+                              </div><span class="mt-0.5">Locked</span></div>
+                            </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr class="h-3"></tr>
+                    <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center">
+                            <div class="w-2 h-8 bg-summit-gray-light-gray-disabled rounded-r-lg block mr-4"></div>
+                              <div class="w-[30px] h-[30px] mr-4">
+                                <img src="img/hill-base-listening.svg" />
+                              </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>Practice #1</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                            <div class="w-full">
+                              <div class="flex w-fit px-3 py-1 bg-summit-gray-light-gray-disabled text-center m-auto">
+                                <div class="w-[30px] h-[30px] mr-2">
+                                <img src="img/icon-grey-lock.svg" />
+                              </div><span class="mt-0.5">Locked</span></div>
+                            </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr class="h-3"></tr>
+                    <tr tabindex="0" class="drop-shadow-md">
+                      <td class="bg-white h-16 rounded-l-xl">
+                          <div class="flex items-center">
+                            <div class="w-2 h-8 bg-summit-gray-light-gray-disabled rounded-r-lg block mr-4"></div>
+                              <div class="w-[30px] h-[30px] mr-4">
+                                <img src="img/hill-base-listening.svg" />
+                              </div>
+                              <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                          </div>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                        <p>Practice #1</p>
+                      </td>
+                      <td class="pl-5 bg-white h-16 text-center">
+                            <div class="w-full">
+                              <div class="flex w-fit px-3 py-1 bg-summit-gray-light-gray-disabled text-center m-auto">
+                                <div class="w-[30px] h-[30px] mr-2">
+                                <img src="img/icon-grey-lock.svg" />
+                              </div><span class="mt-0.5">Locked</span></div>
+                            </div>
+                      </td>
+                      <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                        &nbsp;
+                      </td>
+                    </tr>
+                    <tr class="h-3"></tr>
+                </tbody>
+            </table>
+
+            <div class="my-10">
+                <a href="#" class="text-bold text-2xl flex m-auto w-fit">
+                  <span class="mr-4">Completed Assignments</span>
+                  <img src="img/nav-arrow-down.svg">
+                </a>
+            </div>
+
+
+            <!--Completed Assignment Table-->
+            <table class="w-full whitespace-nowrap">
+              <thead>
+                <tr>
+                  <th class="py-4 text-left pl-5">
+                    <span class="ml-2">Course Section</span>
+                  </th>
+                  <th class="py-4">
+                    <span class="ml-2">Assignment</span></th>
+                  <th class="py-4">
+                    <span class="ml-2">Submission Date</span>
+                  </th>
+                  <th class="py-4"><button class="group">
+                    Score
+                   </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr tabindex="0" class="drop-shadow-md">
+                  <td class="bg-white h-16 rounded-l-xl">
+                      <div class="flex items-center">
+                        <div class="w-2 h-8 bg-summit-blue-primary rounded-r-lg block mr-4"></div>
+                          <div class="w-[30px] h-[30px] mr-4">
+                            <img src="img/hill-base-listening.svg" />
+                          </div>
+                          <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                      </div>
+                  </td>
+                  <td class="pl-5 bg-white h-16 text-center">
+                      <p>Pronounciation Perfector<sup>TM</sup></p>
+                  </td>
+                  <td class="pl-5 bg-white h-16 text-center">
+                        <p>04/21/2024</p>
+                  </td>
+                  <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                    <span class="text-summit-pink-table font-bold">70%</span>
+                  </td>
+                </tr>
+                  <tr class="h-3"></tr>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                        <div class="flex items-center">
+                          <div class="w-2 h-8 bg-summit-blue-primary rounded-r-lg block mr-4"></div>
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/hill-base-listening.svg" />
+                            </div>
+                            <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                        </div>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Listening Assessment</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                          <p>04/21/2024</p>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <span class="text-summit-pink-table font-bold">60%</span>
+                    </td>
+                  </tr>
+                  <tr class="h-3"></tr>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                        <div class="flex items-center">
+                          <div class="w-2 h-8 bg-summit-blue-primary  rounded-r-lg block mr-4"></div>
+                            <div class="w-[30px] h-[30px] mr-4">
+                              <img src="img/hill-base-listening.svg" />
+                            </div>
+                            <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                        </div>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Practice #4</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>07/21/2024</p>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <img src="img/plp-table-checkmark.svg" class="m-auto">
+                    </td>
+                  </tr>
+                  <tr class="h-3"></tr>
+                  <tr tabindex="0" class="drop-shadow-md">
+                    <td class="bg-white h-16 rounded-l-xl">
+                      <div class="flex items-center">
+                        <div class="w-2 h-8 bg-summit-blue-primary  rounded-r-lg block mr-4"></div>
+                          <div class="w-[30px] h-[30px] mr-4">
+                            <img src="img/hill-base-listening.svg" />
+                          </div>
+                          <p class="text-base font-medium leading-none text-gray-700 mr-2">Basics Present- Properties of Matter</p>
+                      </div>
+                  </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>Practice #1</p>
+                    </td>
+                    <td class="pl-5 bg-white h-16 text-center">
+                      <p>06/21/2024</p>
+                    </td>
+                    <td class="pl-5 pr-5 bg-white text-center h-16 rounded-r-xl">
+                      <img src="img/plp-table-checkmark.svg" class="m-auto">
+                    </td>
+                  </tr>
+                  <tr class="h-3"></tr>
+              </tbody>
+          </table>
+
+          </section>
+        </div>
+        <!--end of table-->
+            </div>
+        </div>
+
+        </section>
+       <!--end of bottom of grid-->
+      </div><!--end of light blue section-->
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+    <div class="antialiased bg-gray-50">
+        <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+                    <div class="flex flex-wrap justify-between">
+                        <img src="img/logo-summit.svg">
+                    </div><!--summit Logo-->
+                    <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+                        <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas
+                            K-12<br />
+                            Teaching and Learning</span>
+                    </div>
+                    <button data-collapse-toggle="navbar-summit" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+                        aria-controls="navbar-summit" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <img src="img/nav-hamburger.svg">
+                    </button>
+                </div>
+
+                <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+                    <div class="left-main-nav flex flex-col md:flex-row">
+                        <!-- My support Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+                            <span>Support</span>
+
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My support Icon-->
+                        <!-- My training Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+                            <span>Training</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My training Icon-->
+                        <!-- Home Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+                            <span>Home</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My Home Icon-->
+                        <!-- My Library Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+                            <span>My Library</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My Library Icon-->
+                        <!-- My Library Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+                            <span>Vocabulary</span>
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My Library Icon-->
+
+
+                        <!-- My Course Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+                            <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+                            <span>My Course</span>
+
+                            <span class="sr-only">Expand</span>
+                        </a>
+
+                        <!-- My course Icon-->
+                        <!-- Account Icon-->
+                        <a type="button" href="#"
+                            class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+                            id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+                            <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+                            <span>My Account</span>
+
+                            <span class="sr-only">Expand</span>
+                        </a>
+                        <div id="actionsDropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                                        Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                                        Password</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                                        Search</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                                    all</a>
+                            </div>
+                        </div>
+
+                        <!-- Account Icon-->
+                    </div><!--end of leftmain-nav-->
+                </div>
+
+
+            </div>
+        </nav>
+        <!--Teacher Top Section-->
+        <div
+            class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-3 sm:gap-2">
+            <div class="">&nbsp;</div>
+            <div class="mt-8 ml-5">
+                <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-center">Class Roster</h1>
+                <p class="text-white text-center">TELPAS Readiness - 4th | Seaba, Hailey</p>
+            </div>
+            <div class="justify-end mt-1 mr-5">
+                <div class="text-right mt-2 mb-6 p-1"><a href="#" class="text-white">District ISD | nimrod</a></div>
+
+            </div>
+        </div>
+
+        <!--End of Teacher Top Section-->
+
+
+        <!--main Section-->
+        <main class="h-auto bg-summit-gray-FA static p-5">
+            <!--End of Top Section-->
+            <div class="flex w-full justify-between">
+                <div class="tab-left-menu px-8">
+                    <button type="submit"
+                        class="inline-flex items-center px-5 py-1.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                        <span>Back</span>
+                    </button>
+                </div>
+                <div class="menu">
+                    <nav class="flex items-center justify-between pt-4">
+                        <button class="bg-summit-blue-primary text-white rounded-t-lg py-2 px-4 mr-2">
+                            <span>K Unit 3</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 4</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 5</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 6</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 7</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 8</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 9</span>
+                        </button>
+                        <button
+                            class="text-summit-gray-dark bg-summit-gray-light-gray-disabled rounded-t-lg py-2 px-4 hover:text-summit-blue-primary mr-2">
+                            <span>K Unit 10</span>
+                        </button>
+
+                    </nav>
+                </div>
+                <!--end of tab-menu-->
+                <div class="tab-right-menu px-8">
+
+                </div>
+                <!--end of tab-menu-right-->
+            </div>
+
+            <div class=" bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke">
+                <section class="p-5 pt-0 m-auto w-full">
+                    <div class="teacher-dashboard-table w-full mt-4 m-auto">
+                        <table class="summit-table-2024 teacher-training-table w-full sticky-header-inside-table">
+                            <thead>
+                                <tr class="table-head">
+                                    <th>
+                                        Skill Strand
+                                    </th>
+                                    <th>
+
+                                        Summit K12
+
+                                    </th>
+                                    <th>
+                                        TEKS
+                                    </th>
+                                    <th>
+
+                                        Assign
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="accordion-header" data-key="section1">
+                                    <td rowspan="" colspan="100"
+                                        class="accordion-parent cursor-pointer  text-left !p-3 !static sticky-blue-header ">
+                                        <span class="parent-accordian-container flex items-center accordion-open"
+                                            data-key="course_Boy">
+                                            <svg class="w-4 h-4 mr-3 text-white accordion-icon" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"></path>
+                                            </svg>
+                                            Header Stuff
+
+                                        </span>
+
+                                    </td>
+                                </tr>
+                                <tr class="accordion-content section1">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/red_locked_ico.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section1">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section1">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section1">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section1">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/red_locked_ico.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-header" data-key="section2">
+                                    <td rowspan="" colspan="100"
+                                        class="accordion-parent cursor-pointer  text-left !p-3 !static sticky-blue-header ">
+                                        <span class="parent-accordian-container flex items-center accordion-open"
+                                            data-key="course_Boy">
+                                            <svg class="w-4 h-4 mr-3 text-white accordion-icon" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"></path>
+                                            </svg>
+                                            Header Stuff
+
+                                        </span>
+
+                                    </td>
+                                </tr>
+                                <tr class="accordion-content section2">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/red_locked_ico.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section2">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section2">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section2">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Decoding and Encoding > Set 1</td>
+                                    <td>K.2.B.ii, K.2.B.iii,K.2.C.i, </td>
+                                    <td><button><img src="img/red_locked_ico.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section2">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/red_locked_ico.svg"></button></td>
+                                </tr>
+                                <tr class="accordion-content section2">
+                                    <td>Sound /m/ Spelled 'm'</td>
+                                    <td>Phoenemic Awareness > Set 1 Mm</td>
+                                    <td>K.2.B.i</td>
+                                    <td><button><img src="img/green_locked_ico_v2.svg"></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+
+                </section>
+            </div>
+    </div><!--end of light blue section-->
+    <!--MODAL-->
+
+    <div id="default-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-blue-light rounded-lg shadow">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between px-4 md:p-5 rounded-t">
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        <img src="img/whatsnew-mainlogo.png" class="h-[60px]" />
+                    </div>
+                    <button type="button"
+                        class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
+                        data-modal-hide="default-modal">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14"
+                            class="w-3 h-3 hover:fill-white">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="w-full">
+                    <div class="w-fit m-auto">
+                        <h4 class="w-full m-auto text-center font-bold text-lg">Select Your product below to
+                            learn more!
+                        </h4>
+                    </div>
+                </div>
+                <div class="p-4 md:p-5 gap-4 grid grid-cols-3">
+                    <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                        href="#">
+                        <div class="rounded-full w-fit p-1 mx-auto">
+                            <img src="img/whatsnew-main_logo_dynamic_science.png" class="h-[60px] w-auto" />
+                        </div>
+                    </a>
+                    <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                        href="#">
+                        <div class="rounded-full w-fit p-1 mx-auto">
+                            <img src="img/whatsnew-c2l_telpas.png" class="h-[60px] w-auto" />
+                        </div>
+                    </a>
+                    <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                        href="#">
+                        <div class="rounded-full w-fit p-1 mx-auto">
+                            <img src="img/whatsnew-RLA_Mastery.png" class="h-[60px] w-auto" />
+                        </div>
+                    </a>
+                    <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                        href="#">
+                        <div class="rounded-full w-fit p-1 mx-auto">
+                            <img src="img/whatsnew-main_logo_dynamic_spanish_science.png" class="h-[60px] w-auto" />
+                        </div>
+                    </a>
+                    <div>&nbsp;</div>
+                    <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                        href="#">
+                        <div class="rounded-full w-fit p-1 mx-auto">
+                            <img src="img/whatsnew-SLAR.png" class="h-[60px] w-auto" />
+                        </div>
+                    </a>
+                </div>
+                <!-- Modal footer -->
+            </div>
+        </div>
+    </div>
+
+    <!--END OF MODAL-->
+
+    </main>
+    <footer class="text-xs block relative py-10">
+        <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> |
+            <a href="#" class="text-summit-blue-dark">Privacy Policy</a>
+        </p>
+        <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+            endorsed
+            by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".accordion-header").click(function () {
+            const key = $(this).data("key");
+            const icon = $(this).find(".accordion-icon");
+
+            // Toggle rows with the same key
+            $(".accordion-content." + key).slideToggle(200);
+
+            // Toggle icon rotation
+            icon.toggleClass("rotate-180");
+        });
+    });
+</script>
+
+
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+            aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+          <div class="left-main-nav flex flex-col md:flex-row">
+            <!-- My support Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+              <span>Support</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My support Icon-->
+            <!-- My training Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+              <span>Training</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My training Icon-->
+            <!-- Home Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+              <span>Home</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Home Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+              <span>My Library</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+              <span>Vocabulary</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+
+
+            <!-- My Course Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+              <span>My Course</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My course Icon-->
+            <!-- Account Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+              id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+              <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+              <span>My Account</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+            <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+              <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                    Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                    Password</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                    Search</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                  all</a>
+              </div>
+            </div>
+
+            <!-- Account Icon-->
+          </div><!--end of leftmain-nav-->
+        </div>
+
+
+      </div>
+    </nav>
+    <!--Teacher Top Section-->
+    <div
+      class="bg-gradient-to-b from-[#1C51E1] to-[#143BA4] relative mt-[72px] h-32 grid grid-cols-1 sm:grid-cols-3 sm:gap-2">
+      <div class="">&nbsp;</div>
+      <div class="mt-8 ml-5">
+        <h1 class="text-white font-bold text-[24px] lg:text-[36px] text-left mb-8">Teacher Dashboard</h1>
+      </div>
+      <div class="justify-end mt-1 mr-5">
+        <div class="text-right mt-2 mb-6 p-1"><a href="#" class="text-white">potato | nimrod</a></div>
+
+          <form>
+            <div class="w-full flex justify-end">
+            <label for="countries" class="mr-4 my-2 text-sm text-white"><span>Change Course:</span></label>
+            <select id="countries"
+              class="bg-white border border-summit-gray-table-border text-black text-sm rounded-lg focus:ring-summit-blue-primary w-fit p-2">
+              <option selected>Dynamic Science</option>
+              <option value="US">Dynamic Science 1</option>
+              <option value="CA">Dynamic Science 2</option>
+              <option value="FR">Dynamic Science 3</option>
+              <option value="DE">Dynamic Science 4</option>
+            </select>
+            </div>
+          </form>
+
+      </div>
+    </div>
+
+    <!--End of Teacher Top Section-->
+    <div class="w-full relative h-fit lg:h-[70px]">
+      <div class="w-[300px] justify-start p-4 relative lg:absolute m-auto lg:mt-[-60px]">
+        <img src="img/course-concept-boosters-biology.png" class="border-4 border-white border-solid rounded-lg align-baseline">
+      </div>
+    </div>
+
+    <!--main Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <!--End of Top Section-->
+      <div class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke">
+        <section class="p-5 m-auto w-full grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <!----------4 column version-------------->
+            <section
+              class="teacher-dashboard-left grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 colspan-1 sm:col-span-2">
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px]"
+                href="#">
+                <div class="rounded-full p-5 bg-summit-table-orange-bg w-fit mt-12 mx-auto">
+                  <img src="img/icon-teacher-top10.svg" class="w-[60px] h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">Top 10</p>
+              </a>
+              
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px]"
+                href="#">
+                <div class="rounded-full p-5 bg-summit-table-purple-bg w-fit mt-12 mx-auto">
+                  <img src="img/icon-teacher-reports.svg" class="w-[60px] h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">Reports</p>
+              </a>
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px] col-span-2"
+                href="#">
+                <div class="rounded-full p-5 bg-summit-table-lightblue-bg w-fit mt-12 mx-auto">
+                  <img src="img/icon-teacher-bookmark.svg" class="w-[60px] h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">My Courses</p>
+              </a>
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px]"
+                href="#">
+                <div class="rounded-full p-5 bg-summit-table-pink-bg w-fit mt-12 mx-auto">
+                  <img src="img/icon-teacher-studentdashboard.svg" class="w-[60px] h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">View Student Dashboard</p>
+              </a>
+              
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px]"
+                href="#">
+                <div class="rounded-full p-5 bg-summit-table-blue-bg w-fit mt-12 mx-auto">
+                  <img src="img/icon-teacher-books.svg" class="w-[60px] h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">Teacher Resources</p>
+              </a>
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px]"
+              href="#" data-modal-target="default-modal" data-modal-toggle="default-modal">
+                <div class="p-5 w-fit mt-12 mx-auto">
+                  <img src="img/whatsnew-mainlogo.png" class="h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">What's New</p>
+              </a>
+              <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary h-[250px]"
+                href="#">
+                <div class="rounded-full p-5 bg-summit-table-red-bg w-fit mt-12 mx-auto">
+                  <img src="img/icon-teacher-lifebouy.svg" class="w-[60px] h-[60px]" />
+                </div>
+                <p class="text-lg w-fit mt-8 mb-12 mx-auto">Support</p>
+              </a>
+            </section>
+
+            <!---end of 4 column second version-->
+            <section class="teacher-dashboard-right">
+              <div class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke h-full">
+                <div class="px-4 py-2 flex justify-between border-b border-solid border-summit-gray-table-border">
+                  <div class="flex">
+                    <div class="rounded-full p-2 bg-summit-blue-primary-10 w-fit text-xl font-bold"><img
+                        src="img/icon-teacher-liststar.svg" class="w-[26px] h-[26px] mx-auto" /></div>
+                    <h4 class="ml-2 mt-2 font-bold">Favorite Reports</h4>
+                  </div>
+                  <div>
+                    <img src="img/icon-teacher-envelop.svg" class="w-[26px] h-[26px] mt-2" />
+                  </div>
+                </div>
+                <!--section-top-->
+                <div class="overflow-auto p-4 h-[420px]">
+                  <div class="w-full mt-10">
+                    <div class="w-fit m-auto">
+                      <img src="img/fav-empty.png" />
+                    </div>
+                    <div>
+                      <h2 class="text-3xl font-bold text-black text-center mt-4">You don't have any Favorite Reports</h2>
+                      <p class="text-summit-gray-dark text-center mt-2">Go to Reports and click on the star icon to add to your favorite reports</p>
+                    </div>
+                  </div><!--Empty Favorites-->
+                </div>
+            </section>
+        </section>
+      </div>
+  </div><!--end of light blue section-->
+<!--MODAL-->
+
+<div id="default-modal" tabindex="-1" aria-hidden="true"
+  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <div class="relative bg-summit-blue-light rounded-lg shadow">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between px-4 md:p-5 rounded-t">
+        <div>
+        &nbsp;
+        </div>
+        <div>
+          <img src="img/whatsnew-mainlogo.png" class="h-[60px]" />
+        </div>
+        <button type="button"
+          class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
+          data-modal-hide="default-modal">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="w-full">
+        <div class="w-fit m-auto">
+          <h4 class="w-full m-auto text-center font-bold text-lg">Select Your product below to learn more! </h4>
+        </div>
+      </div>
+      <div class="p-4 md:p-5 gap-4 grid grid-cols-3">
+        <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+          href="#">
+          <div class="rounded-full w-fit p-1 mx-auto">
+            <img src="img/whatsnew-main_logo_dynamic_science.png" class="h-[60px] w-auto" />
+          </div>
+        </a>
+        <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+          href="#">
+          <div class="rounded-full w-fit p-1 mx-auto">
+            <img src="img/whatsnew-c2l_telpas.png" class="h-[60px] w-auto" />
+          </div>
+        </a>
+        <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+          href="#">
+          <div class="rounded-full w-fit p-1 mx-auto">
+            <img src="img/whatsnew-RLA_Mastery.png" class="h-[60px] w-auto" />
+          </div>
+        </a>
+        <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+          href="#">
+          <div class="rounded-full w-fit p-1 mx-auto">
+            <img src="img/whatsnew-main_logo_dynamic_spanish_science.png" class="h-[60px] w-auto" />
+          </div>
+        </a>
+        <div>&nbsp;</div>
+        <a class="bg-white rounded-xl drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+          href="#">
+          <div class="rounded-full w-fit p-1 mx-auto">
+            <img src="img/whatsnew-SLAR.png" class="h-[60px] w-auto" />
+          </div>
+        </a>
+      </div>
+      <!-- Modal footer -->
+    </div>
+  </div>
+</div>
+
+<!--END OF MODAL-->
+
+  </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

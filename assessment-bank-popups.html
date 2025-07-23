@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-between relative z-20 w-full md:w-fit xl:w-max sm:px-0 py-4">
+          <div class="flex flex-wrap justify-between">
+            <img src="img/logo-summit.svg">
+          </div><!--summit Logo-->
+          <div class="flex-wrap justify-between items-center ml-2 hidden xl:flex ">
+            <span class="font-extrabold leading-6 text-summit-blue-primary text-[25px]">Accelerating Texas K-12<br />
+              Teaching and Learning</span>
+          </div>
+          <button data-collapse-toggle="navbar-summit" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 text-sm rounded-lg md:hidden hover:bg-summit-gray-dark focus:outline-none focus:ring-2 focus:ring-summit-blue-primary"
+            aria-controls="navbar-summit" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/nav-hamburger.svg">
+          </button>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-summit">
+          <div class="left-main-nav flex flex-col md:flex-row">
+            <!-- My support Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-support.svg" class="mr-5 md:m-auto">
+
+              <span>Support</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My support Icon-->
+            <!-- My training Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-training.svg" class="mr-5 md:m-auto">
+              <span>Training</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My training Icon-->
+            <!-- Home Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-home.svg" class="mr-5 md:m-auto">
+              <span>Home</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Home Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-library.svg" class="mr-5 md:m-auto">
+              <span>My Library</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+            <!-- My Library Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-vocab.svg" class="mr-5 md:m-auto">
+              <span>Vocabulary</span>
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My Library Icon-->
+
+
+            <!-- My Course Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start">
+              <img src="img/nav-course.svg" class="mr-5 md:m-auto">
+
+              <span>My Course</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+
+            <!-- My course Icon-->
+            <!-- Account Icon-->
+            <a type="button" href="#"
+              class="p-2 md:px-0 lg:px-1 mr-1 text-black border-b-[3px] border-b-transparent hover:text-black hover:border-b-summit-blue-dark hover:border-b-[3px] summit-menu summit-teacher-menu text-center flex flex-row md:flex-col w-full md:w-fit 2xl:w-[110px] justify-start"
+              id="actionsDropdownButton" data-dropdown-toggle="actionsDropdown">
+              <img src="img/nav-profile.svg" class="mr-5 md:m-auto">
+              <span>My Account</span>
+
+              <span class="sr-only">Expand</span>
+            </a>
+            <div id="actionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
+              <ul class="py-1 text-sm text-gray-700" aria-labelledby="actionsDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit
+                    Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Change
+                    Password</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global
+                    Search</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                </li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete
+                  all</a>
+              </div>
+            </div>
+
+            <!-- Account Icon-->
+          </div><!--end of leftmain-nav-->
+        </div>
+
+
+      </div>
+    </nav>
+    <section class="breadcrumb-title mt-[72px]">
+        <div class="w-full grid grid-cols-2 text-sm">
+            <div class="text-left py-4 px-8"><a href="#" class="text-summit-blue-primary hover:underline">Courses</a> / <a href="#" class="text-summit-blue-primary hover:underline">Dynamic Science - 5<sup>th</sup></a></div>
+            <div class="text-right py-4 px-8"><a href="#" class="hover:underline">Science Academy</a> | <a href="#" class="hover:underline">Raza Hasan Content</a></div>
+        </div>
+        <div class="w-full grid grid-cols-3 my-4">
+            <div class="px-8">
+            <button type="submit" class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+              <span>Back</span>
+            </button>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-center text-summit-blue-primary">Create A Custom Assessment</h1>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </div>  
+    </section>  
+    
+    <!--main Section-->
+    <main class="h-auto bg-summit-gray-FA p-5">
+        <section class="bg-white rounded-xl border-solid border-summit-gray-stroke border w-full">
+
+
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-warning"
+                data-modal-toggle="default-modal-warning">Pop up warning button (delete after)</a>
+            </p>
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-select"
+                data-modal-toggle="default-modal-select">Pop up select button (delete after)</a>
+            </p>
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-delete-mixtures"
+              data-modal-toggle="default-modal-delete-mixtures">Pop up delete mixtures button (delete after)</a>
+            </p>
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-delete-record"
+              data-modal-toggle="default-modal-delete-record">Confirm Delete record (delete after)</a>
+            </p>
+            <p class="m-auto text-center"><a href="#" data-modal-target="default-modal-delete-quiz"
+              data-modal-toggle="default-modal-delete-quiz">Confirm Delete Quiz</a>
+            </p>
+        </section>
+
+        <!--MODAL Warning-->
+        <div id="default-modal-warning" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-warning">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="py-2 px-4">
+                <div class="w-full">
+                    <img src="img/popup-warning-icon.svg" class="m-auto" />
+                    <h2 class="font-bold text-xl text-center">Warning:  Configuration Settings</h2>
+                    <p class="mt-1 text-center m-auto max-w-[500px]">If you choose to reset, all your currently selected questions will be lost. Are you sure you want to proceed?</p>
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 w-full flex justify-center gap-2">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-dark hover:bg-summit-blue-dark font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Cancel</a> 
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-blue-primary hover:bg-summit-blue-dark font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Reset</a>   
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Warning-->
+
+        <!--MODAL Select-->
+        <div id="default-modal-select" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-5 rounded-t">
+                <span class="font-bold">Question Preview</span>
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-select">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="w-full">
+                <div class="ml-5">
+                    <img src="img/demo-sound-player.png" class="h-10"/>
+                </div>
+                <div class="w-fit">
+                  <h4 class="w-full font-bold text-left ml-5 mt-2">Click on the image that shows an example of a balanced force.</h4>
+                </div>
+              </div>
+              <div class="p-5 gap-4 pb-10 grid grid-cols-3">
+                <a class="bg-white drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                  href="#">
+                  <div class="py-1 px-2 absolute bg-white border border-solid border-summit-gray-stroke text-center font-bold text-summit-blue-primary">A.</div>
+                  <div class="rounded-full w-fit mx-auto">             
+                    <img src="img/demo-question-preview.png" class="w-[150px] h-auto" />
+                  </div>
+                </a>
+                <a class="bg-white drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary"
+                  href="#">
+                  <div class="py-1 px-2 absolute bg-white border border-solid border-summit-gray-stroke text-center font-bold text-summit-blue-primary">B.</div>
+                  <div class="rounded-full w-fit mx-auto">
+                    <img src="img/demo-question-preview.png" class="w-[150px] h-auto" />
+                  </div>
+                </a>
+                <a class="bg-white drop-shadow-md border border-solid border-summit-gray-stroke hover:border-summit-blue-primary "
+                  href="#">
+                  <div class="py-1 px-2 absolute bg-white border border-solid border-summit-gray-stroke text-center font-bold text-summit-blue-primary">C.</div>
+                  <div class="rounded-full w-fit mx-auto">
+                    <img src="img/demo-question-preview.png" class="w-[150px] h-auto" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Select-->
+        <!--MODAL Delete Record-->
+        <div id="default-modal-delete-record" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-delete-record">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="py-2 px-4">
+                <div class="w-full">
+                    <img src="img/assessment-delete-mixtures.svg" class="m-auto" />
+                    <h2 class="font-bold text-2xl text-center mt-4">Delete Record</h2>
+                    <p class="mt-4 text-center m-auto max-w-[500px]">You are about to delete "<strong>THIS RECORD</strong>" and this action cannot be undone</p>
+                    <p class="mt-4 text-center m-auto max-w-[500px]">Are you sure you want to proceed?</p>
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 w-full flex justify-center gap-2">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-dark hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Cancel</a> 
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-red-primary hover:bg-summit-red-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Reset</a>   
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Delete Mixtures-->
+
+        <!--MODAL Delete mixtures-->
+        <div id="default-modal-delete-mixtures" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-delete-mixtures">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="py-2 px-4">
+                <div class="w-full">
+                    <img src="img/assessment-delete-mixtures.svg" class="m-auto" />
+                    <h2 class="font-bold text-2xl text-center mt-4">Delete Mixtures</h2>
+                    <p class="mt-4 text-center m-auto max-w-[500px]">You are about to delete "<strong>Mixtures</strong>" and this action cannot be undone</p>
+                    <p class="mt-4 text-center m-auto max-w-[500px]">Are you sure you want to delete this assessment?</p>
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 w-full flex justify-center gap-2">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-dark hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Cancel</a> 
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-red-primary hover:bg-summit-red-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-36">
+                  Reset</a>   
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Delete Mixtures-->
+
+        <!--MODAL Delete Quiz Events-->
+        <div id="default-modal-delete-quiz" tabindex="-1" aria-hidden="true"
+          class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-summit-gray-FA rounded-lg shadow">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between px-4 md:p-1 rounded-t">
+                <button type="button"
+                  class="bg-transparent hover:bg-summit-blue-primary hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal-delete-quiz">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" class="w-3 h-3 hover:fill-white">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+              <!-- Modal body -->
+              <div class="py-2 px-4">
+                <div class="w-full">
+                    <p class="font-bold text-2xl text-center mt-1 max-w-[400px] m-auto"><span>Are you sure you want to <br />Delete this Quiz Attempt?</span></p>
+                    <p class="text-summit-red-primary my-2 text-center">(This can not be undone)</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Class:</strong> Dynamic Science</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Grade Level:</strong> 5</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Quiz:</strong> 4.6A Formative Assessment 2</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Sutdent Name:</strong> Nielsen, Mary</p>
+                    <p class="mt-4 text-center m-auto max-w-[400px]"><strong>Grade:</strong> <span class="bg-summit-green-table inline-block px-2 rounded-lg text-white">92%</span></p>
+                </div>
+              </div>
+              <!-- Modal footer -->
+              <div class="p-5 pb-6 grid grid-cols-2 w-[400px] gap-2 m-auto">
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-blue-primary hover:bg-summit-blue-dark font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+                  Delete Only</a> 
+                <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-green-primary hover:bg-summit-green-table font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full">
+                  Delete and Reassign</a>   
+                  <a data-modal-hide="default-modal" type="button" href="#"
+                  class="block text-white bg-summit-gray-dark hover:bg-summit-gray-disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full col-span-2">
+                  Cancel</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END OF MODAL Delete Quiz-->
+
+
+
+    </main>
+  <footer class="text-xs block relative py-10">
+    <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+        href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+    <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+      endorsed
+      by, or affiliated with the Texas Education Agency.</p>
+  </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

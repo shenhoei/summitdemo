@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+
+
+    <!--main Section-->
+    <main class="h-auto bg-summit-gray-FA static p-5">
+      <!--End of Top Section-->
+      <div
+        class="bg-summit-blue-light rounded-xl border border-solid border-summit-gray-stroke flex flex-row overflow-auto">
+
+
+
+        <section class="flex-grow" id="teacher-reports-content-arrange">
+          <div class="p-5 overflow-auto">
+            <div class="teacher-dashboard-table overflow-auto h-[500px]" id="summit-table-holder">
+              <table id="myTable" class="tablesorter">
+                <thead>
+                  <tr>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th>Due</th>
+                    <th>Web Site</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Smith</td>
+                    <td>John</td>
+                    <td>jsmith@gmail.com</td>
+                    <td>$50.00</td>
+                    <td>http://www.jsmith.com</td>
+                  </tr>
+                  <tr>
+                    <td>Bach</td>
+                    <td>Frank</td>
+                    <td>fbach@yahoo.com</td>
+                    <td>$50.00</td>
+                    <td>http://www.frank.com</td>
+                  </tr>
+                  <tr>
+                    <td>Doe</td>
+                    <td>Jason</td>
+                    <td>jdoe@hotmail.com</td>
+                    <td>$100.00</td>
+                    <td>http://www.jdoe.com</td>
+                  </tr>
+                  <tr>
+                    <td>Conway</td>
+                    <td>Tim</td>
+                    <td>tconway@earthlink.net</td>
+                    <td>$50.00</td>
+                    <td>http://www.timconway.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="w-full flex justify-end">
+              <button type="submit"
+                class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg hover:bg-summit-blue-dark">
+                <img src="img/icon-button-download.svg" class="w-[18px] h-[18px] mr-2"><span>Download</span>
+              </button>
+            </div>
+
+
+          </div>
+        </section>
+      </div><!--end of light blue section-->
+
+    </main>
+    <footer class="text-xs block relative py-10">
+      <p class="text-center mb-1">Copyright &copy; 2024 <a href="#" class="text-summit-blue-dark">Summit K12</a> | <a
+          href="#" class="text-summit-blue-dark">Privacy Policy</a></p>
+      <p class="text-center">STAAR® is a federally registered mark owned by TEA. Summit K12 is not sponsored by,
+        endorsed
+        by, or affiliated with the Texas Education Agency.</p>
+    </footer>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.32.0/js/jquery.tablesorter.min.js"></script>
+<script>
+  $(function () {
+    $("#myTable").tablesorter();
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>

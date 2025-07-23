@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-50">
+  <div class="antialiased bg-gray-50">
+    <!--assign course popup-->
+    <div id="assign-course-modal" tabindex="-1" aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[200] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full tailwind-popup">
+      <div
+        class="relative p-4 w-full max-w-2xl max-h-full min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1200px]">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal header -->
+          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+            <div>
+              <h3 class="text-xl font-semibold text-black">
+                Assign to Students
+              </h3>
+              <h6 class="text-summit-blue-primary">Dynamic Science - 6th - 6.6A: Classification of matter</h6>
+            </div>
+            <button type="button"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-black rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+              data-modal-hide="assign-course-modal">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <form>
+            <div class="p-4 md:p-5 space-y-4">
+              <div class="w-full border border-solid border-summit-gray-stroke rounded-md">
+                
+                <div class="w-full"><!--pop-up-body-->
+
+                    <div class="bg-summit-blue-light px-5 py-3 grid grid-cols-4 justify-items-end">
+                      <div class="col-span-2 text-left w-full">
+                        <h3 class="font-semibold mt-1">Select which student(s) you wish to assign</h3>
+                      </div>
+                      <div class="relative col-span-2 w-[300px]">
+                        <form>
+                          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-summit-gray-disabled " aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                          </div>
+                          <input type="search" id="default-search"
+                            class="block w-full p-2 ps-10 text-xs text-gray-900 border border-summit-gray-stroke rounded-lg bg-gray-50 focus:ring-black focus:border-black"
+                            placeholder="Search Students" required />
+                        </form>
+                      </div>
+
+                    </div>
+                    <!--start of inner-table-->
+                    <div class=" h-[300px] max-h-[300px] overflow-auto">
+                      <table class="w-full text-xs text-left rtl:text-right text-black ">
+                        <thead class="text-xs text-gray-700 uppercase bg-white">
+                          <tr>
+                            <th scope="col" class="p-3">
+                              <div class="flex items-center">
+                                <input id="checkbox-all-search" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                              </div>
+                            </th>
+                            <th scope="col" class="px-3 py-3">
+                              <div class="flex">
+                                <div class="w-[15px] h-[15px]">
+                                  <button class="bg-none border-none">
+                                  <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.03055 12.9695C8.10029 13.0391 8.15561 13.1218 8.19335 13.2129C8.23109 13.3039 8.25052 13.4015 8.25052 13.5001C8.25052 13.5987 8.23109 13.6963 8.19335 13.7873C8.15561 13.8784 8.10029 13.9611 8.03055 14.0307L5.03055 17.0307C4.9609 17.1005 4.87818 17.1558 4.78713 17.1935C4.69609 17.2313 4.59849 17.2507 4.49993 17.2507C4.40137 17.2507 4.30377 17.2313 4.21272 17.1935C4.12167 17.1558 4.03896 17.1005 3.9693 17.0307L0.969304 14.0307C0.899621 13.961 0.844346 13.8783 0.806634 13.7873C0.768922 13.6962 0.749512 13.5986 0.749512 13.5001C0.749512 13.4016 0.768922 13.304 0.806634 13.2129C0.844346 13.1219 0.899621 13.0392 0.969304 12.9695C1.11003 12.8287 1.30091 12.7497 1.49993 12.7497C1.59847 12.7497 1.69606 12.7691 1.7871 12.8068C1.87815 12.8445 1.96087 12.8998 2.03055 12.9695L3.74993 14.6898V1.5001C3.74993 1.30119 3.82895 1.11042 3.9696 0.969772C4.11025 0.82912 4.30102 0.750102 4.49993 0.750102C4.69884 0.750102 4.88961 0.82912 5.03026 0.969772C5.17091 1.11042 5.24993 1.30119 5.24993 1.5001V14.6898L6.9693 12.9695C7.03896 12.8997 7.12167 12.8444 7.21272 12.8067C7.30377 12.7689 7.40137 12.7495 7.49993 12.7495C7.59849 12.7495 7.69609 12.7689 7.78713 12.8067C7.87818 12.8444 7.9609 12.8997 8.03055 12.9695ZM17.0306 3.96948L14.0306 0.969477C13.9609 0.899744 13.8782 0.844425 13.7871 0.806682C13.6961 0.768939 13.5985 0.749512 13.4999 0.749512C13.4014 0.749512 13.3038 0.768939 13.2127 0.806682C13.1217 0.844425 13.039 0.899744 12.9693 0.969477L9.9693 3.96948C9.82857 4.11021 9.74951 4.30108 9.74951 4.5001C9.74951 4.69912 9.82857 4.89 9.9693 5.03073C10.11 5.17146 10.3009 5.25052 10.4999 5.25052C10.699 5.25052 10.8898 5.17146 11.0306 5.03073L12.7499 3.31041V16.5001C12.7499 16.699 12.8289 16.8898 12.9696 17.0304C13.1103 17.1711 13.301 17.2501 13.4999 17.2501C13.6988 17.2501 13.8896 17.1711 14.0303 17.0304C14.1709 16.8898 14.2499 16.699 14.2499 16.5001V3.31041L15.9693 5.03073C16.11 5.17146 16.3009 5.25052 16.4999 5.25052C16.699 5.25052 16.8898 5.17146 17.0306 5.03073C17.1713 4.89 17.2503 4.69912 17.2503 4.5001C17.2503 4.30108 17.1713 4.11021 17.0306 3.96948Z" fill="black"/>
+                                  </svg>
+                                  </button> 
+                                </div>                               
+                                <div class="ml-2">All Students</div>
+                              </div>
+                            </th>
+                            <th scope="col" class="px-3 py-3">
+                              <div class="flex">
+                                <div class="w-[15px] h-[15px]">
+                                  <button>
+                                  <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.03055 12.9695C8.10029 13.0391 8.15561 13.1218 8.19335 13.2129C8.23109 13.3039 8.25052 13.4015 8.25052 13.5001C8.25052 13.5987 8.23109 13.6963 8.19335 13.7873C8.15561 13.8784 8.10029 13.9611 8.03055 14.0307L5.03055 17.0307C4.9609 17.1005 4.87818 17.1558 4.78713 17.1935C4.69609 17.2313 4.59849 17.2507 4.49993 17.2507C4.40137 17.2507 4.30377 17.2313 4.21272 17.1935C4.12167 17.1558 4.03896 17.1005 3.9693 17.0307L0.969304 14.0307C0.899621 13.961 0.844346 13.8783 0.806634 13.7873C0.768922 13.6962 0.749512 13.5986 0.749512 13.5001C0.749512 13.4016 0.768922 13.304 0.806634 13.2129C0.844346 13.1219 0.899621 13.0392 0.969304 12.9695C1.11003 12.8287 1.30091 12.7497 1.49993 12.7497C1.59847 12.7497 1.69606 12.7691 1.7871 12.8068C1.87815 12.8445 1.96087 12.8998 2.03055 12.9695L3.74993 14.6898V1.5001C3.74993 1.30119 3.82895 1.11042 3.9696 0.969772C4.11025 0.82912 4.30102 0.750102 4.49993 0.750102C4.69884 0.750102 4.88961 0.82912 5.03026 0.969772C5.17091 1.11042 5.24993 1.30119 5.24993 1.5001V14.6898L6.9693 12.9695C7.03896 12.8997 7.12167 12.8444 7.21272 12.8067C7.30377 12.7689 7.40137 12.7495 7.49993 12.7495C7.59849 12.7495 7.69609 12.7689 7.78713 12.8067C7.87818 12.8444 7.9609 12.8997 8.03055 12.9695ZM17.0306 3.96948L14.0306 0.969477C13.9609 0.899744 13.8782 0.844425 13.7871 0.806682C13.6961 0.768939 13.5985 0.749512 13.4999 0.749512C13.4014 0.749512 13.3038 0.768939 13.2127 0.806682C13.1217 0.844425 13.039 0.899744 12.9693 0.969477L9.9693 3.96948C9.82857 4.11021 9.74951 4.30108 9.74951 4.5001C9.74951 4.69912 9.82857 4.89 9.9693 5.03073C10.11 5.17146 10.3009 5.25052 10.4999 5.25052C10.699 5.25052 10.8898 5.17146 11.0306 5.03073L12.7499 3.31041V16.5001C12.7499 16.699 12.8289 16.8898 12.9696 17.0304C13.1103 17.1711 13.301 17.2501 13.4999 17.2501C13.6988 17.2501 13.8896 17.1711 14.0303 17.0304C14.1709 16.8898 14.2499 16.699 14.2499 16.5001V3.31041L15.9693 5.03073C16.11 5.17146 16.3009 5.25052 16.4999 5.25052C16.699 5.25052 16.8898 5.17146 17.0306 5.03073C17.1713 4.89 17.2503 4.69912 17.2503 4.5001C17.2503 4.30108 17.1713 4.11021 17.0306 3.96948Z" fill="black"/>
+                                  </svg>
+                                  </button> 
+                                </div>                               
+                                <div class="ml-2">End Date &amp; Time</div>
+                              </div>
+                            </th>
+                            <th scope="col" class="px-3 py-3">
+                              <div class="flex">
+                                <div class="w-[15px] h-[15px]">
+                                  <button>
+                                  <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.03055 12.9695C8.10029 13.0391 8.15561 13.1218 8.19335 13.2129C8.23109 13.3039 8.25052 13.4015 8.25052 13.5001C8.25052 13.5987 8.23109 13.6963 8.19335 13.7873C8.15561 13.8784 8.10029 13.9611 8.03055 14.0307L5.03055 17.0307C4.9609 17.1005 4.87818 17.1558 4.78713 17.1935C4.69609 17.2313 4.59849 17.2507 4.49993 17.2507C4.40137 17.2507 4.30377 17.2313 4.21272 17.1935C4.12167 17.1558 4.03896 17.1005 3.9693 17.0307L0.969304 14.0307C0.899621 13.961 0.844346 13.8783 0.806634 13.7873C0.768922 13.6962 0.749512 13.5986 0.749512 13.5001C0.749512 13.4016 0.768922 13.304 0.806634 13.2129C0.844346 13.1219 0.899621 13.0392 0.969304 12.9695C1.11003 12.8287 1.30091 12.7497 1.49993 12.7497C1.59847 12.7497 1.69606 12.7691 1.7871 12.8068C1.87815 12.8445 1.96087 12.8998 2.03055 12.9695L3.74993 14.6898V1.5001C3.74993 1.30119 3.82895 1.11042 3.9696 0.969772C4.11025 0.82912 4.30102 0.750102 4.49993 0.750102C4.69884 0.750102 4.88961 0.82912 5.03026 0.969772C5.17091 1.11042 5.24993 1.30119 5.24993 1.5001V14.6898L6.9693 12.9695C7.03896 12.8997 7.12167 12.8444 7.21272 12.8067C7.30377 12.7689 7.40137 12.7495 7.49993 12.7495C7.59849 12.7495 7.69609 12.7689 7.78713 12.8067C7.87818 12.8444 7.9609 12.8997 8.03055 12.9695ZM17.0306 3.96948L14.0306 0.969477C13.9609 0.899744 13.8782 0.844425 13.7871 0.806682C13.6961 0.768939 13.5985 0.749512 13.4999 0.749512C13.4014 0.749512 13.3038 0.768939 13.2127 0.806682C13.1217 0.844425 13.039 0.899744 12.9693 0.969477L9.9693 3.96948C9.82857 4.11021 9.74951 4.30108 9.74951 4.5001C9.74951 4.69912 9.82857 4.89 9.9693 5.03073C10.11 5.17146 10.3009 5.25052 10.4999 5.25052C10.699 5.25052 10.8898 5.17146 11.0306 5.03073L12.7499 3.31041V16.5001C12.7499 16.699 12.8289 16.8898 12.9696 17.0304C13.1103 17.1711 13.301 17.2501 13.4999 17.2501C13.6988 17.2501 13.8896 17.1711 14.0303 17.0304C14.1709 16.8898 14.2499 16.699 14.2499 16.5001V3.31041L15.9693 5.03073C16.11 5.17146 16.3009 5.25052 16.4999 5.25052C16.699 5.25052 16.8898 5.17146 17.0306 5.03073C17.1713 4.89 17.2503 4.69912 17.2503 4.5001C17.2503 4.30108 17.1713 4.11021 17.0306 3.96948Z" fill="black"/>
+                                  </svg>
+                                  </button> 
+                                </div>                               
+                                <div class="ml-2">Due Date &amp; Time</div>
+                              </div>
+                            </th>
+                            <th scope="col" class="px-3 py-1">
+                              <div class="flex">
+                                <div class="w-[15px] h-[15px]">
+                                  <button>
+                                  <svg width="15" height="15" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.03055 12.9695C8.10029 13.0391 8.15561 13.1218 8.19335 13.2129C8.23109 13.3039 8.25052 13.4015 8.25052 13.5001C8.25052 13.5987 8.23109 13.6963 8.19335 13.7873C8.15561 13.8784 8.10029 13.9611 8.03055 14.0307L5.03055 17.0307C4.9609 17.1005 4.87818 17.1558 4.78713 17.1935C4.69609 17.2313 4.59849 17.2507 4.49993 17.2507C4.40137 17.2507 4.30377 17.2313 4.21272 17.1935C4.12167 17.1558 4.03896 17.1005 3.9693 17.0307L0.969304 14.0307C0.899621 13.961 0.844346 13.8783 0.806634 13.7873C0.768922 13.6962 0.749512 13.5986 0.749512 13.5001C0.749512 13.4016 0.768922 13.304 0.806634 13.2129C0.844346 13.1219 0.899621 13.0392 0.969304 12.9695C1.11003 12.8287 1.30091 12.7497 1.49993 12.7497C1.59847 12.7497 1.69606 12.7691 1.7871 12.8068C1.87815 12.8445 1.96087 12.8998 2.03055 12.9695L3.74993 14.6898V1.5001C3.74993 1.30119 3.82895 1.11042 3.9696 0.969772C4.11025 0.82912 4.30102 0.750102 4.49993 0.750102C4.69884 0.750102 4.88961 0.82912 5.03026 0.969772C5.17091 1.11042 5.24993 1.30119 5.24993 1.5001V14.6898L6.9693 12.9695C7.03896 12.8997 7.12167 12.8444 7.21272 12.8067C7.30377 12.7689 7.40137 12.7495 7.49993 12.7495C7.59849 12.7495 7.69609 12.7689 7.78713 12.8067C7.87818 12.8444 7.9609 12.8997 8.03055 12.9695ZM17.0306 3.96948L14.0306 0.969477C13.9609 0.899744 13.8782 0.844425 13.7871 0.806682C13.6961 0.768939 13.5985 0.749512 13.4999 0.749512C13.4014 0.749512 13.3038 0.768939 13.2127 0.806682C13.1217 0.844425 13.039 0.899744 12.9693 0.969477L9.9693 3.96948C9.82857 4.11021 9.74951 4.30108 9.74951 4.5001C9.74951 4.69912 9.82857 4.89 9.9693 5.03073C10.11 5.17146 10.3009 5.25052 10.4999 5.25052C10.699 5.25052 10.8898 5.17146 11.0306 5.03073L12.7499 3.31041V16.5001C12.7499 16.699 12.8289 16.8898 12.9696 17.0304C13.1103 17.1711 13.301 17.2501 13.4999 17.2501C13.6988 17.2501 13.8896 17.1711 14.0303 17.0304C14.1709 16.8898 14.2499 16.699 14.2499 16.5001V3.31041L15.9693 5.03073C16.11 5.17146 16.3009 5.25052 16.4999 5.25052C16.699 5.25052 16.8898 5.17146 17.0306 5.03073C17.1713 4.89 17.2503 4.69912 17.2503 4.5001C17.2503 4.30108 17.1713 4.11021 17.0306 3.96948Z" fill="black"/>
+                                  </svg>
+                                  </button> 
+                                </div>                               
+                                <div class="ml-2">Close Date &amp; Time</div>
+                              </div>
+                            </th>
+                            <th scope="col" class="px-3 py-1">
+                                <div class="w-[15px] h-[15px]">
+                                  <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.2" d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25H18.75Z" fill="#C7C7C7"/>
+                                      <path d="M20.25 4.5H16.5V3.75C16.5 3.15326 16.2629 2.58097 15.841 2.15901C15.419 1.73705 14.8467 1.5 14.25 1.5H9.75C9.15326 1.5 8.58097 1.73705 8.15901 2.15901C7.73705 2.58097 7.5 3.15326 7.5 3.75V4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM9 3.75C9 3.55109 9.07902 3.36032 9.21967 3.21967C9.36032 3.07902 9.55109 3 9.75 3H14.25C14.4489 3 14.6397 3.07902 14.7803 3.21967C14.921 3.36032 15 3.55109 15 3.75V4.5H9V3.75ZM18 19.5H6V6H18V19.5ZM10.5 9.75V15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94891 16.5 9.75 16.5C9.55109 16.5 9.36032 16.421 9.21967 16.2803C9.07902 16.1397 9 15.9489 9 15.75V9.75C9 9.55109 9.07902 9.36032 9.21967 9.21967C9.36032 9.07902 9.55109 9 9.75 9C9.94891 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75ZM15 9.75V15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75Z" fill="#C7C7C7"/>
+                                      </svg>
+                                                                        
+                                  </button> 
+                                </div>                               
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr class="bg-summit-blue-light hover:bg-gray-50">
+                            <td class="w-4 p-3 border-solid border border-summit-gray-stroke">
+                              <div class="flex items-center">
+                                <input id="checkbox-table-search-1" type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-summit-gray-stroke rounded focus:ring-summit-blue-dark">
+                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                              </div>
+                            </td>
+                            <td scope="row"
+                              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-solid border border-summit-gray-stroke">
+                              LastName, FirstName
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                            <td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td><td class="px-3 py-1 border-solid border border-summit-gray-stroke">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!--end of inntertable-->
+                    <!--table-footer-selectors-->
+                    <table class="w-full text-xs text-left rtl:text-right text-black ">
+                      <thead class="text-xs text-gray-700 uppercase bg-white">
+                        <tr>
+                        <th class="bg-summit-gray-FA p-3 border-r border-summit-gray-stroke" colspan="2">
+                          <h2 class="font-semi-bold">Select Date &amp; Time</h2>
+                        </th>
+                        <th class="bg-summit-gray-FA p-3">
+                          <h2 class="font-semi-bold">Change Close Date &amp; Time</h2>
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                          <div class="p-3">
+                            <label for="name" class="block mb-2 text-xs font-medium text-black">Start Date
+                              &amp; Time</label>
+                            <div class="relative max-w-sm">
+                              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none pt-2">
+                                <svg class="w-4 h-4 text-summit-gray-disabled " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                  fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                </svg>
+                              </div>
+                              <input datepicker type="text"
+                                class="bg-gray-50 border border-summit-gray-stroke text-black text-sm rounded-lg focus:ring-summit-blue-dark focus:border-blue-500 block w-full ps-10 p-1.5"
+                                placeholder="Select date">
+                            </div>
+                          </div>        
+                          </td>
+                          <td class="border-r border-summit-gray-stroke">
+                            <div class="p-3">
+                              <label for="name" class="block mb-2 text-xs font-medium text-black">Due Date
+                                &amp; Time</label>
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-summit-gray-disabled " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-summit-gray-stroke text-black text-sm rounded-lg focus:ring-summit-blue-dark focus:border-blue-500 block w-full ps-10 p-1.5 pl-[50px]"
+                                  placeholder="Select date">
+                              </div>
+                            </div>
+                          </td>
+
+                          <td>
+                            <div class="p-3">
+                              <label for="name" class="block mb-2 text-xs font-medium text-textcolor-light">Close Date
+                                &amp; Time</label>
+                              <div class="relative max-w-sm">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                  <svg class="w-4 h-4 text-summit-gray-disabled " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                  </svg>
+                                </div>
+                                <input datepicker type="text"
+                                  class="bg-gray-50 border border-summit-gray-stroke text-black text-sm rounded-lg focus:ring-summit-blue-dark focus:border-blue-500 block w-full ps-10 p-1.5"
+                                  placeholder="Select date">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                </div>
+                <!--end of pop-up table section-->
+              </div>
+            </div>
+          </form>
+          <!-- Modal footer -->
+          <div class="flex justify-between p-4 md:p-5 border-t border-gray-200 rounded-b">
+            <button data-modal-hide="assign-course-modal" type="button"
+              class="py-2.5 px-5 ms-3 text-sm font-medium text-black focus:outline-none bg-white rounded-lg border border-gray-200hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Cancel</button>
+            <button data-modal-hide="assign-course-modal" type="button"
+              class="text-white bg-summit-gray-disabled hover:bg-summit-blue-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-2">Apply and Assign to selected student(s)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--assign course popup-->
+    <button data-modal-target="assign-course-modal" data-modal-toggle="assign-course-modal"
+                        data-popover-target="popover-left1" data-popover-placement="left"
+                        class="flex items-center justify-center m-auto">
+                        
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0 5C0 2.23858 2.23858 0 5 0H25C27.7614 0 30 2.23858 30 5V25C30 27.7614 27.7614 30 25 30H5C2.23858 30 0 27.7614 0 25V5Z"
+                            fill="url(#paint0_linear_2862_3882)" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.75 1.75H6.25C3.76472 1.75 1.75 3.76472 1.75 6.25V23.75C1.75 26.2353 3.76472 28.25 6.25 28.25H23.75C26.2353 28.25 28.25 26.2353 28.25 23.75V6.25C28.25 3.76472 26.2353 1.75 23.75 1.75ZM6.25 1.25C3.48858 1.25 1.25 3.48858 1.25 6.25V23.75C1.25 26.5114 3.48858 28.75 6.25 28.75H23.75C26.5114 28.75 28.75 26.5114 28.75 23.75V6.25C28.75 3.48858 26.5114 1.25 23.75 1.25H6.25Z"
+                            fill="url(#paint1_linear_2862_3882)" />
+                          <g filter="url(#filter0_d_2862_3882)">
+                            <path
+                              d="M10.9699 6.98623C11.3421 7.32082 11.3722 7.88848 11.0376 8.26066L8.33083 11.2682C8.16541 11.4524 7.93233 11.5614 7.68421 11.5652C7.43609 11.5689 7.19925 11.475 7.02256 11.302L5.51504 9.79826C5.16541 9.44488 5.16541 8.87345 5.51504 8.52006C5.86466 8.16668 6.43985 8.16668 6.78947 8.52006L7.6203 9.35089L9.69173 7.05014C10.0263 6.67796 10.594 6.64788 10.9662 6.98247L10.9699 6.98623ZM10.9699 13.0013C11.3421 13.3359 11.3722 13.9035 11.0376 14.2757L8.33083 17.2832C8.16541 17.4674 7.93233 17.5765 7.68421 17.5802C7.43609 17.584 7.19925 17.49 7.02256 17.3171L5.51504 15.8133C5.16165 15.4599 5.16165 14.8885 5.51504 14.5389C5.86842 14.1892 6.43985 14.1855 6.78947 14.5389L7.6203 15.3697L9.69173 13.0689C10.0263 12.6968 10.594 12.6667 10.9662 13.0013H10.9699ZM13.6729 9.15916C13.6729 8.49375 14.2105 7.95615 14.8759 7.95615H23.297C23.9624 7.95615 24.5 8.49375 24.5 9.15916C24.5 9.82457 23.9624 10.3622 23.297 10.3622H14.8759C14.2105 10.3622 13.6729 9.82457 13.6729 9.15916ZM13.6729 15.1742C13.6729 14.5088 14.2105 13.9712 14.8759 13.9712H23.297C23.9624 13.9712 24.5 14.5088 24.5 15.1742C24.5 15.8396 23.9624 16.3772 23.297 16.3772H14.8759C14.2105 16.3772 13.6729 15.8396 13.6729 15.1742ZM11.2669 21.1892C11.2669 20.5238 11.8045 19.9862 12.4699 19.9862H23.297C23.9624 19.9862 24.5 20.5238 24.5 21.1892C24.5 21.8547 23.9624 22.3922 23.297 22.3922H12.4699C11.8045 22.3922 11.2669 21.8547 11.2669 21.1892Z"
+                              fill="white" />
+                            <g filter="url(#filter1_d_2862_3882)">
+                              <path
+                                d="M6.20312 21.0312C6.20312 20.7206 6.45496 20.4688 6.76562 20.4688H8.73438C9.04504 20.4688 9.29688 20.7206 9.29688 21.0312V22.4375C9.29688 22.7482 9.04504 23 8.73438 23H6.76562C6.45496 23 6.20312 22.7482 6.20312 22.4375V21.0312Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.76562 19.625C6.76562 19.0813 7.20634 18.6406 7.75 18.6406C8.29366 18.6406 8.73438 19.0813 8.73438 19.625V20.4688H8.45312V19.625C8.45312 19.2367 8.13833 18.9219 7.75 18.9219C7.36167 18.9219 7.04688 19.2367 7.04688 19.625V20.4688H6.76562V19.625Z"
+                                fill="white" />
+                            </g>
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_2862_3882" x="1.25" y="2.75" width="27.25" height="24.25"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2862_3882" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2862_3882"
+                                result="shape" />
+                            </filter>
+                            <filter id="filter1_d_2862_3882" x="1.5" y="14.5" width="12.5" height="12.5"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2862_3882" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2862_3882"
+                                result="shape" />
+                            </filter>
+                            <linearGradient id="paint0_linear_2862_3882" x1="15" y1="0" x2="15" y2="30"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#FF0000" />
+                              <stop offset="1" stop-color="#990000" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_2862_3882" x1="15" y1="1.25" x2="15" y2="28.75"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#9A0101" />
+                              <stop offset="1" stop-color="#FE0101" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </button>
+
+
+
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+</html>
