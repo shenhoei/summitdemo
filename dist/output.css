@@ -819,10 +819,6 @@ video {
   top: 273px;
 }
 
-.top-\[373px\] {
-  top: 373px;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -1173,6 +1169,10 @@ video {
 
 .mt-\[1px\] {
   margin-top: 1px;
+}
+
+.mt-\[273px\] {
+  margin-top: 273px;
 }
 
 .mt-\[40px\] {
