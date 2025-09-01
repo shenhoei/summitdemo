@@ -1439,6 +1439,10 @@ video {
   height: 100vh;
 }
 
+.h-svh {
+  height: 100svh;
+}
+
 .max-h-\[300px\] {
   max-height: 300px;
 }
@@ -1933,6 +1937,10 @@ video {
 
 .place-content-center {
   place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -5558,6 +5566,10 @@ button.tailwind-popup-dark-gray-button {
 
   .md\:m-auto {
     margin: auto;
+  }
+
+  .md\:ml-\[400px\] {
+    margin-left: 400px;
   }
 
   .md\:ml-\[500px\] {

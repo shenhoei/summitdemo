@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-summit-gray-FA">
+  <div class="antialiased">
+    <nav class="bg-white border-b border-gray-200 px-4 py-0 fixed left-0 right-0 top-0 z-50">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex justify-start items-center">
+          <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
+            aria-controls="drawer-navigation"
+            class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100">
+            <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg aria-hidden="true" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="sr-only">Toggle sidebar</span>
+          </button>
+          <a href="#"
+            class="inline-flex items-center justify-center h-9 mr-3 px-2 text-xs font-medium text-summit-blue-primary bg-summit-blue-light rounded-full focus:outline-nonehover:text-summit-blue-primary focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:border-gray-600  dark:hover:bg-gray-700">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.5139 1.57636C10.7823 1.30788 11.2177 1.30788 11.4861 1.57636L19.7361 9.82636C19.8651 9.9553 19.9375 10.1302 19.9375 10.3125V19.9375C19.9375 20.3172 19.6297 20.625 19.25 20.625H13.0625C12.6828 20.625 12.375 20.3172 12.375 19.9375V14.4375H9.625V19.9375C9.625 20.3172 9.3172 20.625 8.9375 20.625H2.75C2.3703 20.625 2.0625 20.3172 2.0625 19.9375V10.3125C2.0625 10.1302 2.13493 9.9553 2.26386 9.82636L10.5139 1.57636ZM3.4375 10.5973V19.25H8.25V13.75C8.25 13.3703 8.5578 13.0625 8.9375 13.0625H13.0625C13.4422 13.0625 13.75 13.3703 13.75 13.75V19.25H18.5625V10.5973L11 3.03477L3.4375 10.5973Z"
+                fill="#2256DD" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.875 3.4375V8.25L15.125 5.5V3.4375C15.125 3.0578 15.4328 2.75 15.8125 2.75H17.1875C17.5672 2.75 17.875 3.0578 17.875 3.4375Z"
+                fill="#2256DD" />
+            </svg>
+
+          </a>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-summit-gray-FA md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white md:dark:bg-gray-900">
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary"
+                aria-current="page">Instructional Resources</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary">Video
+                Resources</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary">Supplemental
+                Resources</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-4 pl-3 pr-4 font-medium border-b-2 border-white text-gray-900 hover:text-summit-blue-primary focus:border-summit-blue-primary focus:text-summit-blue-primary">Course
+                Navigation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center lg:order-2">
+          <!-- Expand Icon -->
+          <button type="button" class="p-2 mr-1 text-summit-gray hover:text-summit-blue-primary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.74304 15.2578C8.45014 14.9649 7.97527 14.9649 7.68238 15.2578L1.53809 21.402L1.53809 17.2504C1.53809 16.8362 1.2023 16.5004 0.788087 16.5004C0.373874 16.5004 0.0380859 16.8362 0.0380864 17.2504L0.0380859 23.2127C0.0380859 23.6269 0.373874 23.9627 0.788087 23.9627L6.75034 23.9627C7.16455 23.9627 7.50034 23.6269 7.50034 23.2127C7.50034 22.7985 7.16455 22.4627 6.75034 22.4627L2.59875 22.4627L8.74304 16.3184C9.03593 16.0255 9.03593 15.5506 8.74304 15.2578Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.257 8.74224C15.5499 9.03514 16.0247 9.03514 16.3176 8.74224L22.4619 2.59795L22.4619 6.74961C22.4619 7.16383 22.7977 7.49961 23.2119 7.49961C23.6261 7.49961 23.9619 7.16383 23.9619 6.74961L23.9619 0.787293C23.9619 0.37308 23.6261 0.0372925 23.2119 0.0372925L17.2497 0.0372972C16.8354 0.0372972 16.4997 0.373084 16.4997 0.787297C16.4997 1.20151 16.8354 1.5373 17.2497 1.5373L21.4013 1.53729L15.257 7.68158C14.9641 7.97448 14.9641 8.44935 15.257 8.74224Z" />
+            </svg>
+
+            <span class="sr-only">Expand</span>
+            </a>
+            <!-- Pencil Icon -->
+            <button type="button" class="p-2 mr-1 text-summit-gray hover:text-summit-blue-primary">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.2197 0.21967C18.5126 -0.0732233 18.9874 -0.0732233 19.2803 0.21967L23.7803 4.71967C24.0732 5.01256 24.0732 5.48743 23.7803 5.78032L8.78034 20.7803C8.70852 20.8521 8.62286 20.9086 8.52856 20.9463L1.02856 23.9463C0.750002 24.0578 0.431838 23.9925 0.219692 23.7803C0.00754482 23.5682 -0.0577606 23.25 0.0536643 22.9714L3.05366 15.4714C3.09138 15.3771 3.14787 15.2915 3.21969 15.2197L18.2197 0.21967ZM16.8107 3.75L20.25 7.18933L22.1893 5.25L18.75 1.81066L16.8107 3.75ZM19.1893 8.24999L15.75 4.81066L6.00002 14.5606V15H6.75002C7.16423 15 7.50001 15.3358 7.50001 15.75V16.5H8.25001C8.66423 16.5 9.00001 16.8358 9.00001 17.25V18H9.43935L19.1893 8.24999ZM4.54749 16.0132L4.3892 16.1715L2.09631 21.9037L7.82854 19.6108L7.98683 19.4525C7.70244 19.3459 7.50001 19.0716 7.50001 18.75V18H6.75002C6.3358 18 6.00002 17.6642 6.00002 17.25V16.5H5.25002C4.92841 16.5 4.65408 16.2976 4.54749 16.0132Z" />
+              </svg>
+
+              <span class="sr-only">Edit</span>
+            </button>
+            <!-- Magnifying Icon -->
+            <button type="button" class="p-2 mr-1 text-summit-gray hover:text-summit-blue-primary transition transform"
+              id="SearchButton" data-collapse-toggle="navSearchBar">
+              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.75 18C14.3063 18 18 14.3063 18 9.75C18 5.19365 14.3063 1.5 9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75C1.5 14.3063 5.19365 18 9.75 18ZM19.5 9.75C19.5 15.1348 15.1348 19.5 9.75 19.5C4.36522 19.5 0 15.1348 0 9.75C0 4.36522 4.36522 0 9.75 0C15.1348 0 19.5 4.36522 19.5 9.75Z" />
+                <path
+                  d="M15.5158 17.6132C15.5601 17.6732 15.6093 17.7307 15.6636 17.785L21.4393 23.5607C22.0251 24.1465 22.9749 24.1465 23.5607 23.5607C24.1465 22.9749 24.1465 22.0251 23.5607 21.4393L17.785 15.6636C17.7307 15.6093 17.6732 15.5601 17.6132 15.5158C17.0248 16.3169 16.3169 17.0248 15.5158 17.6132Z" />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+            <form>
+              <label for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+              <div class="hidden absolute right-5 top-2" id="navSearchBar">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-summit-gray" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                  </svg>
+                </div>
+                <input type="search" id="default-search" data-dropdown-toggle="searchDropDown"
+                  class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-100 rounded-lg bg-summit-gray-FA focus:ring-summit-blue-light"
+                  placeholder="Enter search here">
+                <button class="absolute -right-3 bottom-3.5" data-modal-hide="navSearchBar">
+                  <svg class="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <div id="searchDropDown"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow w-54 dark:bg-gray-700 dark:divide-gray-600 max-h-[350px] overflow-auto">
+              <div class="py-1">
+                <h6 class="block px-4 py-2 pb-1 font-bold text-lg">Showing Results For: <br /><span
+                    class="max-w-[300px] truncate block overflow-hidden">Sample Search Query with long truncated text
+                  </span></h6>
+                <p class="block px-4 py-2 pt-0">
+                  <span>Showing 14 of 14 results</span>
+                </p>
+              </div>
+              <div class="py-1 max-w-[320px]">
+                <h6 class="block px-4 py-2 pb-1 font-bold text-summit-blue-primary text-lg">Video resources</h6>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6A - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+              </div>
+
+              <div class="py-1 max-w-[320px]">
+                <h6 class="block px-4 py-2 pb-1 font-bold text-summit-blue-primary text-lg">Picture resources</h6>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+                <p class="block pt-0 text-xs">
+                  <a href="#"
+                    class="block px-4 hover:text-summit-blue-primary hover:bg-summit-blue-light py-2"><span>8.6B - Topic
+                      - Classification of Matter - Length - 18:50</span></a>
+                </p>
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+
+    <aside
+      class="fixed top-0 left-0 z-40 w-[400px] min-w-[400px] h-screen xs:pt-24 xs:pb-14 sm:py-14  transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 asideBarToggle"
+      id="drawer-navigation" tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" class="w-[16px] absolute left-[399px] bg-summit-blue-primary rounded-r-lg top-1/2 py-5"
+        id="asideToggleBtn">
+        <img src="img/aside-arrow-left.svg">
+      </button>
+      <div class="overflow-y-auto pb-5 px-0 h-full bg-white">
+        <!--Aside Title-->
+        <div class="flex flex-row bg-summit-blue-primary text-white">
+          <div class="flex-grow text-left whitespace-nowrap pl-5 py-4">
+            <span class="block text-2xl font-medium">Teacher Resources</span><span class="block font-light">Dynamic
+              Science - 8th</span>
+
+          </div>
+          <button type="button" id="asideToggleBtn2"
+            class="flex-row text-3xl bg-summit-blue-dark py-8 px-5 font-medium text-left whitespace-nowrap">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="fill-white">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.7071 7.29289C24.0976 7.68342 24.0976 8.31658 23.7071 8.70711L16.4142 16L23.7071 23.2929C24.0976 23.6834 24.0976 24.3166 23.7071 24.7071C23.3166 25.0976 22.6834 25.0976 22.2929 24.7071L14.2929 16.7071C13.9024 16.3166 13.9024 15.6834 14.2929 15.2929L22.2929 7.29289C22.6834 6.90237 23.3166 6.90237 23.7071 7.29289Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 2C8.44772 2 8 2.44772 8 3L8 29C8 29.5523 8.44772 30 9 30C9.55228 30 10 29.5523 10 29L10 3C10 2.44772 9.55228 2 9 2Z" />
+            </svg>
+          </button>
+        </div>
+        <!--menu items-->
+        <ul class="space-y-2 mt-3">
+          <li>
+            <a type="button" href="#"
+              class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              data-tooltip-target="tooltip-1" aria-controls="dropdown-cat1" data-collapse-toggle="dropdown-cat1">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Category 1: Master and
+                Energy</span>
+              <div id="tooltip-1" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                Concept Mastery
+                <div class="tooltip-arrow" data-popper-arrow></div>
+              </div>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </a>
+
+            <ul id="dropdown-cat1" class="hidden py-2 space-y-0">
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  data-tooltip-target="tooltip-2" aria-controls="dropdown-cat1-inner1"
+                  data-collapse-toggle="dropdown-cat1-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category
+                      #
+                      : </span>Matter and Energy
+                  </div>
+                  <div id="tooltip-2" role="tooltip"
+                    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    Category # : Matter and Energy
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6 pr-2" />
+
+                </a>
+                <ul id="dropdown-cat1-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#" data-tooltip-target="tooltip-3"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                        Lesson Guide Lesson Guide Lesson Guide</div>
+                    </a>
+                    <div id="tooltip-3" role="tooltip"
+                      class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                      Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide Lesson Guide
+                      <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat1-inner2" data-collapse-toggle="dropdown-cat1-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span
+                      class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">Category
+                      2
+                      : </span>Force, Motion and Energy
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat1-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light menu-active">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a type="button" href="#"
+              class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat2" data-collapse-toggle="dropdown-cat2">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Vocabulary Mastery</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </a>
+            <ul id="dropdown-cat2" class="hidden py-2 space-y-0">
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner0" data-collapse-toggle="dropdown-cat2-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.5A
+                      : </span>Newton's First Law of Motion
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat2-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner" data-collapse-toggle="dropdown-cat2-inner">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.6A
+                      : </span>Classification of Matter
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat2-inner" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner3" data-collapse-toggle="dropdown-cat2-inner3">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.8A
+                      : </span>Another Category item
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat2-inner3" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat2-inner2" data-collapse-toggle="dropdown-cat2-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">9.7A
+                      : </span>Balanced and Unbalanced Net Forces
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat2-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a type="button" href="#"
+              class="aside-button flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat3" data-collapse-toggle="dropdown-cat3">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[310px]">Usage Report</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </a>
+            <ul id="dropdown-cat3" class="hidden py-2 space-y-0">
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner0" data-collapse-toggle="dropdown-cat3-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.5B
+                      : </span>Sub category 1
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat3-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner1" data-collapse-toggle="dropdown-cat3-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <img src="img/side-menu-rainbow-icon.svg" class="w-[24px] h-[24px]">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
+                      : </span>Sub category 2
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat3-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  class="aside-button items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light dark:hover:bg-gray-700 flex"
+                  aria-controls="dropdown-cat3-inner2" data-collapse-toggle="dropdown-cat3-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[304px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.3A
+                      : </span>Sub category 3
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </a>
+                <ul id="dropdown-cat3-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                      </div>
+                      <div class="pl-2 truncate max-w-[294px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a type="button" href="#"
+              class="flex items-center p-2 pl-5 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light">
+              <img src="img/side-menu-book.svg" class="w-6 h-6" />
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap truncate max-w-[304px]">No Dropdown menu
+                item</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="pt-5 mt-5 space-y-2 border-t border-summit-gray-stroke">
+          <li>
+            <button type="button"
+              class="flex items-center p-2 w-full text-base font-medium text-gray-900 transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light"
+              aria-controls="dropdown-cat4" data-collapse-toggle="dropdown-cat4">
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                  fill="#7A7A7A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                  fill="#7A7A7A" />
+              </svg>
+
+              <span class="flex-1 ml-3 text-left whitespace-nowrap">Category 4 : Move Item Sample</span>
+              <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+            </button>
+            <ul id="dropdown-cat4" class="hidden py-2 space-y-0">
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-lightflex"
+                  aria-controls="dropdown-cat4-inner0" data-collapse-toggle="dropdown-cat4-inner0">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                        fill="#7A7A7A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                        fill="#7A7A7A" />
+                    </svg>
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">11.5B
+                      : </span>Move Cat 1
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat4-inner0" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Move Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-lightflex"
+                  aria-controls="dropdown-cat4-inner1" data-collapse-toggle="dropdown-cat4-inner1">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                        fill="#7A7A7A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                        fill="#7A7A7A" />
+                    </svg>
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">10.6B
+                      : </span>Move Cat 2
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat4-inner1" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Lesson Guide</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Print</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Study Guide: Key</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">E-Poster</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Interactive E-Poster</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button href="#"
+                  class="items-center pl-2 w-full text-base text-left font-medium text-textcolor-main transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-lightflex"
+                  aria-controls="dropdown-cat4-inner2" data-collapse-toggle="dropdown-cat4-inner2">
+                  <div
+                    class="w-[50px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                        fill="#7A7A7A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                        fill="#7A7A7A" />
+                    </svg>
+                  </div>
+                  <div class="pl-2 flex-1 truncate max-w-[410px]">
+                    <span class="text-black group-hover:text-summit-blue-primary group-hover:bg-summit-blue-light">11.3A
+                      : </span>Move cat 3
+                  </div>
+                  <img src="img/side-menu-updown-arrow.svg" class="w-6 h-6" />
+                </button>
+                <ul id="dropdown-cat4-inner2" class="hidden space-y-0">
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 1</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 2</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 3</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 4</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[75px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="ml-[25px]">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.69231 14.1529C3.69231 15.1725 2.86576 15.999 1.84615 15.999C0.826551 15.999 0 15.1725 0 14.1529C0 13.1333 0.826551 12.3067 1.84615 12.3067C2.86576 12.3067 3.69231 13.1333 3.69231 14.1529ZM3.69231 7.99857C3.69231 9.01818 2.86576 9.84473 1.84615 9.84473C0.826551 9.84473 0 9.01818 0 7.99857C0 6.97897 0.826551 6.15242 1.84615 6.15242C2.86576 6.15242 3.69231 6.97897 3.69231 7.99857ZM3.69231 1.84623C3.69231 2.86583 2.86576 3.69238 1.84615 3.69238C0.826551 3.69238 0 2.86583 0 1.84623C0 0.826626 0.826551 7.53403e-05 1.84615 7.53403e-05C2.86576 7.53403e-05 3.69231 0.826626 3.69231 1.84623Z"
+                            fill="#7A7A7A" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.84612 14.1529C9.84612 15.1725 9.01957 15.999 7.99996 15.999C6.98036 15.999 6.15381 15.1725 6.15381 14.1529C6.15381 13.1333 6.98036 12.3067 7.99996 12.3067C9.01957 12.3067 9.84612 13.1333 9.84612 14.1529ZM9.84615 7.99857C9.84615 9.01818 9.0196 9.84473 7.99999 9.84473C6.98039 9.84473 6.15384 9.01818 6.15384 7.99857C6.15384 6.97897 6.98039 6.15242 7.99999 6.15242C9.0196 6.15242 9.84615 6.97897 9.84615 7.99857ZM9.84615 1.84623C9.84615 2.86583 9.0196 3.69238 7.99999 3.69238C6.98039 3.69238 6.15384 2.86583 6.15384 1.84623C6.15384 0.826626 6.98039 7.53403e-05 7.99999 7.53403e-05C9.0196 7.53403e-05 9.84615 0.826626 9.84615 1.84623Z"
+                            fill="#7A7A7A" />
+                        </svg>
+                      </div>
+                      <div class="pl-2 truncate max-w-[400px]">Option Inner 5</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="items-center pl-2 w-full text-base font-medium text-black transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-light flex focus:text-summit-blue-primary focus:bg-summit-blue-light">
+                      <div
+                        class="w-[87px] h-[40px] border-r-2 border-primary-bordergray p-2 group-hover:border-summit-blue-primary group-focus:border-summit-blue-primary">
+
+                      </div>
+                      <button href="#"
+                        class="items-center pl-2 ml-2 py-2 w-full text-base text-left font-medium text-summit-blue-primary transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-lightflex">
+                        <span
+                          class="w-2 h-2 p-3 leading-3 bg-summit-blue-primary text-white rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark">&#43;</span><span
+                          class="flex ml-3">Add Custom Category</span>
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button href="#"
+              class="items-center pl-2 py-2 w-full text-base text-left font-medium text-summit-blue-primary transition duration-75 group hover:text-summit-blue-primary hover:bg-summit-blue-lightflex">
+              <span
+                class="w-2 h-2 p-3 leading-3 bg-summit-blue-primary text-white rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark">&#43;</span><span
+                class="flex ml-3">Add Custom Category</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 justify-left p-4 space-x-4 w-full lg:flex border-t border-x-summit-gray-stroke bg-white">
+        <svg width="205" height="36" viewBox="0 0 205 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="205" height="36" fill="url(#summit-logo)" />
+          <defs>
+            <pattern id="summit-logo" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_2435_2806" transform="scale(0.00487805 0.0277778)" />
+            </pattern>
+            <image id="image0_2435_2806" width="205" height="36"
+              xlink:href="data:image/png;base64,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" />
+          </defs>
+        </svg>
+      </div>
+    </aside>
+
+    <main class="p-4 md:ml-[400px] h-auto pt-20 bg-summit-blue-light">
+      <!--zoom button cluster-->
+      <div class="fixed right-16 bottom-16 z-20">
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.5 8.90002C0.776142 8.90002 1 9.12388 1 9.40002V11.9C1 12.4523 1.44772 12.9 2 12.9H14C14.5523 12.9 15 12.4523 15 11.9V9.40002C15 9.12388 15.2239 8.90002 15.5 8.90002C15.7761 8.90002 16 9.12388 16 9.40002V11.9C16 13.0046 15.1046 13.9 14 13.9H2C0.895431 13.9 0 13.0046 0 11.9V9.40002C0 9.12388 0.223858 8.90002 0.5 8.90002Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.64645 10.8536C7.84171 11.0488 8.15829 11.0488 8.35355 10.8536L11.3536 7.85355C11.5488 7.65829 11.5488 7.34171 11.3536 7.14645C11.1583 6.95118 10.8417 6.95118 10.6464 7.14645L8.5 9.29289V0.5C8.5 0.223858 8.27614 -7.45058e-09 8 -7.45058e-09C7.72386 -7.45058e-09 7.5 0.223858 7.5 0.5V9.29289L5.35355 7.14645C5.15829 6.95118 4.84171 6.95118 4.64645 7.14645C4.45118 7.34171 4.45118 7.65829 4.64645 7.85355L7.64645 10.8536Z"
+              fill="white" />
+          </svg>
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.0443 12.0419L16.2001 16.2008M7.80005 5.40078V10.2008M5.40005 7.80078H10.2M13.8 7.80078C13.8 11.1145 11.1138 13.8008 7.80005 13.8008C4.48634 13.8008 1.80005 11.1145 1.80005 7.80078C1.80005 4.48707 4.48634 1.80078 7.80005 1.80078C11.1138 1.80078 13.8 4.48707 13.8 7.80078Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.2 12.2008L16.2001 16.2008M5.40005 7.80078H10.2M13.8 7.80078C13.8 11.1145 11.1138 13.8008 7.80005 13.8008C4.48634 13.8008 1.80005 11.1145 1.80005 7.80078C1.80005 4.48707 4.48634 1.80078 7.80005 1.80078C11.1138 1.80078 13.8 4.48707 13.8 7.80078Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <img src="img/icon-type.png">
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <img src="img/icon-edit.png">
+        </button>
+        <button type="button"
+          class="w-10 h-10 bg-summit-gray-dark rounded-full flex items-center justify-center hover:bg-summit-blue-primary focus:bg-summit-blue-primary active:bg-summit-blue-dark mb-4">
+          <img src="img/icon-highlight.png">
+        </button>
+      </div>
+      <!--zoom button cluster-->
+      <!--Matter and Energy-->
+      <section>
+        <div class="grid place-items-center h-screen">
+          <div class="w-full item-center p-4">
+            <h1 class="text-3xl text-summit-blue-primary text-center">EDIT MODE</h1>
+            <p class="font-bold text-center">Summit K12 Employees Only</p>
+            <p class="text-center">Select an item on the left to edit or add a new item by clicking the icon</p>
+          </div>
+        </div>
+      </section>
+      <!--End Matter and Energy-->
+
+      <!--Matter and Energy-->
+      <section>
+        <div class="grid grid-cols-1">
+          <div class="w-full p-4">
+            <img src="img/demo.jpg" class="w-full" />
+          </div>
+          <div class="w-full mt-4">
+            <img src="img/demo2.jpg" class="w-full" />
+          </div>
+        </div>
+      </section>
+      <!--Add custom Item-->
+      <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2 mb-4">
+          <!--form Sample-->
+          <div class="">
+            <section>
+              <div class="py-8 mx-auto ax-w-2xl lg:py-16 xl:max-w-3xl">
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                  Add Custom Category
+                </h2>
+                <form action="#">
+                  <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                    <div class="w-full">
+                      <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                      <select id="subject"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="Science">Science</option>
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                      </select>
+                    </div>
+                    <div class="w-full">
+                      <label for="grade"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Grade</label>
+                      <select id="grade"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category Name</label>
+                      <select id="category"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="1">
+                          Category 1: This is something
+                        </option>
+                        <option value="2">Category 2: This is something</option>
+                        <option value="3">Category 3: This is something</option>
+                        <option value="4">Category 4: This is something</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit"
+                    class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-summit-blue-dark">
+                    Save
+                  </button>
+
+                  <button type="submit"
+                    class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center border text-summit-blue-primary border-summit-blue-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-white">
+                    Cancel
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+          <!--Form Section-->
+          <div class="">
+
+          </div>
+        </div>
+      </section>
+      <!--End Matter and Energy-->
+      <section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2 mb-4">
+          <!--form Sample-->
+          <div class="">
+            <section>
+              <div class="py-8 mx-auto ax-w-2xl lg:py-16 xl:max-w-3xl">
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                  Description
+                </h2>
+                <form action="#">
+                  <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                    <div class="w-full">
+                      <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                      <select id="subject"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="Science">Science</option>
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                      </select>
+                    </div>
+                    <div class="w-full">
+                      <label for="grade"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Grade</label>
+                      <select id="grade"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <label for="category"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                      <select id="category"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="1">
+                          Category 1: This is something
+                        </option>
+                        <option value="2">Category 2: This is something</option>
+                        <option value="3">Category 3: This is something</option>
+                        <option value="4">Category 4: This is something</option>
+                      </select>
+                    </div>
+                    <div class="sm:col-span-2">
+                      <div class="flex mb-1">
+                        <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mr-3">Add
+                          Tags</label>
+                        <div
+                          class="flex bg-summit-blue-primary text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-summit-blue-dark">
+                          <button class="p-0">
+                            <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
+                                fill="white" />
+                            </svg>
+                          </button>
+                          <span class="align-middle ml-1 mt-0.5 leading-3">grade:8</span>
+                        </div>
+                        <div
+                          class="flex bg-summit-blue-primary text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-summit-blue-dark">
+                          <button>
+                            <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
+                                fill="white" />
+                            </svg>
+                          </button>
+                          <span class="align-middle ml-1 mt-0.5 leading-3">grade:9</span>
+                        </div>
+                      </div>
+                      <input type="text" name="price" id="price"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark"
+                        placeholder="Insert tags" required="" />
+                    </div>
+
+                    <div class="sm:col-span-2">
+                      <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">File
+                        Type</label>
+                      <select id="category"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                        <option selected="1">File Type 1</option>
+                        <option value="2">File Type 2</option>
+                        <option value="3">File Type 3</option>
+                        <option value="4">File Type 4</option>
+                      </select>
+                    </div>
+
+                    <div class="sm:col-span-2">
+                      <label for="item-weight"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload
+                        File</label>
+                      <div class="relative">
+                        <input type="search" id="default-search"
+                          class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-summit-gray-FA focus:ring-summit-blue-primary focus:border-summit-blue-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-primary dark:focus:border-summit-blue-primary"
+                          placeholder="Force_Motion.jpg" required />
+                        <button type="submit"
+                          class="flex text-red-600 absolute right-2.5 bottom-2.5 bg-transparent font-medium text-sm px-4 py-2">
+                          <div class="inset-y-0 left-0 flex mt-0.5 pointer-events-none">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.30769 5.86667C5.60508 5.86667 5.84615 6.10545 5.84615 6.4V12.8C5.84615 13.0946 5.60508 13.3333 5.30769 13.3333C5.01031 13.3333 4.76923 13.0946 4.76923 12.8V6.4C4.76923 6.10545 5.01031 5.86667 5.30769 5.86667Z"
+                                fill="#E52629" />
+                              <path
+                                d="M8 5.86667C8.29738 5.86667 8.53846 6.10545 8.53846 6.4V12.8C8.53846 13.0946 8.29738 13.3333 8 13.3333C7.70262 13.3333 7.46154 13.0946 7.46154 12.8V6.4C7.46154 6.10545 7.70262 5.86667 8 5.86667Z"
+                                fill="#E52629" />
+                              <path
+                                d="M11.2308 6.4C11.2308 6.10545 10.9897 5.86667 10.6923 5.86667C10.3949 5.86667 10.1538 6.10545 10.1538 6.4V12.8C10.1538 13.0946 10.3949 13.3333 10.6923 13.3333C10.9897 13.3333 11.2308 13.0946 11.2308 12.8V6.4Z"
+                                fill="#E52629" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15 3.2C15 3.7891 14.5178 4.26667 13.9231 4.26667H13.3846V13.8667C13.3846 15.0449 12.4203 16 11.2308 16H4.76923C3.57969 16 2.61538 15.0449 2.61538 13.8667V4.26667H2.07692C1.48215 4.26667 1 3.7891 1 3.2V2.13333C1 1.54423 1.48215 1.06667 2.07692 1.06667H5.84615C5.84615 0.477563 6.32831 0 6.92308 0H9.07692C9.67169 0 10.1538 0.477563 10.1538 1.06667H13.9231C14.5178 1.06667 15 1.54423 15 2.13333V3.2ZM3.81942 4.26667L3.69231 4.32962V13.8667C3.69231 14.4558 4.17446 14.9333 4.76923 14.9333H11.2308C11.8255 14.9333 12.3077 14.4558 12.3077 13.8667V4.32962L12.1806 4.26667H3.81942ZM2.07692 3.2V2.13333H13.9231V3.2H2.07692Z"
+                                fill="#E52629" />
+                            </svg>
+                          </div>
+
+                          <span class="flex ml-1">Delete</span>
+                        </button>
+                      </div>
+                      <span class="mt-2 text-black text-sm">You can upload .jpg and .png</span>
+                    </div>
+
+                    <div class="sm:col-span-2">
+                      <label for="description"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                      <textarea id="description" rows="8"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-summit-gray-FA rounded-lg border border-gray-300 focus:ring-summit-blue-dark focus:border-summit-blue-dark"
+                        placeholder="Your description here"></textarea>
+                    </div>
+                    <div class="w-full">
+                      <label for="subject"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subcategory Name</label>
+                      <input type="text" name="price" id="price"
+                        class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark"
+                        placeholder="8.7A: Newton's Second Law of Motion" required="" />
+                    </div>
+                    <div class="w-full">
+                      <div class="flex items-center mt-9">
+                        <input id="link-checkbox" type="checkbox" value=""
+                          class="w-4 h-4 text-summit-blue-primary bg-gray-100 border-gray-300 rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                        <label for="link-checkbox"
+                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">TEKS
+                          Scaffold</label>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit"
+                    class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-summit-blue-dark">
+                    Save
+                  </button>
+
+                  <button type="submit"
+                    class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center border text-summit-blue-primary border-summit-blue-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-white">
+                    Cancel
+                  </button>
+                </form>
+              </div>
+            </section>
+          </div>
+          <!--Form Section-->
+          <div class="">
+            <section>
+              <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16 xl:max-w-3xl">
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                  Preview
+                </h2>
+                <div>
+                  <img src="img/demo.jpg" />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2 mb-4">
+        <!--form Sample-->
+        <div class="">
+          <section>
+            <div class="py-8 mx-auto ax-w-2xl lg:py-16 xl:max-w-3xl">
+              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                Description
+              </h2>
+              <form action="#">
+                <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                  <div class="w-full">
+                    <label for="subject"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                    <select id="subject"
+                      class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                      <option selected="Science">Science</option>
+                      <option value="Math">Math</option>
+                      <option value="English">English</option>
+                      <option value="Spanish">Spanish</option>
+                    </select>
+                  </div>
+                  <div class="w-full">
+                    <label for="grade"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Grade</label>
+                    <select id="grade"
+                      class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                      <option selected="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <div class="grid gap-6 md:grid-cols-2">
+                      <div class="relative">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio"
+                          class="w-4 h-4 peer hidden text-summit-blue-primary bg-gray-100 border-gray-300 focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                        <label for="bordered-radio-1"
+                          class="w-full py-4 pl-10 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 group-hover:text-white peer-checked:text-white bg-white rounded hover:bg-summit-blue-primary hover:text-white group peer-checked:bg-summit-blue-primary flex">New
+                          Subcategory</label>
+                        <div
+                          class="rounded-full w-3 h-3 border-2 peer-checked:border-summit-gray-stroke peer-checked:outline-double peer-checked:outline-white peer-checked:outline-5 bg-summit-gray-stroke peer-checked:bg-summit-blue-primary absolute left-5 top-5">
+                        </div>
+                      </div>
+                      <div class="relative">
+                        <input checked id="bordered-radio-2" type="radio" value="" name="bordered-radio"
+                          class="w-4 h-4 peer hidden text-summit-blue-primary bg-gray-100 border-gray-300 focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                        <label for="bordered-radio-2"
+                          class="w-full py-4 pl-10 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 group-hover:text-white peer-checked:text-white bg-white rounded hover:bg-summit-blue-primary hover:text-white group peer-checked:bg-summit-blue-primary flex">Existing
+                          Subcategory</label>
+                        <div
+                          class="rounded-full w-3 h-3 border-2 peer-checked:border-summit-gray-stroke peer-checked:outline-double peer-checked:outline-white peer-checked:outline-5 bg-summit-gray-stroke peer-checked:bg-summit-blue-primary absolute left-5 top-5">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2">
+                    <div class="flex mb-1">
+                      <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mr-3">Add
+                        Tags</label>
+                      <div
+                        class="flex bg-summit-blue-primary text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-summit-blue-dark">
+                        <button class="p-0">
+                          <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
+                              fill="white" />
+                          </svg>
+                        </button>
+                        <span class="align-middle ml-1 mt-0.5 leading-3">grade:8</span>
+                      </div>
+                      <div
+                        class="flex bg-summit-blue-primary text-white text-xs px-2 h-5 rounded-xl mr-3 align-middle hover:bg-summit-blue-dark">
+                        <button>
+                          <svg width="12" height="13" viewBox="0 0 14 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14 7.5C14 11.366 10.866 14.5 7 14.5C3.13401 14.5 0 11.366 0 7.5C0 3.63401 3.13401 0.5 7 0.5C10.866 0.5 14 3.63401 14 7.5ZM4.68436 4.56564C4.5135 4.39479 4.2365 4.39479 4.06564 4.56564C3.89479 4.7365 3.89479 5.0135 4.06564 5.18436L6.38128 7.5L4.06564 9.81564C3.89479 9.9865 3.89479 10.2635 4.06564 10.4344C4.2365 10.6052 4.5135 10.6052 4.68436 10.4344L7 8.11872L9.31564 10.4344C9.4865 10.6052 9.7635 10.6052 9.93436 10.4344C10.1052 10.2635 10.1052 9.9865 9.93436 9.81564L7.61872 7.5L9.93436 5.18436C10.1052 5.0135 10.1052 4.7365 9.93436 4.56564C9.7635 4.39479 9.4865 4.39479 9.31564 4.56564L7 6.88128L4.68436 4.56564Z"
+                              fill="white" />
+                          </svg>
+                        </button>
+                        <span class="align-middle ml-1 mt-0.5 leading-3">grade:9</span>
+                      </div>
+                    </div>
+                    <input type="text" name="price" id="price"
+                      class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark"
+                      placeholder="Insert tags" required="" />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">File
+                      Type</label>
+                    <select id="category"
+                      class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-dark focus:border-summit-blue-dark block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark">
+                      <option selected="1">File Type 1</option>
+                      <option value="2">File Type 2</option>
+                      <option value="3">File Type 3</option>
+                      <option value="4">File Type 4</option>
+                    </select>
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload
+                      File</label>
+                    <div class="relative">
+                      <input type="search" id="default-search"
+                        class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-summit-gray-FA focus:ring-summit-blue-primary focus:border-summit-blue-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-primary dark:focus:border-summit-blue-primary"
+                        placeholder="Force_Motion.jpg" required />
+                      <button type="submit"
+                        class="flex text-red-600 absolute right-2.5 bottom-2.5 bg-transparent font-medium text-sm px-4 py-2">
+                        <div class="inset-y-0 left-0 flex mt-0.5 pointer-events-none">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M5.30769 5.86667C5.60508 5.86667 5.84615 6.10545 5.84615 6.4V12.8C5.84615 13.0946 5.60508 13.3333 5.30769 13.3333C5.01031 13.3333 4.76923 13.0946 4.76923 12.8V6.4C4.76923 6.10545 5.01031 5.86667 5.30769 5.86667Z"
+                              fill="#E52629" />
+                            <path
+                              d="M8 5.86667C8.29738 5.86667 8.53846 6.10545 8.53846 6.4V12.8C8.53846 13.0946 8.29738 13.3333 8 13.3333C7.70262 13.3333 7.46154 13.0946 7.46154 12.8V6.4C7.46154 6.10545 7.70262 5.86667 8 5.86667Z"
+                              fill="#E52629" />
+                            <path
+                              d="M11.2308 6.4C11.2308 6.10545 10.9897 5.86667 10.6923 5.86667C10.3949 5.86667 10.1538 6.10545 10.1538 6.4V12.8C10.1538 13.0946 10.3949 13.3333 10.6923 13.3333C10.9897 13.3333 11.2308 13.0946 11.2308 12.8V6.4Z"
+                              fill="#E52629" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M15 3.2C15 3.7891 14.5178 4.26667 13.9231 4.26667H13.3846V13.8667C13.3846 15.0449 12.4203 16 11.2308 16H4.76923C3.57969 16 2.61538 15.0449 2.61538 13.8667V4.26667H2.07692C1.48215 4.26667 1 3.7891 1 3.2V2.13333C1 1.54423 1.48215 1.06667 2.07692 1.06667H5.84615C5.84615 0.477563 6.32831 0 6.92308 0H9.07692C9.67169 0 10.1538 0.477563 10.1538 1.06667H13.9231C14.5178 1.06667 15 1.54423 15 2.13333V3.2ZM3.81942 4.26667L3.69231 4.32962V13.8667C3.69231 14.4558 4.17446 14.9333 4.76923 14.9333H11.2308C11.8255 14.9333 12.3077 14.4558 12.3077 13.8667V4.32962L12.1806 4.26667H3.81942ZM2.07692 3.2V2.13333H13.9231V3.2H2.07692Z"
+                              fill="#E52629" />
+                          </svg>
+                        </div>
+
+                        <span class="flex ml-1">Delete</span>
+                      </button>
+                    </div>
+                    <span class="mt-2 text-black text-sm">You can upload .jpg and .png</span>
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label for="description"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                    <textarea id="description" rows="8"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-summit-gray-FA rounded-lg border border-gray-300 focus:ring-summit-blue-dark focus:border-summit-blue-dark"
+                      placeholder="Your description here"></textarea>
+                  </div>
+                  <div class="w-full">
+                    <label for="subject"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subcategory Name</label>
+                    <input type="text" name="price" id="price"
+                      class="bg-summit-gray-FA border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-summit-blue-primary focus:border-summit-blue-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-summit-blue-dark dark:focus:border-summit-blue-dark"
+                      placeholder="8.7A: Newton's Second Law of Motion" required="" />
+                  </div>
+                  <div class="w-full">
+                    <div class="flex items-center mt-9">
+                      <input id="link-checkbox" type="checkbox" value=""
+                        class="w-4 h-4 text-summit-blue-primary bg-gray-100 border-gray-300 rounded focus:ring-summit-blue-primary dark:focus:ring-summit-blue-primary dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                      <label for="link-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">TEKS
+                        Scaffold</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit"
+                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-summit-blue-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-summit-blue-dark">
+                  Save
+                </button>
+
+                <button type="submit"
+                  class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center border text-summit-blue-primary border-summit-blue-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-white">
+                  Cancel
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+        <!--Form Section-->
+        <div class="">
+          <section>
+            <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16 xl:max-w-3xl">
+              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                Preview
+              </h2>
+              <div
+                class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-summit-blue-primary h-48 md:h-72">
+                <div class="w-full text-center">No Preview</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <h4>Video player samples</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-2 mb-4">
+        <div class="p-6 text-center">
+          <video class="w-full" id="mp4player" autoplay muted controls
+            x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
+            <source src="vids/errr.mp4" id="mp4demo">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="grid xs:grid-cols-1 md:grid-cols-3  gap-4 mb-4">
+        <div
+          class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-summit-blue-primary h-48 md:h-[300px]">
+          <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+            class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 m-auto focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            type="button">
+            SAMPLE GENERAL USE MODAL
+          </button>
+          <div id="popup-modal" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative w-full max-w-md max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <button type="button"
+                  class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+                  data-modal-hide="popup-modal">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center">
+                  <svg class="mx-auto mb-4 text-gray-400 w-12 h-12" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <h3 class="mb-5 text-lg font-normal text-summit-gray">THIS IS A SAMPLE MODAL </h3>
+                  <button data-modal-hide="popup-modal" type="button"
+                    class="text-white bg-summit-blue-primary hover:bg-summit-blue-dark focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                    Affirmative Button
+                  </button>
+                  <button data-modal-hide="popup-modal" type="button"
+                    class="text-summit-gray bg-whitefocus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500  dark:focus:ring-gray-600">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div><!--Popup Modal-->
+        </div>
+        <div class="flex flex-col place-content-center bg-black overflow-hidden rounded-lg h-fit ">
+          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center"
+            data-modal-target="popup-modal3" data-modal-toggle="popup-modal3">
+            <img class="w-auto h-auto margin-auto" src="img/videothumbnail.png" />
+          </a>
+          <div class="max-h-[62px] h-fit bg-white p-2 line-clamp-2">
+            <span>Youtube Video Title something are going to be long super extra long hello there</span>
+          </div>
+          <div id="popup-modal3" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative w-[560px+100px] p-6"><!--please change 560 to match the youtube embed width-->
+              <div class="relative bg-black shadow dark:bg-gray-700">
+                <button type="button" id="modalclose3"
+                  class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+                  data-modal-hide="popup-modal3">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center">
+                  <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/tpCDwnmkeoY?si=RQm1LkgqSgeDTYIB?rel=&enablejsapi=1"
+                    title="YouTube video player" id="videoplayer3" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div><!--Popup Modal2-->
+
+        </div><!--video player--->
+        <div class="flex flex-wrap items-center justify-items-center border-summit-blue-primary h-48 md:h-[300px]">
+          <div role="status"
+            class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
+            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+              <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
+              <path
+                d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z" />
+            </svg>
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div><!--video player placeholder-->
+
+        <div class="flex flex-wrap items-center justify-items-center border-summit-blue-primary h-48 md:h-[300px]">
+          <div role="status"
+            class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
+            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+              <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
+              <path
+                d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z" />
+            </svg>
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div><!--video player placeholder-->
+        <div class="flex flex-col place-content-center bg-black overflow-hidden rounded-lg h-fit">
+          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center"
+            data-modal-target="popup-modal2" data-modal-toggle="popup-modal2">
+            <img class="w-full h-auto" src="img/videothumbnail.png" />
+          </a>
+          <div class="max-h-[62px] h-fit bg-white p-2 line-clamp-2">
+            <span>Youtube Video Title something are going to be long super extra long hello there</span>
+          </div>
+          <div id="popup-modal2" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative w-full max-w-screen-lg max-h-full">
+              <div class="relative bg-black shadow dark:bg-gray-700">
+                <button type="button" id="modalclose2"
+                  class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+                  data-modal-hide="popup-modal2">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center" x-show="modalOpen">
+                  <video class="w-full" id="mp4player" autoplay muted controls
+                    x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
+                    <source src="vids/errr.mp4" id="mp4demo">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div><!--Popup Modal2-->
+
+        </div><!--video player--->
+        <div class="flex flex-wrap items-center justify-items-center border-summit-blue-primary h-48 md:h-[300px]">
+          <div role="status"
+            class="flex items-center justify-center h-full w-full bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700">
+            <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+              <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
+              <path
+                d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z" />
+            </svg>
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div><!--video player placeholder-->
+      </div>
+      <div
+        class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-summit-blue-primaryh-96 mb-4">
+      </div>
+      <h4>Image Grid</h4>
+      <div class="grid grid-cols-3 gap-4">
+        <div
+          class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center">
+          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center"
+            data-modal-target="popup-modal4" data-modal-toggle="popup-modal4">
+            <img class="h-auto w-auto margin-auto" src="img/image1.png" />
+          </a>
+          <div id="popup-modal4" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative">
+              <div class="relative bg-black shadow dark:bg-gray-700">
+                <button type="button" id="modalclose2"
+                  class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+                  data-modal-hide="popup-modal4">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center" x-show="modalOpen">
+                  <img class="h-full w-auto m-auto max-h-90" src="img/image1.png" />
+                </div>
+              </div>
+            </div>
+          </div><!--Popup Modal4-->
+        </div>
+        <div
+          class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center">
+          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center"
+            data-modal-target="popup-modal5" data-modal-toggle="popup-modal5">
+            <img class="h-auto w-auto m-auto" src="img/image2.jpg" />
+          </a>
+          <div id="popup-modal5" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative">
+              <div class="relative bg-black shadow dark:bg-gray-700">
+                <button type="button" id="modalclose3"
+                  class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+                  data-modal-hide="popup-modal5">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center m-auto" x-show="modalOpen">
+                  <img class="h-full w-auto m-auto max-h-90" src="img/image2.jpg" />
+                </div>
+              </div>
+            </div>
+          </div><!--Popup Modal5-->
+        </div>
+        <div
+          class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center place-content-center">
+          <a class="cursor-pointer flex overflow-hidden items-center justify-items-center"
+            data-modal-target="popup-modal6" data-modal-toggle="popup-modal6">
+            <img class="h-auto w-auto margin-auto" src="img/image3.jpg" />
+          </a>
+          <div id="popup-modal6" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden p-6 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black bg-opacity-80">
+            <div class="relative">
+              <div class="relative bg-black shadow dark:bg-gray-700">
+                <button type="button" id="modalclose2"
+                  class="absolute z-10 top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center "
+                  data-modal-hide="popup-modal6">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+                <div class="p-6 text-center m-auto" x-show="modalOpen">
+                  <img class="h-auto w-auto m-auto max-h-90" src="img/image3.jpg" />
+                </div>
+              </div>
+            </div>
+          </div><!--Popup Modal6-->
+        </div>
+      </div>
+
+      <h1 class="m-10 text-xl font-bold text-gray-900">Full Sized Image for full-sized HTML</h1>
+      <div class="place-content-center w-full h-auto">
+        <img class="h-full w-auto" src="img/image1.png" />
+      </div><!--full-size html-->
+
+      <h1 class="m-10 text-xl font-bold text-gray-900">TEXT BLOCK</h1>
+      <div class="w-full min-h-screen items-center align-middle inline-block p-32">
+        <h1 class="mb-12 text-5xl font-semibold text-gray-900">This is a Trial Account with Limited Features available
+        </h1>
+        <h1 class="text-5xl font-semibold text-gray-900">Contact our local representative to explore additional items
+        </h1>
+      </div><!--text block as requested-->
+
+      <h1 class="m-10 text-xl font-bold text-gray-900">Full page embedded pdf</h1>
+      <div>
+        <object class="w-full min-h-screen"
+          data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">
+        </object>
+      </div>
+
+    </main>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="js/custom.js"></script>
+
+</html>
