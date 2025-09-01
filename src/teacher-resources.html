@@ -1745,16 +1745,6 @@
           </section>
         </div>
       </div>
-      <h4>Video player samples</h4>
-      <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-2 mb-4">
-        <div class="p-6 text-center">
-          <video class="w-full" id="mp4player" autoplay muted controls
-            x-init="$watch('modalOpen', value => value ? $el.play() : $el.pause())" width="1920" height="1080">
-            <source src="vids/errr.mp4" id="mp4demo">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
       <div class="grid xs:grid-cols-1 md:grid-cols-3  gap-4 mb-4">
         <div
           class="border-2 border-dashed rounded-lg flex flex-wrap items-center justify-items-center border-summit-blue-primary h-48 md:h-[300px]">
@@ -1988,12 +1978,6 @@
           </div><!--Popup Modal6-->
         </div>
       </div>
-
-      <h1 class="m-10 text-xl font-bold text-gray-900">Full Sized Image for full-sized HTML</h1>
-      <div class="place-content-center w-full h-auto">
-        <img class="h-full w-auto" src="img/image1.png" />
-      </div><!--full-size html-->
-
       <h1 class="m-10 text-xl font-bold text-gray-900">TEXT BLOCK</h1>
       <div class="w-full min-h-screen items-center align-middle inline-block p-32">
         <h1 class="mb-12 text-5xl font-semibold text-gray-900">This is a Trial Account with Limited Features available
